@@ -35,10 +35,21 @@ explicitly flips `TRADING_MODE` in `memory/strategy.md` to `live`.
    - `memory/signals-learnings.md` if you learned something worth remembering next time
 7. **Commit and push.** This repo is cloned fresh for every remote routine run — if you don't
    commit and push your memory file changes back to `main`, the next routine wakes up with no
-   memory of what you just did. Always end with:
+   memory of what you just did.
+
+   The built-in GitHub integration this environment authenticates with is **read-only** for git
+   operations — `git push` and the GitHub API will both fail with 403 / "Resource not accessible
+   by integration" no matter what the routine's Permissions tab says. Do **not** waste time
+   retrying plain `git push` or the GitHub MCP tools after the first 403 — that failure is
+   structural, not transient, and retrying just burns context budget. Instead, push using the PAT
+   in `GH_TOKEN`, directly onto `main` (not your auto-created `claude/...` branch, which nobody
+   merges):
    ```
-   git add -A && git commit -m "<routine name>: <one-line summary>" && git push
+   git add -A && git commit -m "<routine name>: <one-line summary>"
+   git push https://${GH_TOKEN}@github.com/pushkar232007/trading-routine.git HEAD:main
    ```
+   If this also fails, that's a real, urgent problem (not the known read-only-integration issue) —
+   notify via `scripts/telegram.py` and stop.
 8. **Notify sparingly.** Only send a Telegram message (`scripts/telegram.py`) when:
    - A trade was actually placed or closed, or
    - It's the market-close or weekly-review routine (always send an end-of-day / end-of-week summary), or
@@ -55,6 +66,8 @@ never in a `.env` file, never committed to git. The scripts read these exact nam
 - `ALPACA_BASE_URL` (paper: `https://paper-api.alpaca.markets`, live: `https://api.alpaca.markets`)
 - `TELEGRAM_BOT_TOKEN`
 - `TELEGRAM_CHAT_ID`
+- `GH_TOKEN` (a GitHub Personal Access Token with `Contents: Read and write` on this repo — needed
+  because the routine's built-in GitHub integration cannot push; see step 7 above)
 
 If a script fails with a missing-credential error, the fix is to set the environment variable in
 the Claude Desktop app's cloud environment settings — not to create a `.env` file.
