@@ -26,5 +26,5 @@ After acting, append every action (or deliberate non-action) to `memory/trade-lo
 documented format, and refresh `memory/portfolio.md` with the latest
 `python3 scripts/alpaca.py account` + `python3 scripts/alpaca.py positions` output.
 
-Only send a WhatsApp notification (`python3 scripts/whatsapp.py "..."`) if a trade was actually
+Only send a Telegram notification (`python3 scripts/telegram.py "..."`) if a trade was actually
 placed or closed.

@@ -3,7 +3,7 @@
 **Cron:** `0 12 * * 1-5` (12:00 PM, Monday-Friday — same timezone basis as pre-market.md; maps to
 roughly 1:00 PM ET, midway through the trading day).
 
-**Notifications:** trade log always; WhatsApp only if a trade is actually placed.
+**Notifications:** trade log always; Telegram only if a trade is actually placed.
 
 ## Prompt to paste into the routine
 
@@ -20,10 +20,10 @@ to hold — and if you choose to hold despite the drawdown, you must write that 
 memory/trade-log.md explicitly. For winners that have run up significantly, consider whether the
 trailing stop should be tightened.
 
-All API keys (Alpaca, CallMeBot) are in environment variables already set in this cloud
+All API keys (Alpaca, Telegram) are in environment variables already set in this cloud
 environment — read them via os.environ in the scripts, never look for or create a .env file.
 
-Log every action to memory/trade-log.md. Only send a WhatsApp message via scripts/whatsapp.py if
+Log every action to memory/trade-log.md. Only send a Telegram message via scripts/telegram.py if
 a position was actually closed.
 
 Before you finish: refresh memory/portfolio.md with the latest account/positions snapshot, commit

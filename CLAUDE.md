@@ -20,9 +20,9 @@ explicitly flips `TRADING_MODE` in `memory/strategy.md` to `live`.
    - `memory/trade-log.md` (last ~20 entries are enough — don't re-read the whole history every time, that burns context budget)
    - `memory/research-log.md` (last 2-3 entries)
 2. **Do the job** for whichever routine triggered you (see `routines/*.md` for what each one covers).
-3. **Use the scripts, not raw curl, for Alpaca and WhatsApp.** They already handle auth and base URLs:
+3. **Use the scripts, not raw curl, for Alpaca and Telegram.** They already handle auth and base URLs:
    - `python3 scripts/alpaca.py <command>` — account, positions, orders, quotes, buy/sell, trailing stops
-   - `python3 scripts/whatsapp.py "<message>"` — send a WhatsApp notification
+   - `python3 scripts/telegram.py "<message>"` — send a Telegram notification
    - Run `python3 scripts/alpaca.py --help` if you forget the exact subcommand syntax.
 4. **Use native WebSearch / WebFetch for research.** No Perplexity in this setup — just the
    built-in tools. Cite what you read in `memory/research-log.md` (ticker, source, takeaway).
@@ -39,7 +39,7 @@ explicitly flips `TRADING_MODE` in `memory/strategy.md` to `live`.
    ```
    git add -A && git commit -m "<routine name>: <one-line summary>" && git push
    ```
-8. **Notify sparingly.** Only send a WhatsApp message (`scripts/whatsapp.py`) when:
+8. **Notify sparingly.** Only send a Telegram message (`scripts/telegram.py`) when:
    - A trade was actually placed or closed, or
    - It's the market-close or weekly-review routine (always send an end-of-day / end-of-week summary), or
    - Something urgent/abnormal happened (API failure, guardrail breach attempt, big drawdown).
@@ -53,8 +53,8 @@ never in a `.env` file, never committed to git. The scripts read these exact nam
 - `ALPACA_API_KEY_ID`
 - `ALPACA_API_SECRET_KEY`
 - `ALPACA_BASE_URL` (paper: `https://paper-api.alpaca.markets`, live: `https://api.alpaca.markets`)
-- `CALLMEBOT_PHONE`
-- `CALLMEBOT_APIKEY`
+- `TELEGRAM_BOT_TOKEN`
+- `TELEGRAM_CHAT_ID`
 
 If a script fails with a missing-credential error, the fix is to set the environment variable in
 the Claude Desktop app's cloud environment settings — not to create a `.env` file.

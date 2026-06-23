@@ -3,7 +3,7 @@
 A Claude Code project that runs on a schedule (pre-market, market open, midday, close, and a
 Friday weekly review), researches the market with native web search, places trades via the
 Alpaca API within hard guardrails, journals everything to files so a stateless agent can pick up
-where it left off, and sends WhatsApp notifications on trades and daily/weekly summaries.
+where it left off, and sends Telegram notifications on trades and daily/weekly summaries.
 
 **This is not financial advice.** It's an experiment in agentic trading. Start in paper mode and
 stay there until you're genuinely comfortable with what the agent does on its own.
@@ -21,7 +21,7 @@ memory/                     Persistent state — the only thing Bull remembers b
   weekly-review.md           Friday grades vs. the S&P 500, append-only
 scripts/
   alpaca.py                  CLI wrapper for the Alpaca trading + market data REST API
-  whatsapp.py                CLI wrapper for CallMeBot WhatsApp notifications
+  telegram.py                 CLI wrapper for Telegram Bot API notifications
 .claude/commands/            Custom skills: /research, /trade, /journal, /weekly-review
 routines/                    The exact prompt + cron schedule for each of the 5 scheduled triggers
 .claude/settings.json        Pre-approved permissions so routines don't stall waiting for a human
@@ -40,18 +40,18 @@ routines/                    The exact prompt + cron schedule for each of the 5 
    switch to this, and flip `TRADING_MODE` in `memory/strategy.md` to `live`, once you've watched
    the paper bot for a while and are comfortable with real money.)
 
-### 2. WhatsApp notifications (CallMeBot)
+### 2. Telegram notifications (Bot API)
 
-1. Save this number in your phone contacts: **+34 644 51 95 23**
-2. Send it a WhatsApp message: `I allow callmebot to send me messages`
-3. CallMeBot replies with your personal API key.
-4. You'll need your own WhatsApp number in international format (e.g. `15551234567`, no `+` or
-   leading `00`) and that API key.
+1. In Telegram, message **@BotFather** → `/newbot` → follow the prompts to name your bot.
+   BotFather replies with a token like `123456789:ABCdefGhIJKlmNoPQRstuVwxyz`.
+2. Open a chat with your new bot (search its `@username`) and send it any message (e.g. "hi") so
+   it's allowed to message you back.
+3. Fetch your chat ID by visiting `https://api.telegram.org/bot<TOKEN>/getUpdates` in a browser
+   (replace `<TOKEN>`) and finding `"chat":{"id": NUMBER, ...}` in the response.
+4. You'll need both the bot token and that chat ID.
 
-This is an unofficial free service meant for personal/hobby notifications — it's not Meta's
-official Business API, so don't rely on it for anything business-critical. If it ever becomes
-unreliable, `scripts/whatsapp.py` is the only file you'd need to swap out for a different
-provider (e.g. Twilio).
+This is the official Telegram Bot API — free, reliable, no business verification needed. If you
+ever want a different channel, `scripts/telegram.py` is the only file you'd need to swap out.
 
 ### 3. Claude Desktop app
 
@@ -60,18 +60,12 @@ provider (e.g. Twilio).
    or via VS Code with the Claude Code extension (recommended while you're still setting things
    up, since VS Code shows you the file tree).
 
-### 4. Push this project to GitHub
+### 4. GitHub repo
 
-Remote routines (the kind that run even when your computer is off) clone this repo fresh on every
-run and push memory updates back to `main`. You need a GitHub repo for that. I have **not**
-created one or pushed anything yet — say the word and I will (via `gh repo create` + `git push`),
-or you can do it yourself:
-
-```
-cd ~/trading-routine
-gh repo create trading-routine --private --source=. --remote=origin
-git push -u origin main
-```
+Done — this is pushed to a private repo at `https://github.com/pushkar232007/trading-routine`,
+with `origin/main` tracked. Remote routines clone this repo fresh on every run and push memory
+updates back to `main`, so every future commit (made by you or by Bull) needs `git push`ed for
+the next routine to see it.
 
 ### 5. Set up the cloud environment (API keys)
 
@@ -82,8 +76,8 @@ placeholders in `.env.example`):
 - `ALPACA_API_KEY_ID`
 - `ALPACA_API_SECRET_KEY`
 - `ALPACA_BASE_URL` → `https://paper-api.alpaca.markets` to start
-- `CALLMEBOT_PHONE`
-- `CALLMEBOT_APIKEY`
+- `TELEGRAM_BOT_TOKEN`
+- `TELEGRAM_CHAT_ID`
 
 ### 6. Create the 5 routines
 

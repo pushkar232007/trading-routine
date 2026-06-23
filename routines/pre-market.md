@@ -21,7 +21,7 @@ relevant.
 
 Do not place any trades in this routine — research and drafting only.
 
-All API keys (Alpaca, CallMeBot) are in environment variables already set in this cloud
+All API keys (Alpaca, Telegram) are in environment variables already set in this cloud
 environment — read them via os.environ in the scripts, never look for or create a .env file.
 
 Do not message me unless something is genuinely urgent (e.g. a holding has a major negative

@@ -3,7 +3,7 @@
 **Cron:** `30 8 * * 1-5` (8:30 AM, Monday-Friday — same timezone basis as pre-market.md; maps to
 the 9:30 AM ET market open).
 
-**Notifications:** trade log always; WhatsApp only if a trade is actually placed.
+**Notifications:** trade log always; Telegram only if a trade is actually placed.
 
 ## Prompt to paste into the routine
 
@@ -20,11 +20,11 @@ guardrail in memory/strategy.md, and execute the ones that clear all checks. Eve
 get a 10% trailing stop attached immediately (python3 scripts/alpaca.py buy SYMBOL QTY
 --trail-percent 10).
 
-All API keys (Alpaca, CallMeBot) are in environment variables already set in this cloud
+All API keys (Alpaca, Telegram) are in environment variables already set in this cloud
 environment — read them via os.environ in the scripts, never look for or create a .env file.
 
-Log every action (or skipped action and why) to memory/trade-log.md. Only send a WhatsApp message
-via scripts/whatsapp.py if a trade was actually placed.
+Log every action (or skipped action and why) to memory/trade-log.md. Only send a Telegram message
+via scripts/telegram.py if a trade was actually placed.
 
 Before you finish: refresh memory/portfolio.md with the latest account/positions snapshot, commit
 and push all changes to main.

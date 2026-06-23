@@ -16,7 +16,7 @@ week's entries in `memory/research-log.md`.
 
 Append the entry to `memory/weekly-review.md` in the documented format.
 
-Always send a WhatsApp summary this run (`python3 scripts/whatsapp.py "..."`) — portfolio return,
+Always send a Telegram summary this run (`python3 scripts/telegram.py "..."`) — portfolio return,
 S&P return, delta, and the grade. This is one of the two routines (along with market close) that
 always notifies regardless of whether a trade happened.
 
