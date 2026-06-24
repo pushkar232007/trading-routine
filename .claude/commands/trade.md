@@ -5,6 +5,13 @@ description: Evaluate the current research/watchlist and execute trades within g
 Read `memory/strategy.md`, `memory/portfolio.md`, `memory/research-log.md` (last 2-3 entries),
 and `memory/signals-learnings.md` before doing anything.
 
+**Standing-plan catch-up:** first confirm the market is open (`python3 scripts/alpaca.py clock`
+→ `is_open: true`). If it is, check whether the most recent pre-market plan in
+`memory/research-log.md` was ever executed (cross-check `memory/trade-log.md` / current positions).
+If a guardrail-clean plan is still pending because an earlier routine misfired (e.g. fired while
+the market was closed), **execute that standing plan first**, then continue with today's ideas.
+This way a single in-hours run can salvage a plan the open routine missed.
+
 For each candidate trade idea:
 
 1. **Check every guardrail in `memory/strategy.md`** before placing anything:

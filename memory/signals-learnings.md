@@ -19,3 +19,12 @@ is what makes you better over time instead of repeating the same mistakes._
   and no orders could execute. Net effect: the planned META starter never got placed all day despite a
   ready plan. Fix the cron/timezone offset so routines fire during/after the cash session (open ~09:30,
   close ~16:00 ET). Until fixed, treat early "open/midday/close" runs as plan-only, not execution.
+- **Escalate the misfire, don't just log it.** When an *execution* routine (open/midday/close) fires
+  with `is_open: false`, send ONE Telegram flag that day (not silent logging) so the human notices the
+  broken schedule and fixes the cron. Silent logging let this recur unseen and cost a full +1.6% S&P
+  week in cash (see weekly-review 2026-06-22). One flag per day, not per run — don't spam.
+- **A good plan that never executes still loses to the index.** Inception week: sound META starter,
+  disciplined avoidance of MU/FDX/INTC traps, zero losses — but 0 trades and -1.6% vs S&P because a
+  timing bug blocked every execution. Risk discipline is necessary but not sufficient; deployment is
+  the job. When a guardrail-clean plan is pending and the market is open, the catch-up rule in
+  `.claude/commands/trade.md` says execute it.
