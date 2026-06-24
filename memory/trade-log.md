@@ -14,6 +14,15 @@ Format:
 
 ---
 
+## 2026-06-24 01:29 — NO-OP (market-close wrap, no positions)
+- Qty / price / stop: none — no order placed.
+- Reasoning: "market-close" routine fired at 01:29 ET (~8h before the 09:30 open; clock `is_open: false`).
+  Account still fully in cash: $100k equity, $0 positions, $0 day P/L. No trades were placed today because
+  every routine fired pre-open. Nothing to wrap — logged the day, refreshed portfolio snapshot, sent EOD
+  Telegram summary. META starter plan carries forward to the next real open.
+- Guardrail check: n/a — no trade attempted.
+- Note: routine timing offset is now a logged recurring issue (see signals-learnings.md → Process notes).
+
 ## 2026-06-24 01:26 — NO-OP (midday risk check, no positions)
 - Qty / price / stop: none — no order placed.
 - Reasoning: "midday" risk-check routine fired at 01:26 ET (~8h before the 09:30 open; clock `is_open: false`).
