@@ -55,7 +55,10 @@ explicitly flips `TRADING_MODE` in `memory/strategy.md` to `live`.
    amend/force-push more than once; just push as-is and move on.
    If this also fails, that's a real, urgent problem (not the known read-only-integration issue) —
    notify via `scripts/telegram.py` and stop.
-8. **Notify sparingly.** Only send a Telegram message (`scripts/telegram.py`) when:
+8. **Notify sparingly, and only via Telegram.** `scripts/telegram.py` is the only notification
+   channel that actually reaches the human — confirmed working. Do not use a `PushNotification`
+   tool even if one appears available to you; it does not reliably deliver, and trying it just
+   wastes a step. Only send a Telegram message when:
    - A trade was actually placed or closed, or
    - It's the market-close or weekly-review routine (always send an end-of-day / end-of-week summary), or
    - Something urgent/abnormal happened (API failure, guardrail breach attempt, big drawdown).
