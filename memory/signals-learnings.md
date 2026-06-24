@@ -10,7 +10,14 @@ is what makes you better over time instead of repeating the same mistakes._
 
 ## Mistakes / anti-patterns to avoid
 
-- _(none logged yet)_
+- **`alpaca.py buy SYMBOL QTY --trail-percent N` can 403 on the stop leg.** The script submits the
+  market buy and the trailing-stop sell back-to-back without waiting for the buy to fill, so Alpaca
+  briefly sees the stop-sell as a naked short and rejects it (`cannot open a short sell while a long
+  buy order is open`) even though the buy itself fills fine. First hit 2026-06-24 on the META starter.
+  Workaround: if this happens, check `positions` — the buy almost certainly filled — then re-submit
+  just the trailing_stop sell order (qty/symbol matching the filled buy) via the same `_request`
+  helper. Don't assume "stop leg failed" means "no position was opened." Ideally fix `cmd_buy` in
+  `scripts/alpaca.py` to poll for the fill before sending the stop leg.
 
 ## Process notes
 

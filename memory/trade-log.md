@@ -14,6 +14,25 @@ Format:
 
 ---
 
+## 2026-06-24 09:55 ET — BUY META
+- Qty / price / stop: 4 shares @ avg $562.81 fill ($2,251.24 cost basis, 2.25% of $100k equity). 10%
+  trailing stop attached separately (see note below), stop_price $506.43, hwm $562.70.
+- Reasoning: executed the standing half-size META starter from the 07:00 ET pre-market plan
+  (macro-driven 3-day AI/tech rout dip, no company-specific bad news, no near-term earnings binary
+  until Jul 29, avg PT $827 / Strong Buy consensus). Market confirmed open (`is_open: true`) — this
+  was the actual scheduled market-open routine, not a misfire.
+- Guardrail check: position size 2.25% ≤ 5% max ✅. 1st new position this week, ≤3/week cap ✅. Day
+  P/L $0 before trade, no daily loss cap breach ✅. Equity (paper) confirmed via `account` ✅. No
+  options/margin/short/crypto used ✅. `TRADING_MODE: paper` confirmed in strategy.md ✅.
+- Note (script bug, not a guardrail issue): `alpaca.py buy META 4 --trail-percent 10` returned a 403
+  on the trailing-stop leg ("cannot open a short sell while a long buy order is open") — the script
+  fires the stop-sell immediately after the market buy without waiting for the fill, so Alpaca sees
+  it as a naked short for an instant. The market buy itself filled fine. Worked around it by
+  re-submitting just the trailing_stop sell order (same payload the script would have sent) once the
+  buy showed `status: filled`. Stop is now live and attached. **Flagging for a script fix:** `cmd_buy`
+  in `scripts/alpaca.py` should poll/wait for the buy order to fill (or at least retry once) before
+  submitting the trailing-stop leg.
+
 ## 2026-06-24 01:29 — NO-OP (market-close wrap, no positions)
 - Qty / price / stop: none — no order placed.
 - Reasoning: "market-close" routine fired at 01:29 ET (~8h before the 09:30 open; clock `is_open: false`).
