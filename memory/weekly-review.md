@@ -34,12 +34,14 @@ Format:
   moment the timing is fixed; not higher than D because "good plan, never executed" still loses to the
   index.
 - Changes to make next week:
-  1. **Routine cron timezone (highest priority — needs the human).** `routines/*.md` crons are written
-     as `30 8 * * 1-5` etc. assuming ET, but the scheduler fires them ~8h early (01:xx ET). Pin the
-     cloud routine schedule to `America/New_York`, OR convert every cron to the scheduler's actual zone
-     (if UTC: market-open `30 13 * * 1-5` = 09:30 EDT, midday `0 16 * * 1-5`, close `0 20 * * 1-5`).
-     Until fixed, no execution routine can ever trade. Bull cannot edit the cloud schedule from the repo
-     — flagged to the human via Telegram this run.
+  1. ~~Routine cron timezone (highest priority — needs the human).~~ **CORRECTED post-run, 2026-06-24:**
+     this was a false alarm. The `is_open: false` firings all week were manual "Run now" test triggers
+     during initial setup (often run at ~1 AM ET by the human), not the actual scheduled cron. The human
+     independently verified the real configured crons already match what's proposed below — no change
+     was needed. See `memory/signals-learnings.md` Process notes for the full correction. (Original text
+     preserved for history: "`routines/*.md` crons are written as `30 8 * * 1-5` etc. assuming ET, but
+     the scheduler fires them ~8h early. Pin the cloud routine schedule to `America/New_York`, OR convert
+     every cron to UTC: market-open `30 13 * * 1-5`, midday `0 16 * * 1-5`, close `0 20 * * 1-5`.")
   2. **Standing-plan catch-up rule (implemented this run in `.claude/commands/trade.md`).** If a prior
      pre-market plan was never executed and the market is now open, execute the standing plan first —
      so a single in-hours run salvages the day even if the open routine misfired.

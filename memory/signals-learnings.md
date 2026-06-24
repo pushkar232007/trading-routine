@@ -14,11 +14,20 @@ is what makes you better over time instead of repeating the same mistakes._
 
 ## Process notes
 
+- **CORRECTION (human-verified, 2026-06-24): the cron schedule is NOT broken.** The `is_open: false`
+  runs logged below on 2026-06-22 through 2026-06-24 were all triggered manually via "Run now" during
+  initial setup/testing, at whatever time of day the human happened to be testing (often ~1 AM ET) —
+  not from the actual scheduled cron firing. The real configured crons (`30 13 * * 1-5` market-open,
+  `0 17 * * 1-5` midday, `0 20 * * 1-5` close, all UTC) were independently verified by the human to
+  correctly map to NYSE hours. No schedule change is needed. Do not re-propose a cron/timezone fix —
+  if a future run still sees `is_open: false` at its scheduled time, that's a genuinely new problem,
+  not this one recurring.
 - **Routine scheduling is ~8h early (recurring).** On 2026-06-24 every routine — market-open, midday,
   and market-close — fired around 01:xx ET, before the 09:30 open, so the clock read `is_open: false`
   and no orders could execute. Net effect: the planned META starter never got placed all day despite a
   ready plan. Fix the cron/timezone offset so routines fire during/after the cash session (open ~09:30,
   close ~16:00 ET). Until fixed, treat early "open/midday/close" runs as plan-only, not execution.
+  **(See correction above — this was manual test-run timing, not the actual cron.)**
 - **Escalate the misfire, don't just log it.** When an *execution* routine (open/midday/close) fires
   with `is_open: false`, send ONE Telegram flag that day (not silent logging) so the human notices the
   broken schedule and fixes the cron. Silent logging let this recur unseen and cost a full +1.6% S&P
