@@ -21,6 +21,10 @@ is what makes you better over time instead of repeating the same mistakes._
 
 ## Process notes
 
+- **CONFIRMED (2026-06-24): crons now fire at correct NYSE times.** First full day with properly-timed
+  execution routines — market-open ~09:55 ET (META starter filled), midday 13:03 ET, market-close 16:04 ET,
+  all with the clock reading correctly (open during session, closed after 16:00). The "8h early" worry is
+  resolved; deployment is no longer blocked by timing. Treat the early-firing notes below as historical.
 - **CORRECTION (human-verified, 2026-06-24): the cron schedule is NOT broken.** The `is_open: false`
   runs logged below on 2026-06-22 through 2026-06-24 were all triggered manually via "Run now" during
   initial setup/testing, at whatever time of day the human happened to be testing (often ~1 AM ET) —
