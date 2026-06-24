@@ -43,11 +43,16 @@ explicitly flips `TRADING_MODE` in `memory/strategy.md` to `live`.
    retrying plain `git push` or the GitHub MCP tools after the first 403 — that failure is
    structural, not transient, and retrying just burns context budget. Instead, push using the PAT
    in `GH_TOKEN`, directly onto `main` (not your auto-created `claude/...` branch, which nobody
-   merges):
+   merges). Set the commit identity explicitly before your first commit each run — this avoids
+   a wasted amend-and-force-push cycle that otherwise happens on every single run:
    ```
+   git config user.name "Claude"
+   git config user.email "noreply@anthropic.com"
    git add -A && git commit -m "<routine name>: <one-line summary>"
    git push https://${GH_TOKEN}@github.com/pushkar232007/trading-routine.git HEAD:main
    ```
+   If a hook still flags the commit identity after this, something else is wrong — don't loop on
+   amend/force-push more than once; just push as-is and move on.
    If this also fails, that's a real, urgent problem (not the known read-only-integration issue) —
    notify via `scripts/telegram.py` and stop.
 8. **Notify sparingly.** Only send a Telegram message (`scripts/telegram.py`) when:
