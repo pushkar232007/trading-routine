@@ -14,6 +14,16 @@ Format:
 
 ---
 
+## 2026-06-24 01:26 — NO-OP (midday risk check, no positions)
+- Qty / price / stop: none — no order placed.
+- Reasoning: "midday" risk-check routine fired at 01:26 ET (~8h before the 09:30 open; clock `is_open: false`).
+  `alpaca.py positions` returned `[]` — account still fully in cash ($100k equity, $0 positions). Nothing to
+  risk-check: no position down -7% to cut, no winner to tighten a stop on. Pre-market META starter was never
+  executed (market-open routine also fired pre-open). Plan unchanged: initiate META ~5% starter w/ 10% trailing
+  stop at the real open; hold off MU/FDX; cautious into Thu Jun 26 PCE.
+- Guardrail check: n/a — no trade attempted.
+- Note: routines still firing ~8h early (timezone/cron offset). Recurring issue — flag for fix.
+
 ## 2026-06-24 01:11 — SKIP (market closed)
 - Qty / price / stop: none — no order placed.
 - Reasoning: "market-open" routine fired at 01:11 ET, ~8h before the 09:30 ET open. `alpaca.py clock`
