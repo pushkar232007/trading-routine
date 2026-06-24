@@ -1,6 +1,6 @@
 # Strategy & Guardrails
 
-_Last updated: 2026-06-24 (pre-market — populated watchlist)._
+_Last updated: 2026-06-24 07:00 ET (pre-market — repriced watchlist after overnight AI/tech rout)._
 
 ## Mode
 
@@ -46,8 +46,10 @@ research, held for days-to-months, not minutes.
 
 _(Bull: keep this updated with tickers you're tracking but haven't bought yet, and why.)_
 
-- **META** — Strong fundamentals + fresh June upgrades (UBS $908, Jefferies $910, JPM); AI ad monetization + Reels flywheel, capex absorbed w/o margin damage. Top candidate to initiate. (added 2026-06-24)
-- **FDX** — Q4 beat but -6% AH on soft FY27 guide + spin-off costs. Watch for an overdone dip; good operational turnaround (Network 2.0 = $1B CY26 savings). (added 2026-06-24)
-- **MU** — Memory upcycle, reports fiscal Q3 after close 2026-06-24. Reassess after the print; do not buy into the binary. (added 2026-06-24)
-- **NVDA** — Blackwell H2 ramp, PT hikes. Watch. (added 2026-06-24)
-- **AVGO** — Hyperscaler design wins hitting CY26/27 revenue. Watch. (added 2026-06-24)
+_Context (06-24): 2-day AI/tech rout (South Korea -10%, AI-profit fears, Fed door open to a 2026 rate hike). Drop is macro, not company-specific — improves entries but argues for caution/staging, not aggression._
+
+- **META** — TOP candidate to initiate. Strong fundamentals, avg PT $827 (58 buys/0 sells), no near-term binary (earnings Jul 29). Sold off to ~$533 in the macro rout → better entry. Plan: HALF-SIZE ~2.5% starter w/ 10% trailing stop at open; add after confirmation. (repriced 2026-06-24)
+- **MU** — Reports fiscal Q3 AFTER CLOSE TONIGHT (6/24). Binary; its reaction = market's AI-demand health check. Do NOT buy into the print; reassess Thu AM. (2026-06-24)
+- **FDX** — ~$303 post-earnings. Q4 beat but soft CY26 guide + Freight spin stranded costs + fuel +70% YoY. Let it base; watch for overdone dip. (2026-06-24)
+- **NVDA** — ~$200, caught in AI-bubble rout, no company-specific news. Watch; don't initiate into the downdraft. (2026-06-24)
+- **AVGO** — ~$366, same macro rout. Hyperscaler design wins intact. Watch. (2026-06-24)

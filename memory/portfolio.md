@@ -3,7 +3,7 @@
 _Bull: overwrite this entire file with a fresh snapshot every routine run. This should always
 reflect the CURRENT state, not history (history lives in trade-log.md)._
 
-- **Last updated:** 2026-06-24 01:33 ET (weekly-review routine — fired pre-open, market closed)
+- **Last updated:** 2026-06-24 07:01 ET (pre-market routine — fired correctly ~2.5h before the 09:30 open)
 - **Mode:** paper
 - **Cash:** $100,000.00
 - **Equity:** $100,000.00
@@ -17,9 +17,9 @@ reflect the CURRENT state, not history (history lives in trade-log.md)._
 |---|---|---|---|---|---|---|
 | _none yet_ | | | | | | |
 
-_Notes: Still a fully-cash $100k paper account — no positions. Weekly-review routine fired at 01:33 ET
-while market was closed (`is_open: false`) — same ~8h-early mistiming as all of today's runs. Inception
-week (funded 06-22) graded **D**: 0 trades, 0.00% vs S&P +1.6% (delta -1.6%) — sat in cash because the
-timing bug blocked every execution routine. Fixes applied: catch-up rule in trade.md + escalate-once on
-misfire in signals-learnings.md; cron-timezone fix flagged to human. Pre-market META starter still stands
-for the next real open: initiate ~5% META w/ 10% trailing stop; hold off MU/FDX; cautious into Thu Jun 26 PCE._
+_Notes: Fully-cash $100k paper account — no positions. **This pre-market run fired at the RIGHT time
+(07:01 ET, open 09:30)** — the ~8h-early runs were manual test fires, not the real cron (per
+signals-learnings correction). Research-only routine: drafted the market-open plan into research-log.md.
+Overnight = day-3 AI/tech rout (rate-hike scare); watchlist repriced lower. Plan for the open: INITIATE
+HALF-SIZE META starter (~2.5%, 10% trailing stop) on the macro dip; HOLD OFF MU (binary print tonight);
+WATCH FDX/NVDA/AVGO. Cautious into MU tonight + Thu May PCE. No trade this routine (research/draft only)._
