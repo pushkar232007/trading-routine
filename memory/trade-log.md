@@ -14,6 +14,22 @@ Format:
 
 ---
 
+## 2026-06-25 09:32 ET — SKIP META add (PCE hot surprise)
+- Qty / price / stop: none — no order placed. META starter unchanged (4 sh @ $562.81, 10% trailing
+  stop live: stop_price $511.227, hwm $568.03, GTC).
+- Reasoning: Market confirmed open (`is_open: true`, 09:31 ET — real scheduled open routine).
+  Standing-plan catch-up: nothing pending — the half-size META starter was already filled 06-24, so
+  no misfired plan to salvage. The only candidate this routine was the PCE-CONTINGENT META add from
+  the 07:00 pre-market plan. Add condition was: core ≤ ~+0.37% m/m / 3.3% y/y → add; core hot → HOLD.
+  **May PCE (8:30 ET actual): core +0.3% m/m but +3.4% y/y vs +3.3% forecast (HOT, highest since
+  Oct 2023); headline +0.4% m/m / +4.1% y/y (highest since Apr 2023), Iran-war oil reigniting
+  inflation, rate-hike door stays open.** Core y/y surprised hot → per the documented rule, HOLD the
+  add; don't add high-multiple tech into a hot inflation print. META already -1% on the day confirms
+  the pressure. Keep dry powder. MU/NVDA/AVGO/FDX = WATCH only (no new catalyst; don't initiate into
+  a hot-PCE tape).
+- Guardrail check: n/a (no trade placed). For reference: META 2.21% of equity ≤ 5% ✅; 1/3 weekly
+  new-position slots used ✅; day P/L -$22.12 (-0.022%), no daily loss cap breach ✅; paper mode ✅.
+
 ## 2026-06-24 13:03 ET — NO-OP (midday risk check; market open, no action triggered)
 - Qty / price / stop: none — no order placed. Existing META trailing stop confirmed live (10% trail,
   hwm risen to $568.03, stop_price $511.23).

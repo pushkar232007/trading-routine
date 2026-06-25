@@ -12,6 +12,14 @@ Format:
 
 ---
 
+## 2026-06-25 09:32 ET — market-open (PCE binary resolved)
+- MACRO (CBS/CNBC/NBC): **May PCE actual = HOT.** Core +0.3% m/m / **+3.4% y/y vs +3.3% forecast**
+  (highest since Oct 2023); headline +0.4% m/m / +4.1% y/y (highest since Apr 2023). Iran-war oil
+  reignited inflation (highest fuel costs in 3 yrs). Core y/y above forecast + accelerating → keeps
+  the Fed rate-hike door open, pressures high-multiple tech. → The 07:00 plan's META add was
+  CONTINGENT on core in-line/cooler; core surprised hot → ADD HELD. Posture: defensive on new tech
+  risk; keep dry powder. META starter held (only position). MU/NVDA/AVGO/FDX = WATCH only.
+
 ## 2026-06-25 07:00 ET — pre-market
 Regime read: MU's blowout = the AI-demand all-clear (at least for memory). Rout fear was a demand-slowdown scare (SK Hynix cutting advanced-AI capacity); MU directly rebuts it.
 - MU (247WallSt/Investing/SEC 8-K): fiscal Q3 BLOWOUT — rev $41.46B vs $35.25B est; non-GAAP EPS $25.11 vs $20.28 (+23.8%); record GM 84.9%. Q4 guide rev $50B±1, non-GAAP EPS $31±1, GM ~86%. Disclosed 16 customer agreements = ~$100B contracted min revenue. Stock +13.1% AH to ~$1,186 (near 52wk high $1,213). → AI memory demand accelerating, not slowing.
