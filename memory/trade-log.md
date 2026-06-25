@@ -14,6 +14,16 @@ Format:
 
 ---
 
+## 2026-06-25 16:04 ET — NO-OP (market-close wrap; market closed)
+- Qty / price / stop: none — no order placed or closed. META trailing stop confirmed live (10% trail,
+  stop_price $511.227, hwm $568.03, GTC, status new).
+- Reasoning: properly-timed market-close run (`is_open: false`, 16:04 ET, post-16:00 close). No trades
+  today — the only decision was the 09:32 SKIP of the contingent META add (May core PCE hot, +3.4% y/y).
+  META closed at $544.99, -3.17% from entry, well inside the -7% cut line → held. Loser, so the
+  stop-tightening ratchet doesn't apply. EOD summary sent via Telegram.
+- Guardrail check: PASS. META 2.18% of equity ≤ 5% ✅; 1/3 weekly slots used ✅; day P/L -$50.72
+  (-0.051%) → no daily loss cap breach ✅; paper mode ✅.
+
 ## 2026-06-25 09:32 ET — SKIP META add (PCE hot surprise)
 - Qty / price / stop: none — no order placed. META starter unchanged (4 sh @ $562.81, 10% trailing
   stop live: stop_price $511.227, hwm $568.03, GTC).
