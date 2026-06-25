@@ -100,3 +100,14 @@ Format:
   (earnings tonight) + FDX (let dip settle), stay cautious into Thu Jun 26 PCE.
 - Guardrail check: n/a — no trade attempted.
 - Note: routine scheduled at wrong time (timezone/cron likely off). Account unchanged: $100k cash, flat.
+
+## 2026-06-25 13:03 — NO-OP (midday risk check, market OPEN)
+- Qty / price / stop: none — no order placed.
+- Reasoning: Only position is META (4 sh, entry $562.81, current $545.14, unrealized -$70.68 / -3.14%).
+  Well inside the -7% loss-cut line, so no close required. META is a loser, not a winner, so the
+  stop-tightening ratchet does not apply (only fires on positions with a positive gain from entry).
+  Trailing stop verified live: 10% trail, stop_price $511.227, hwm $568.03, GTC, status new.
+- Guardrail check: PASS. -3.14% > -7% cut line → hold. No winner ≥+15% gain → no tighten. Day P/L
+  -$50.12 (-0.05%) → no daily-loss-cap concern. META 2.18% of equity ≤ 5% size cap.
+- Note: No Telegram (nothing closed). Holding dry powder; MU/NVDA/AVGO/FDX = WATCH only. 1 of 3
+  weekly new-position slots used.
