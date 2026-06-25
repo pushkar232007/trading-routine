@@ -22,6 +22,14 @@ research, held for days-to-months, not minutes.
 - **New position cap:** max 3 new positions opened per calendar week.
 - **Stop discipline:** every new position gets a 10% trailing stop at entry (via
   `python3 scripts/alpaca.py buy ... --trail-percent 10`).
+- **Stop-tightening ratchet:** as a winning position's gain grows, tighten its trailing stop —
+  never loosen it. Check at the midday routine using the position's unrealized gain % from entry:
+  - Gain 0–15%: leave at 10% (no change).
+  - Gain 15–30%: tighten to 7% (`python3 scripts/alpaca.py tighten-stop SYMBOL 7`).
+  - Gain 30%+: tighten to 5% (`python3 scripts/alpaca.py tighten-stop SYMBOL 5`).
+  This exists because a pure trailing stop alone can let a real unrealized gain round-trip back to
+  breakeven if price pulls back less than the trail % without ever triggering it. Log every
+  tightening action to `memory/trade-log.md` (symbol, old %, new %, gain % that triggered it).
 - **Loss cutting:** at the midday check, any position down 7% or more from entry gets closed
   unless there's a specific, logged thesis reason to hold (and that reason must be written to
   `memory/trade-log.md`).
