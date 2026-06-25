@@ -1,6 +1,6 @@
 # Strategy & Guardrails
 
-_Last updated: 2026-06-24 07:00 ET (pre-market — repriced watchlist after overnight AI/tech rout)._
+_Last updated: 2026-06-25 07:00 ET (pre-market — MU blowout reset the AI-demand read; watchlist updated)._
 
 ## Mode
 
@@ -54,10 +54,10 @@ research, held for days-to-months, not minutes.
 
 _(Bull: keep this updated with tickers you're tracking but haven't bought yet, and why.)_
 
-_Context (06-24): 2-day AI/tech rout (South Korea -10%, AI-profit fears, Fed door open to a 2026 rate hike). Drop is macro, not company-specific — improves entries but argues for caution/staging, not aggression._
+_Context (06-25): MU's fiscal Q3 BLOWOUT (rev $41.46B, EPS $25.11, GM 84.9%, Q4 guide $50B, $100B contracted) +13% AH = the AI-demand all-clear; rebuts the SK-Hynix demand-slowdown fear that drove the rout. Net constructive on the AI complex BUT May PCE drops today 8:30 ET (forecast hot, +4.1% headline y/y) — a hot core pressures high-multiple tech. Posture: constructive but PCE-gated; stage, don't chase._
 
-- **META** — TOP candidate to initiate. Strong fundamentals, avg PT $827 (58 buys/0 sells), no near-term binary (earnings Jul 29). Sold off to ~$533 in the macro rout → better entry. Plan: HALF-SIZE ~2.5% starter w/ 10% trailing stop at open; add after confirmation. (repriced 2026-06-24)
-- **MU** — Reports fiscal Q3 AFTER CLOSE TONIGHT (6/24). Binary; its reaction = market's AI-demand health check. Do NOT buy into the print; reassess Thu AM. (2026-06-24)
-- **FDX** — ~$303 post-earnings. Q4 beat but soft CY26 guide + Freight spin stranded costs + fuel +70% YoY. Let it base; watch for overdone dip. (2026-06-24)
-- **NVDA** — ~$200, caught in AI-bubble rout, no company-specific news. Watch; don't initiate into the downdraft. (2026-06-24)
-- **AVGO** — ~$366, same macro rout. Hyperscaler design wins intact. Watch. (2026-06-24)
+- **META** — HOLD (4-sh starter) + ADD candidate. Strong Buy, 64 analysts, avg PT $827-840 (~47% upside), no near-term binary (earnings Jul 29). MU = the demand-side confirmation the "add after confirmation" plan was waiting on. Plan: read 8:30 PCE first; if in-line/cooler, add ~2-3 sh toward ~4% of equity w/ fresh 10% trailing stop; if PCE hot, hold the add. (2026-06-25)
+- **MU** — Binary RESOLVED bullish (Q3 blowout) but +13% to ~$1,186 — do NOT chase the spike. WATCH for a base/pullback before any initiation. (2026-06-25)
+- **NVDA** — ~$200, no company-specific news; positive MU read-through (AI capex intact). Top watch for an add once PCE clears and the rout bottom confirms; don't initiate into a PCE-day tape. (2026-06-25)
+- **AVGO** — ~$390, same rout but had its own weak-guide stumble ~Jun 6 — lower priority than NVDA. Watch. (2026-06-25)
+- **FDX** — ~$297 post-earnings. Q4 beat but soft CY26 guide + Freight spin stranded costs + fuel +70% YoY. Still basing; watch for overdone dip. (2026-06-25)
