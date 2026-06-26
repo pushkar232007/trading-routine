@@ -37,7 +37,7 @@ def send(message: str) -> str:
     token = _env("TELEGRAM_BOT_TOKEN")
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     data = urllib.parse.urlencode(
-        {"chat_id": _env("TELEGRAM_CHAT_ID"), "text": message}
+        {"chat_id": _env("TELEGRAM_CHAT_ID"), "text": f"[Alpaca Bot] {message}"}
     ).encode()
     try:
         with urllib.request.urlopen(url, data=data) as resp:
