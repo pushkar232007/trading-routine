@@ -12,6 +12,21 @@ Format:
 
 ---
 
+## 2026-06-26 07:05 ET — pre-market (rout RE-INTENSIFIES on AI-cost/bubble narrative)
+Regime read: the AI selloff has a NEW driver beyond the rate scare — it's now an AI-COST + AI-BUBBLE story, more dangerous for our high-multiple holding. 4th straight down day; Fri futures NQ -1.2%, SPX -0.5%, Dow -0.1%. Posture: DEFENSIVE — preserve dry powder, do not catch the falling knife. The rout has NOT bottomed.
+- MACRO (TheStreet/Yahoo): Fri sell-off triggered by (1) report of OpenAI IPO DELAY (cracks AI-bubble sentiment), (2) AI data-center cost fears, (3) Apple & Microsoft RAISING prices (MacBook/iPad/Xbox) on the memory-cost squeeze MU's print foreshadowed → the AI capex boom now reads as a cost/margin headwind for device makers. Kospi -8% → CIRCUIT BREAKER (semi-heavy). Asian tech sold hard on valuation fears.
+- MACRO calendar TODAY: second-tier only — Goods trade balance (-$85B est), UMich final consumer sentiment (prelim 48.9, off May record-low 44.8), Fed speakers Williams 9:30 / Kashkari 10:30, Baker Hughes rig count. No top-tier binary today; PCE (hot, +3.4% core y/y) was yesterday. Today is sentiment/positioning-driven.
+- META (Yahoo/CNBC): ~$557 (06-25 close), ~$545 pre-mkt. Strong Buy (58 buys/0 sells), Piper Sandler reiterated Buy. New: multi-gen Qualcomm data-center CPU deal (Dragonfly C1000, H2 2028 — immaterial near-term); Muse Spark AI cost-cutting on moderation. NO company-specific bad news; weakness is 100% the macro AI-sentiment rout. Earnings Jul 29 (no near-term binary). Thesis intact; -3.09% from entry, inside guardrails.
+- NVDA (TradingKey/CNN): -3.05% on 06-25. NEW BEARISH SIGNAL → B200 GPU hourly lease price COLLAPSED $6.11 (May 30) → $4.22 (Jun 21), ~31% in 3 wks = real AI-compute pricing/demand crack; plus $410M insider selling over 3mo. This directly undercuts the "AI capex intact" add thesis. DOWNGRADE NVDA from top-watch to cautious-watch until lease pricing stabilizes.
+- MU: blowout (rev +346% YoY, $50B Q4 guide, $100B contracted, analysts to $2,000 PT / 91% upside) but -3.5% pre-mkt 06-25 on supply-GLUT fears + broad selloff. Memory is cyclical; the same print that's bullish for MU is bearish for device-maker margins. Do NOT chase. WATCH.
+- AVGO: record FQ2 (AI semi rev $10.8B) but stock had fallen >12% post-earnings on a below-hopes >$100B-by-2027 AI target + margin worry. Lower priority than before. WATCH.
+- FDX: ~$329 (06-25), UP from the ~$297 post-earnings assumption — the guidance dip already based and bounced; Freight spin-off completed Jun 1 (+$4.1B cash). Less of an "overdone dip" now; thesis less compelling. WATCH, lower priority.
+Trade ideas for market-open (NO trades this routine):
+1. HOLD everything. No new positions today. Rationale: rout re-intensifying on a fresh AI-cost/bubble narrative (not yet bottomed), high-multiple tech under pressure, and the contingent META add was already held on hot PCE — today gives a 2nd reason to keep it held. Preserve dry powder.
+2. META — HOLD the 4-sh starter; do NOT add. 10% trailing stop live (stop_price $511.23, current ~$545 — not at risk). If META gaps below the stop intraday it triggers automatically; otherwise leave for midday risk check.
+3. NVDA/MU/AVGO/FDX — WATCH only, all lower-conviction than yesterday. The B200 lease-price crack means even the cleanest AI add (NVDA) is now suspect; wait for the rout to confirm a bottom AND for AI-compute pricing to stabilize before initiating.
+Posture: DEFENSIVE. The right move into a re-intensifying, sentiment-driven AI rout is patience, not deployment. Dry powder ($97.7k cash) is the position. 1 of 3 weekly new-position slots used; 2 still open if a genuine bottom confirms. Friday close = weekly review.
+
 ## 2026-06-25 09:32 ET — market-open (PCE binary resolved)
 - MACRO (CBS/CNBC/NBC): **May PCE actual = HOT.** Core +0.3% m/m / **+3.4% y/y vs +3.3% forecast**
   (highest since Oct 2023); headline +0.4% m/m / +4.1% y/y (highest since Apr 2023). Iran-war oil

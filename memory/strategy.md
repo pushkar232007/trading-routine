@@ -1,6 +1,6 @@
 # Strategy & Guardrails
 
-_Last updated: 2026-06-25 07:00 ET (pre-market — MU blowout reset the AI-demand read; watchlist updated)._
+_Last updated: 2026-06-26 07:05 ET (pre-market — AI rout RE-INTENSIFIED on cost/bubble narrative; NVDA downgraded, posture defensive)._
 
 ## Mode
 
@@ -54,10 +54,10 @@ research, held for days-to-months, not minutes.
 
 _(Bull: keep this updated with tickers you're tracking but haven't bought yet, and why.)_
 
-_Context (06-25): MU's fiscal Q3 BLOWOUT (rev $41.46B, EPS $25.11, GM 84.9%, Q4 guide $50B, $100B contracted) +13% AH = the AI-demand all-clear; rebuts the SK-Hynix demand-slowdown fear that drove the rout. Net constructive on the AI complex BUT May PCE drops today 8:30 ET (forecast hot, +4.1% headline y/y) — a hot core pressures high-multiple tech. Posture: constructive but PCE-gated; stage, don't chase._
+_Context (06-26): AI rout RE-INTENSIFIED on a NEW driver — not just the rate scare but an AI-COST + AI-BUBBLE narrative: OpenAI IPO-delay report, AI data-center cost fears, Apple/MSFT raising device prices on the memory squeeze MU foreshadowed, and NVDA's B200 lease price collapsing ~31% in 3 wks. 4th straight down day; Fri futures red (NQ -1.2%); Kospi -8% circuit breaker. Posture: DEFENSIVE — hold, preserve dry powder, do NOT catch the falling knife. The rout has NOT bottomed. Today's data is second-tier (UMich sentiment, goods trade, Fed speakers); PCE (hot) was 06-25._
 
-- **META** — HOLD (4-sh starter) + ADD candidate. Strong Buy, 64 analysts, avg PT $827-840 (~47% upside), no near-term binary (earnings Jul 29). MU = the demand-side confirmation the "add after confirmation" plan was waiting on. Plan: read 8:30 PCE first; if in-line/cooler, add ~2-3 sh toward ~4% of equity w/ fresh 10% trailing stop; if PCE hot, hold the add. (2026-06-25)
-- **MU** — Binary RESOLVED bullish (Q3 blowout) but +13% to ~$1,186 — do NOT chase the spike. WATCH for a base/pullback before any initiation. (2026-06-25)
-- **NVDA** — ~$200, no company-specific news; positive MU read-through (AI capex intact). Top watch for an add once PCE clears and the rout bottom confirms; don't initiate into a PCE-day tape. (2026-06-25)
-- **AVGO** — ~$390, same rout but had its own weak-guide stumble ~Jun 6 — lower priority than NVDA. Watch. (2026-06-25)
-- **FDX** — ~$297 post-earnings. Q4 beat but soft CY26 guide + Freight spin stranded costs + fuel +70% YoY. Still basing; watch for overdone dip. (2026-06-25)
+- **META** — HOLD (4-sh starter). NO add. Strong Buy (58 buys/0 sells, Piper Sandler Buy), no near-term binary (earnings Jul 29), no company-specific bad news — weakness is 100% the macro AI-sentiment rout. The "add after confirmation" plan is now held on TWO grounds: hot PCE (06-25) + re-intensifying AI rout (06-26). Re-evaluate the add only once the rout confirms a bottom. 10% trailing stop live (stop_price $511.23). (2026-06-26)
+- **NVDA** — DOWNGRADED to cautious-watch (was top-watch). B200 GPU hourly lease price collapsed $6.11→$4.22 (~31% in 3 wks) + $410M insider selling = a real AI-compute pricing/demand crack that undercuts the "AI capex intact" thesis. Do not initiate until lease pricing stabilizes AND the rout bottoms. (2026-06-26)
+- **MU** — Q3 blowout ($50B Q4 guide, $100B contracted, PTs to $2,000) but -3.5% on supply-GLUT fears + selloff; the same print is bearish for device-maker margins. Do NOT chase. WATCH for a base. (2026-06-26)
+- **AVGO** — Record FQ2 (AI semi $10.8B) but fell >12% post-earnings on below-hopes >$100B-by-2027 AI target + margin worry. Lower priority. WATCH. (2026-06-26)
+- **FDX** — ~$329 (rallied from the ~$297 post-earnings low; dip already based/bounced). Freight spin-off done Jun 1 (+$4.1B cash). Less of an overdone-dip setup now; thesis less compelling. WATCH, low priority. (2026-06-26)
