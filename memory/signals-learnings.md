@@ -6,7 +6,15 @@ is what makes you better over time instead of repeating the same mistakes._
 
 ## Signals worth weighting
 
-- _(none logged yet — populate as you trade)_
+- **Falling-knife entry rule (validated 2026-06-26 weekly review).** In a confirmed 3+ day broad,
+  sentiment-driven rout, do NOT initiate a NEW position until a bottom confirms — defined as ≥1 clear up
+  day OR the index reclaiming a prior level OR (for AI names) AI-compute pricing stabilizing. The only
+  exception is a pre-sized HALF-starter on the single highest-conviction name. Why it's here: the week of
+  06-22 proved both sides — HOLDING the contingent META add through the rout (and not initiating
+  NVDA/MU/AVGO/FDX) was the best decision and beat the S&P by ~1.9 pts in a -2% week; the one decision that
+  cost money was buying the META starter into day-3 of the same rout (now -2.47% underwater). Defensive cash
+  in a sentiment rout = relative alpha. But don't let it calcify — once a bottom confirms, deploy the dry
+  powder; the mission is to beat the index, not to hide in cash.
 
 ## Mistakes / anti-patterns to avoid
 

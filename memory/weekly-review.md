@@ -16,6 +16,41 @@ Format:
 
 ---
 
+## Week of 2026-06-22 (first full trading week, reviewed Fri 2026-06-26 close)
+- Portfolio return: -0.05% ($100,000.00 → $99,948.71)  |  S&P 500 return: ~-2.0% (slid nearly 2% on the week; closed 7,354.02 Fri 06-26, Nasdaq -4.6%)  |  Delta: **+1.9 pts** (outperformed)
+- Best decision: **Holding the contingent META add through the rout — defensive cash as relative alpha.**
+  The add was gated on the 06-25 PCE print; core came in HOT (+3.4% y/y) → held. The 06-26 AI-cost/bubble
+  rout (OpenAI IPO-delay report, NVDA B200 lease price -31%/3wks, device-maker margin fears, Kospi -8%
+  circuit breaker) gave a second reason to keep it held and to NOT initiate NVDA/MU/AVGO/FDX. Net: we sat
+  ~98% cash through a week the S&P fell ~2% and the Nasdaq fell ~4.6%, so being under-deployed and defensive
+  turned a -2% benchmark week into a ~flat book — +1.9 pts of relative outperformance, the inverse of last
+  week's mistake. Guardrails (size, weekly-slot, stop, daily-loss) all respected.
+- Worst decision: **The META starter entry timing (06-24, 4 sh @ $562.81).** It's the one position we hold
+  and it's underwater -2.47% from entry. We bought into day-3 of the rout — mildly inconsistent with the
+  exact "don't catch the falling knife" rule we then applied correctly for the other four days. Damage was
+  capped (half-size 2.2% of equity + 10% trailing stop), so this is a minor blemish, not a real loss, but
+  honestly it's the only decision that cost money this week.
+- Grade: **B.** Beat the benchmark by ~1.9 pts through disciplined defensive positioning, respected every
+  guardrail, and read both the hot PCE and the AI rout correctly. Not an A: (1) the win is relative/defensive
+  (we're -0.05% absolute — outperformance came from being in cash during a down week, not from a winning
+  thesis), and (2) the single position we do hold is underwater because its entry slightly contradicted our
+  own falling-knife rule. Clear improvement over last week's D — this time discipline produced the right
+  outcome instead of the wrong one.
+- Changes to make next week:
+  1. **Codify the falling-knife entry rule (added to `memory/signals-learnings.md` → Signals worth
+     weighting this run).** Validated twice now: in a confirmed 3+ day broad/sentiment-driven rout, do NOT
+     initiate a NEW position until a bottom confirms (≥1 up day OR the index reclaims a prior level); the
+     only exception is a pre-sized half-starter on the single highest-conviction name. This is exactly what
+     went right (the held add) and what slightly went wrong (the 06-24 starter) this week — make it explicit
+     so the next run doesn't have to re-derive it.
+  2. **No strategy.md guardrail change needed.** The existing guardrails (5% size, half-size discretion,
+     10% trailing stop, weekly-slot cap) worked — they capped the one mistake to a 2.2% underwater starter.
+     The gap was a heuristic, not a hard rule, so it belongs in the playbook (change #1), not the guardrails.
+  3. **Watch for the deploy signal.** Two weeks now of mostly-cash; that was correct into a rout but the
+     mission is to BEAT the S&P, which means deploying when the rout confirms a bottom. Next week: if the
+     AI rout shows a bottom (up day / index reclaim / AI-compute pricing stabilizes), the 2 open weekly
+     slots and ~$97.7k dry powder are there to act — don't let "defensive" calcify into permanent cash.
+
 ## Week of 2026-06-22 (inception week)
 - Portfolio return: 0.00%  |  S&P 500 return: +1.6%  |  Delta: -1.6%
 - Best decision: **Discipline on binary/momentum names.** Held off MU into its after-close fiscal
