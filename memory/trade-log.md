@@ -14,6 +14,19 @@ Format:
 
 ---
 
+## 2026-06-29 16:04 ET — NO-OP (market-close wrap; market CLOSED)
+- Qty / price / stop: none — no order placed or closed. META trailing stop confirmed live (10% trail,
+  stop_price $513.81, hwm $570.90, GTC, status new).
+- Reasoning: properly-timed market-close run (`is_open: false`, 16:04 ET, post-16:00 close). No trades
+  today — the standing 06-29 pre-market plan was an explicit HOLD / no new positions, executed as such at
+  open (09:32) and held through the midday risk check (13:03). META drifted from the midday $564.70 to a
+  $562.00 close (-0.14% from entry) but still finished UP +2.14% on the day vs $550.25 prior close — the
+  rout-moderating bounce held. Well inside the -7% cut line → held; gain below +15% → ratchet N/A. Defensive
+  posture holds: no confirmed bottom yet + the Thu 7/2 jobs binary is still ahead. Dry powder $97.7k intact.
+  EOD summary sent via Telegram.
+- Guardrail check: PASS. META 2.25% of equity ($2,248 / $99,996.75) ≤ 5% ✅; 0/3 weekly new-position slots
+  used ✅; day P/L +$47.00 (+0.047%) → no daily-loss-cap breach ✅; paper mode ✅.
+
 ## 2026-06-26 16:05 ET — NO-OP (market-close wrap; market CLOSED)
 - Qty / price / stop: none — no order placed or closed. META trailing stop confirmed live (10% trail,
   stop_price $511.227, hwm $568.03, GTC).
