@@ -1,6 +1,6 @@
 # Strategy & Guardrails
 
-_Last updated: 2026-06-26 07:05 ET (pre-market — AI rout RE-INTENSIFIED on cost/bubble narrative; NVDA downgraded, posture defensive)._
+_Last updated: 2026-06-29 07:10 ET (pre-market — AI rout MODERATING into an orderly rotation; posture defensive-but-thawing, gated on Thu jobs report)._
 
 ## Mode
 
@@ -54,10 +54,10 @@ research, held for days-to-months, not minutes.
 
 _(Bull: keep this updated with tickers you're tracking but haven't bought yet, and why.)_
 
-_Context (06-26): AI rout RE-INTENSIFIED on a NEW driver — not just the rate scare but an AI-COST + AI-BUBBLE narrative: OpenAI IPO-delay report, AI data-center cost fears, Apple/MSFT raising device prices on the memory squeeze MU foreshadowed, and NVDA's B200 lease price collapsing ~31% in 3 wks. 4th straight down day; Fri futures red (NQ -1.2%); Kospi -8% circuit breaker. Posture: DEFENSIVE — hold, preserve dry powder, do NOT catch the falling knife. The rout has NOT bottomed. Today's data is second-tier (UMich sentiment, goods trade, Fed speakers); PCE (hot) was 06-25._
+_Context (06-29): AI rout has shifted from PANIC to an ORDERLY VALUATION RESET + SECTOR ROTATION (healthcare XLV +7.88% on the week; non-tech sectors all up; S&P only ~3% off its high). Mon futures modestly green (Dow +0.2%, S&P +0.1%); the Kospi-circuit-breaker panic has passed. BUT no clear up day yet (Fri treaded water) and a fresh binary is ahead: **June jobs report Thu 7/2 (early for the holiday), consensus +172k** — hot = rate-hike fears pressure high-multiple tech, cool = relief. Warsh speaks Wed 7/1; **markets CLOSED Fri 7/3**. Posture: DEFENSIVE-but-THAWING — hold, preserve dry powder, deploy a slot only once jobs clears AND a bottom confirms. NEW WEEK: 0 of 3 new-position slots used (META opened last week)._
 
-- **META** — HOLD (4-sh starter). NO add. Strong Buy (58 buys/0 sells, Piper Sandler Buy), no near-term binary (earnings Jul 29), no company-specific bad news — weakness is 100% the macro AI-sentiment rout. The "add after confirmation" plan is now held on TWO grounds: hot PCE (06-25) + re-intensifying AI rout (06-26). Re-evaluate the add only once the rout confirms a bottom. 10% trailing stop live (stop_price $511.23). (2026-06-26)
-- **NVDA** — DOWNGRADED to cautious-watch (was top-watch). B200 GPU hourly lease price collapsed $6.11→$4.22 (~31% in 3 wks) + $410M insider selling = a real AI-compute pricing/demand crack that undercuts the "AI capex intact" thesis. Do not initiate until lease pricing stabilizes AND the rout bottoms. (2026-06-26)
-- **MU** — Q3 blowout ($50B Q4 guide, $100B contracted, PTs to $2,000) but -3.5% on supply-GLUT fears + selloff; the same print is bearish for device-maker margins. Do NOT chase. WATCH for a base. (2026-06-26)
-- **AVGO** — Record FQ2 (AI semi $10.8B) but fell >12% post-earnings on below-hopes >$100B-by-2027 AI target + margin worry. Lower priority. WATCH. (2026-06-26)
-- **FDX** — ~$329 (rallied from the ~$297 post-earnings low; dip already based/bounced). Freight spin-off done Jun 1 (+$4.1B cash). Less of an overdone-dip setup now; thesis less compelling. WATCH, low priority. (2026-06-26)
+- **META** — HOLD (4-sh starter). NO add yet. Strong Buy (58 buys/0 sells), no near-term binary (earnings Jul 29), no company-specific bad news — weakness was 100% the macro rout and the position is now HEALING (~$558.80 pre-mkt Mon, only -0.71% from entry vs -2.28% Fri). The "add after confirmation" plan now has THREE gates: hot PCE (06-25) + the AI rout + the Thu 7/2 jobs binary. Re-evaluate the add only after jobs clears AND a bottom confirms. 10% trailing stop live (stop_price $511.23). (2026-06-29)
+- **NVDA** — cautious-watch (HOLDS). B200 GPU hourly lease price still at the $4.22 low (the -31% from $6.11 has NOT reversed/stabilized) + China headwind (Commerce closing the offshore loophole; mainland-China DC rev ~$0). Falling lease = supply built faster than workloads = pricing-power warning. Do not initiate until lease pricing stabilizes AND the rout bottoms. (2026-06-29)
+- **MU** — Q3 blowout (rev quadrupled); analysts raised fair value ~$866.60, DRAM/HBM tight through FY27. But Morningstar warns of a 2029-2030 supply GLUT (50%+ rev drop) → -4% Fri. Memory is cyclical; do NOT chase. WATCH for a base. (2026-06-29)
+- **AVGO** — Record FQ2 but its cautious AI-chip commentary helped trigger the rout; fell >12% post-earnings. Lower priority. WATCH. (2026-06-29)
+- **FDX** — ~$329 (rallied from the ~$297 post-earnings low; dip already based/bounced). Freight spin-off done Jun 1 (+$4.1B cash). Less of an overdone-dip setup now; thesis less compelling. WATCH, low priority. (2026-06-29)
