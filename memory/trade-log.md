@@ -14,6 +14,11 @@ Format:
 
 ---
 
+## 2026-06-30 09:32 ET — NO-OP (market-open, contingent META add HELD; market OPEN)
+- Qty / price / stop: none — no order placed. Existing META 10% trailing stop remains live (stop_price ~$513.81, hwm $570.90, GTC).
+- Reasoning: Properly-timed market-open run (`is_open: true`, 09:32 ET). Standing 06-30 pre-market plan's primary idea was to ADD ~3 sh META — but it was EXPLICITLY conditioned on "tape holds green / not selling off AND JOLTS (10:00 ET) isn't a shock; do not add into weakness." Both gates FAIL at the open: (1) META reversed from +0.17% pre-mkt ($563.75) to **-1.10% on the day ($556.43)** — selling off, not green; (2) JOLTS hasn't printed yet (10:00 ET). Per the plan's own stated alternative, HOLD the add and revisit Thu 7/2 AFTER the jobs print, which fully closes the third gate. Falling-knife/"don't add into weakness" discipline applies. No NEW positions (NVDA gated on B200 lease stabilization — still unmet; MU don't chase; AVGO/FDX low priority). Existing 4-sh META starter held: -1.13% from entry, well inside the -7% cut line; gain negative so ratchet N/A. Dry powder $97.7k intact.
+- Guardrail check: PASS. META 2.23% of equity ($2,225.71 / $99,974.46) ≤ 5% cap ✅; 0/3 weekly new-position slots used ✅; day P/L -$24.69 (-0.025%) → no daily-loss-cap breach ✅; paper mode ✅. (A guardrail did not block the add — the add's own pre-conditions weren't met.)
+
 ## 2026-06-29 16:04 ET — NO-OP (market-close wrap; market CLOSED)
 - Qty / price / stop: none — no order placed or closed. META trailing stop confirmed live (10% trail,
   stop_price $513.81, hwm $570.90, GTC, status new).
