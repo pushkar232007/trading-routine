@@ -14,6 +14,26 @@ Format:
 
 ---
 
+## 2026-07-02 09:40 ET — BUY META (add to starter; sequenced-to-jobs plan EXECUTED)
+- Qty / price / stop: +3 sh @ $599.30 fill; fresh 10% trailing stop live (GTC, stop_price $539.82,
+  hwm $599.80, status new, qty 3). Original 4-sh starter stop also live (trail 10%, stop_price
+  $565.45, hwm $628.28). Full 7-sh position now stop-protected.
+- Reasoning: Executed the standing sequenced-to-Thursday META add (planned 6/30, deferred 6/30 & 7/1
+  to await today's jobs binary). BOTH gates cleared post-8:30 print: (1) June NFP = **57K vs ~110-115K
+  consensus, unemployment FELL to 4.2%** = soft-but-NOT-recessionary → closes the Warsh rate-hike door,
+  fuels rate-cut hopes (2yr yield fell); broad tape green (Dow +0.5%, S&P +0.4%, Nasdaq +0.2%). (2) META
+  -2.1% on the day (~$600 vs $612.91 close) = normal consolidation after the +8.8% Wed pop on the "Meta
+  Compute" cloud-infra catalyst, NOT a hard reversal; no company-specific bad news, still green from entry.
+  Catalyst (capex-monetization bear case answered) intact. Kept size to 3 sh (~$1.8k) — don't chase after
+  a +8.8% pop. Lifted META 2.40% → 4.19% of equity toward the intended ~4% core weight.
+- META position after add: 7 sh, avg entry $578.45, current ~$599.85, unrealized +$149.78 (+3.70%),
+  4.19% of equity ($4,198.92 / $100,149.73). Gain +3.70% is inside the 0–15% band → trail stays 10%,
+  no ratchet; far above the -7% cut line.
+- Guardrail check: PASS. Size 4.19% ≤ 5% cap. Day P/L equity $100,149.73 vs prior close $100,200.39 =
+  -0.051% → no daily-loss-cap concern. ADD to existing position consumes NO new-position slot (0 of 3
+  used this week). 10% trailing stop attached at entry. TRADING_MODE = paper. No options/margin/short/crypto.
+  Cash $95,950.85 (dry powder still ~$96k). Telegram sent (trade placed).
+
 ## 2026-07-01 16:02 ET — NO-OP (market-close wrap; market CLOSED)
 - Qty / price / stop: none — no order placed or closed. META 10% trailing stop confirmed live: stop_price $565.452, hwm $628.28, trail 10%, GTC, status new.
 - Reasoning: properly-timed market-close run (`is_open: false`, 16:02 ET, post-16:00 close). No trades today — the standing 07-01 plan deliberately sequenced the META ADD to Thu 7/2 POST-jobs; held at the open (09:32) and through the midday check (13:05). META had a strong session: 4 sh @ $562.81 entry, closed $611.72, unrealized +$195.64 (+8.69%), day +$193.72 (+8.60% on the position). Faded off the midday $618.69 / intraday high $628.28 but still finished deep green. **Loss-cut: +8.69% → far above the -7% cut line → held.** **Ratchet: gain +8.69% in the 0–15% band → trail left at 10%, no tighten (fires at +15%; never loosen).** Touched ~+11.6% at the $628 intraday high but closed +8.69% — no ratchet trigger. Add still sequenced to Thu 7/2 post-jobs (not chasing this run into the binary). NVDA gated on lease-recovery confirmation + jobs; MU/AVGO/FDX WATCH only. EOD summary sent via Telegram.

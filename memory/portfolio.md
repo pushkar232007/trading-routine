@@ -3,27 +3,27 @@
 _Bull: overwrite this entire file with a fresh snapshot every routine run. This should always
 reflect the CURRENT state, not history (history lives in trade-log.md)._
 
-- **Last updated:** 2026-07-02 07:05 ET (pre-market JOBS DAY — research/draft only, NO trades. META re-rated +8.8% Wed on "Meta Compute" cloud news; now +9.14%.)
+- **Last updated:** 2026-07-02 09:40 ET (market-open, JOBS DAY — executed the sequenced META add post-8:30 NFP)
 - **Mode:** paper
-- **Cash:** $97,748.75
-- **Equity:** $100,205.63
-- **Buying power:** $397,874.26
-- **vs. prior close:** last_equity $100,200.39 (pre-market, market not open — no meaningful day P/L yet)
-- **vs. $100k paper start:** +$205.63 (+0.206%). Account funded 2026-06-22; only position is the META starter.
+- **Cash:** $95,950.85
+- **Equity:** $100,149.73
+- **Buying power:** $395,560.26
+- **vs. prior close:** last_equity $100,200.39 → day P/L -$50.66 (-0.051%)
+- **vs. $100k paper start:** +$149.73 (+0.150%). Account funded 2026-06-22.
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current price | Unrealized P/L | Stop level | Thesis |
 |---|---|---|---|---|---|---|
-| META | 4 | $562.81 | $614.24 | +$205.72 (+9.14%) | 10% trailing stop, GTC, live | Half-size starter on the macro AI-rout dip; re-rated +8.8% Wed 7/1 on the "Meta Compute" cloud-business news (Bloomberg) which answers the capex bear case → thesis STRENGTHENED. No earnings binary until Jul 29, Strong Buy. Contingent ADD (~3 sh) sequenced to TODAY post-jobs (8:30 NFP). |
+| META | 7 | $578.45 | $599.85 | +$149.78 (+3.70%) | 10% trailing, GTC, live (2 legs: 4-sh stop $565.45 / hwm $628.28; 3-sh add stop $539.82 / hwm $599.80) | Core AI name. Half-size starter (4 sh @ $562.81) on the 6/24 macro AI-rout dip; ADDED 3 sh @ $599.30 today post-jobs to lift toward the intended ~4% weight. Thesis STRENGTHENED by the 7/1 "Meta Compute" cloud-infra catalyst (answers the capex-monetization bear case). No earnings binary until Jul 29, Strong Buy. |
 
-_Notes: Thu 07-02 pre-market snapshot (market not yet open; this is a research/draft routine — NO trades placed).
-META 4 sh @ $562.81 entry, ~$614.24, unrealized +$205.72 (+9.14%) — best level yet, up from +8.69% at Wed close on
-the +8.8% Wednesday pop from the "Meta Compute" cloud-infra news (Bloomberg). META now 2.45% of equity
-($2,456.88 / $100,205.63) ≤ 5% size cap. 10% trailing stop live/GTC. Loss-cut/ratchet not evaluated here (that's the
-midday/execution routines) — gain is +9.14%, well inside the 0–15% band (trail stays 10%) and far above the -7% cut.
-**JOBS DAY: June NFP 8:30 ET (consensus ~100–125K, UE 4.3%) = week's binary and the META-add gate; markets CLOSED
-Fri 7/3.** Standing plan: market-open reads the 8:30 print, then executes the ~3 sh META add IF jobs in-line/soft AND
-META not reversing hard (an ADD consumes no new-position slot). NVDA gate NOT confirmed (B200 lease forward-guide down
-to $2.50–3.00 by Q4; Wed semi selloff MU -10.6%) → hold fire. Dry powder $97.7k intact. 0 of 3 new-position slots used
-this week. Posture CONSTRUCTIVE. Next: market-open Thu 7/2 post-8:30-NFP → the /trade decision on the META add._
+_Notes: Thu 07-02 market-open. **Executed the sequenced-to-jobs META add** — both gates cleared: June NFP
+57K (vs ~110-115K consensus) with unemployment FALLING to 4.2% = soft-not-recessionary (closes the rate-hike
+door, dovish; broad tape green Dow +0.5%/S&P +0.4%/Nasdaq +0.2%), AND META only -2.1% on the day (normal
+consolidation after the +8.8% Wed pop, not a hard reversal). Bought 3 sh @ $599.30 with a fresh 10% trail;
+full 7-sh position now stop-protected by two GTC trailing legs. META now 4.19% of equity ($4,198.92 /
+$100,149.73) ≤ 5% cap; gain +3.70% inside the 0–15% band so trail stays 10% (no ratchet), far above the -7%
+cut. 0 of 3 new-position slots used this week (an ADD consumes none). NVDA still gated (B200 lease forward-guide
+down to $2.50–3.00 by Q4; Wed semi selloff) → hold fire, highest-priority watch. MU breaking down, don't chase.
+AVGO/FDX low priority. Dry powder ~$96k. Markets CLOSED Fri 7/3 (July 4). Next: midday risk check Thu 7/2 →
+verify stops, evaluate loss-cut/ratchet (none triggered now). Posture CONSTRUCTIVE._
