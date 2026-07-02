@@ -12,6 +12,20 @@ Format:
 
 ---
 
+## 2026-07-02 07:05 ET — pre-market (JOBS DAY — June NFP 8:30 ET is the week's binary + META-add gate; META re-rated +8.8% on a real catalyst)
+Regime read: our high-conviction name (META) got a genuine FUNDAMENTAL upgrade while the compute-hardware watch names (NVDA/MU) got hit — validates staying concentrated in META and patient on NVDA. Posture CONSTRUCTIVE. Today's binary (NFP, not yet out) is the last gate on the sequenced META add. Markets CLOSED Fri 7/3.
+- META (Investing/Yahoo/TheStreet): **SURGED +8.8% Wed 7/1 on a Bloomberg report Meta is entering CLOUD INFRASTRUCTURE** — internal "Meta Compute" segment to sell excess AI compute (hosted models + bare-metal, vs CoreWeave/AWS/Azure/GCP). Zuckerberg flagged this at the May shareholder mtg; now concrete. **This directly answers the #1 bear case (capex monetization) → thesis-STRENGTHENING, not just holding.** Position now +9.14% (~$614.24 vs $562.81 entry), 2.45% of equity. No company binary until earnings Jul 29. Add thesis materially improved.
+- MACRO (BLS/FactSet/Kiplinger/CapEcon): **June NFP releases TODAY 8:30 ET — NOT yet out at this run.** Consensus median ~100K (FactSet), range ~110–125K (BofA 110, JPM 125); unemployment 4.3% held. May was 172K (beat). Lower bar = a soft-not-recessionary print is partly priced. **Markets CLOSED Fri 7/3 (July 4).** Warsh remarks also in focus.
+- MACRO tape (CNBC/Schwab/Yahoo): Futures ~flat-to-down into the print (S&P -0.08%, NQ -0.3%). Wed session: **AI-hardware sold off hard on overstretch fears — MU -10.6%, AMD -6.9%, INTC -9%** — but META bucked it (+8.8%) on its own catalyst. This is a compute-side valuation worry, not a META problem.
+- NVDA (getdeploying/Spheron/Thunder/KuCoin): **Gate still NOT confirmed.** B200 median holds ~$6.11 (range $3.20 Runcrate → $16.11 GCP), BUT providers now GUIDE PRICING DOWN to $2.50–3.00 by Q4 2026 = bearish forward trajectory for NVDA pricing power; plus Wed's semi selloff. Do NOT initiate — keep highest-priority watch. A buy would be a fresh slot.
+- MU (read-through): **-10.6% Wed — NOT basing, breaking further down.** Cyclical-glut worry alive. WATCH, do not chase, no change.
+- AVGO / FDX: no fresh catalyst. WATCH, low priority.
+Trade ideas for market-open (NO trades this routine — /trade decides post-8:30):
+1. **META ADD (~3 sh / ~$1.8k, fresh 10% trail)** — the sequenced-to-Thursday add, now with a STRONGER catalyst. Sequence: market-open routine reads the 8:30 NFP FIRST, then: **IF jobs in-line/soft-not-recessionary AND META isn't reversing hard → execute the add** (lifts META ~2.45% → ~4% of equity). Given META just re-rated on a durable catalyst, do NOT demand a pullback that may not come — but do NOT chase into a HOT-jobs high-multiple-tech selloff either; if the print is hot and tech sells off, HOLD the add and reassess midday. An ADD consumes NO new-position slot. Caveat: entry ~$614 vs $562.81 starter — adding after a +8.8% pop, so size stays at ~3 sh, not more.
+2. **NVDA — do NOT initiate.** Lease forward-trajectory bearish + Wed semi selloff; gate unconfirmed. Highest-priority watch. Fresh slot if it ever triggers (0 of 3 used this week).
+3. **MU / AVGO / FDX — WATCH only, unchanged.** MU breaking down (don't chase); AVGO/FDX low priority.
+Posture: CONSTRUCTIVE. The barbell is working — long the name whose bear case just got answered (META), patient on the hardware names getting re-rated (NVDA/MU). Dry powder $97.7k intact. 0 of 3 weekly new-position slots used.
+
 ## 2026-07-01 07:05 ET — pre-market (day 2 of 3 in the jobs gauntlet; ADP/ISM/Warsh today, NFP Thu)
 Regime read: rout bottomed Mon 6/29; posture CONSTRUCTIVE. Best H1 in years just closed (Dow +8.9%, S&P +9.6%, Nasdaq +12.8%, Russell +~22%). Today's modest RED futures = normal pre-payrolls profit-taking after that run, NOT a resumption of the rout. The week's binary is still Thu jobs.
 - MACRO (Schwab/Stocktwits/CNBC): futures RED into payrolls — Dow -0.33%, S&P -0.29%, NQ -0.34%; S&P ~7,471 (-0.38% Tue). Today (Wed 7/1): **ADP est 118K (prev 122K), ISM-mfg est 53.8 (prev 54.0)**, Warsh remarks, construction spending, EIA. All second-tier vs Thu.
