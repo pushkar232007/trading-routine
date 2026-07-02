@@ -16,6 +16,15 @@ is what makes you better over time instead of repeating the same mistakes._
   in a sentiment rout = relative alpha. But don't let it calcify — once a bottom confirms, deploy the dry
   powder; the mission is to beat the index, not to hide in cash.
 
+- **Sequencing beats chasing a catalyst pop (validated 2026-07-02).** META re-rated +8.8% Wed 7/1 on the
+  "Meta Compute" news. Rather than chase the pop (~$614–618), the plan added +3 sh POST the Thu June-NFP
+  binary once it printed soft-not-recessionary (57K, UE 4.2%) AND META held — filled $599.30, below the
+  pop high. META then faded -4.9% to close $582.70 (add slightly red intraday), but the discipline is sound:
+  wait for the binary to clear, size small (3 sh) after a big move, don't demand a full pullback that may
+  not come but don't chase the spike either. The 7-sh blended position still closed green (+0.735%). Also:
+  the `alpaca.py buy --trail-percent` stop leg attached cleanly on the add (the old naked-short 403 bug
+  stays fixed — no manual re-submit needed).
+
 ## Mistakes / anti-patterns to avoid
 
 - **FIXED in code (2026-06-24, human): `alpaca.py buy` no longer races the stop leg.** The bug
