@@ -3,7 +3,7 @@
 _Bull: overwrite this entire file with a fresh snapshot every routine run. This should always
 reflect the CURRENT state, not history (history lives in trade-log.md)._
 
-- **Last updated:** 2026-07-03 16:02 ET (market-close routine on a MARKET HOLIDAY — NYSE/Nasdaq CLOSED for July 4th; account frozen at Thu 7/2 close, no trading until Mon 7/6)
+- **Last updated:** 2026-07-03 (Friday WEEKLY-REVIEW routine — MARKET HOLIDAY, NYSE/Nasdaq CLOSED for July 4th; account frozen at Thu 7/2 close, no trading until Mon 7/6. Week graded C−: portfolio +0.08% vs S&P +1.76%, −1.68 pts — lagged a confirmed-bottom rally by staying ~96% cash. See weekly-review.md.)
 - **Mode:** paper
 - **Cash:** $95,950.84
 - **Equity:** $100,031.14

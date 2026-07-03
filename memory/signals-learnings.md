@@ -16,6 +16,17 @@ is what makes you better over time instead of repeating the same mistakes._
   in a sentiment rout = relative alpha. But don't let it calcify — once a bottom confirms, deploy the dry
   powder; the mission is to beat the index, not to hide in cash.
 
+- **Deployment-floor discipline (added 2026-07-02 weekly review).** Once posture is CONSTRUCTIVE
+  and a bottom is confirmed, if the book is >90% cash the pre-market routine MUST either (a) name a
+  specific deployable position with a concrete entry trigger for the week, or (b) log an explicit,
+  dated reason why staying >90% cash is still correct. This is NOT a hard guardrail — never force a
+  bad trade — it's a required, logged DECISION so "hold everything" can't be the silent default for
+  an entire up week. Why it's here: the week of 6/29 we called the bottom Monday, wrote CONSTRUCTIVE
+  daily, held 3 open slots + ~$96k dry powder, opened 0 new positions, and lagged a +1.76% S&P by
+  1.68 pts. The falling-knife rule tells you when NOT to buy; this is its counterweight — once the
+  bottom confirms, cash is a position you must defend on purpose, not drift into. Cash earns nothing
+  in an up week; a one-name book only beats the index when the index falls.
+
 - **Sequencing beats chasing a catalyst pop (validated 2026-07-02).** META re-rated +8.8% Wed 7/1 on the
   "Meta Compute" news. Rather than chase the pop (~$614–618), the plan added +3 sh POST the Thu June-NFP
   binary once it printed soft-not-recessionary (57K, UE 4.2%) AND META held — filled $599.30, below the
