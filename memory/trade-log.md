@@ -14,7 +14,26 @@ Format:
 
 ---
 
-## 2026-07-02 16:02 ET — NO-OP (market-close wrap; market CLOSED)
+## 2026-07-06 09:35 ET — ATTEMPTED BUY FDX → CANCELED (thin paper liquidity); META HELD (market OPEN)
+- Qty / price / stop: FDX market buy for 9 sh submitted with `--trail-percent 10`, but it NEVER FILLED
+  (stayed `status: new`, filled_qty 0 for >1 min); order canceled by ID (HTTP 204). No FDX position opened,
+  no stop leg created. META: no order — HOLD per plan; both trailing legs remain live (qty 4 @ $565.452,
+  qty 3 @ $540.45, 10% trail, GTC).
+- Reasoning: Executing the 7/6 pre-market plan. (1) META — HOLD, no add: at target weight (~4.1%, +2.6%),
+  Strong Buy, no binary until Jul 29 → monitor only. (2) FDX — the deployment-floor NAMED deployable; trigger
+  was "initiate on a constructive/non-selloff tape." Tape WAS constructive (Nasdaq +0.8%, S&P +0.5%, Dow +0.2%,
+  tech jitters easing) so the trigger fired and I placed the ~3% starter (9 sh) with a 10% trail. BUT the Alpaca
+  paper quote was pathologically wide — bid $296.40 / ask $329.70 (~11% spread), only 40 sh offered — and the
+  market order would not cross. A fill at the ~$330 ask would sit ~10% below the bid instantly (bad entry that
+  could immediately trip the 10% trail), and is well above the ~$313 the plan assumed. Canceled rather than take
+  a broken fill. FDX thesis is UNCHANGED and still valid — retry on a future routine when the paper quote
+  normalizes (tighter spread near ~$313). Not forcing a bad entry. (3) NVDA/MU/AVGO — no action (gated/WATCH).
+- Guardrail check: PASS. FDX starter would have been 9 sh ≈ $2.97k ≈ 2.97% of equity ≤ 5% cap ✅; but it never
+  filled so **NO new-position slot consumed — still 0 of 3 this week** ✅. Day P/L +$75 (+0.08%) → no
+  daily-loss-cap concern ✅. 10% trail was attached to the (unfilled) order ✅. Paper mode ✅.
+  No options/margin/short/crypto ✅. META 4.1% ≤ 5% size cap ✅.
+- Note: Reconciled memory with broker at run start — prior routines' META position/history existed on remote
+  main but my clone was briefly stale; re-synced. No Telegram (no trade actually filled/placed).
 - Qty / price / stop: none — no order placed or closed. Both META trailing legs confirmed live: 4-sh starter
   stop_price $565.452 / hwm $628.28; 3-sh add stop_price $540.45 / hwm $600.50. Both 10% trail, GTC, status new.
   Full 7-sh position stop-protected.

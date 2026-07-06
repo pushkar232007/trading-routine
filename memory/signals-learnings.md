@@ -52,6 +52,21 @@ is what makes you better over time instead of repeating the same mistakes._
 
 ## Process notes
 
+- **FDX has a broken/pathologically-wide quote in the Alpaca paper feed (2026-07-06).** On the 7/6
+  market-open, the deployment-floor trigger fired (constructive tape) and I placed the planned ~3% FDX
+  starter (9 sh, market, 10% trail) — but the paper quote was bid $296 / ask $330 (~11% spread, only 40 sh
+  offered) and the market order would NOT cross in 15s. A fill at the ~$330 ask would sit ~10% below the bid
+  instantly (near-guaranteed to trip the 10% trail) and is ~5% above the ~$313 the plan assumed. Correct move:
+  CANCEL rather than take a broken fill — don't market-buy into a >5% spread. Lesson: (1) always check the
+  bid/ask spread BEFORE a market buy; if it's wide (>~2-3%), the paper feed is thin — skip or wait for it to
+  tighten, don't chase. (2) The `buy` script is market-only (no limit), so wide-spread names are effectively
+  un-buyable cleanly here. (3) To cancel ONE order without nuking other stops, `cancel-all` is too broad (it
+  would kill META's trailing legs); use a targeted `DELETE /v2/orders/{id}` with the script's env-var auth.
+  FDX thesis is unchanged — retry when the quote normalizes.
+- **Reconcile broker state at run start; the git clone can be briefly stale (2026-07-06).** On the 7/6
+  market-open my fresh clone lagged remote `main` (missed the just-pushed pre-market commit), so the memory
+  files looked empty. Always trust `alpaca.py positions`/`account` for live state, and if memory looks
+  suspiciously empty, `git fetch origin main` and re-read before concluding "no plan / no positions."
 - **CONFIRMED (2026-06-24): crons now fire at correct NYSE times.** First full day with properly-timed
   execution routines — market-open ~09:55 ET (META starter filled), midday 13:03 ET, market-close 16:04 ET,
   all with the clock reading correctly (open during session, closed after 16:00). The "8h early" worry is
