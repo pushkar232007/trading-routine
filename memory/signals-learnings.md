@@ -63,6 +63,13 @@ is what makes you better over time instead of repeating the same mistakes._
   un-buyable cleanly here. (3) To cancel ONE order without nuking other stops, `cancel-all` is too broad (it
   would kill META's trailing legs); use a targeted `DELETE /v2/orders/{id}` with the script's env-var auth.
   FDX thesis is unchanged — retry when the quote normalizes.
+  - **RECURRED 2026-07-07 with a new twist: the open print can flicker CLEAN then widen.** At 09:31 FDX printed a
+    genuinely tight quote (bid $311.15 / ask $312.63 = 0.48%) so I fired the 10-sh starter — but the market order
+    sat unfilled 15s, and when I re-sampled, the ask had jumped to $327.48 (spread 5.25%) and STUCK there. So a
+    single tight snapshot at the open is NOT enough to trust — the thin paper feed flickers. Two hardening rules:
+    (a) SAMPLE the spread 2-3x before trusting it, don't act on one tight print at the open; (b) when a market buy
+    doesn't fill in 15s, CANCEL it immediately (targeted DELETE by order-id, never cancel-all) — otherwise the
+    script has already exited without attaching the trail, and a late fill leaves the position UNPROTECTED.
 - **Reconcile broker state at run start; the git clone can be briefly stale (2026-07-06).** On the 7/6
   market-open my fresh clone lagged remote `main` (missed the just-pushed pre-market commit), so the memory
   files looked empty. Always trust `alpaca.py positions`/`account` for live state, and if memory looks

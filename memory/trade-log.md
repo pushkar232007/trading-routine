@@ -14,6 +14,32 @@ Format:
 
 ---
 
+## 2026-07-07 09:32 ET — ATTEMPTED BUY FDX → CANCELED (paper quote flickered wide again); META HELD (market OPEN)
+- Qty / price / stop: FDX market buy for 10 sh submitted with `--trail-percent 10`, but it NEVER FILLED
+  (stayed `status: new`, filled_qty 0 for 15s+); canceled by ID via targeted DELETE (HTTP 204) so the script's
+  already-exited-without-a-stop order couldn't fill later UNPROTECTED. No FDX position opened, no stop leg created.
+  META: no order — HOLD per plan; both trailing legs remain live (qty 4 @ $565.452 / hwm $628.28; qty 3 @ $547.992 /
+  hwm $608.88, 10% trail, GTC).
+- Reasoning: Executing the 7/7 pre-market plan. (1) META — HOLD, no add: at target weight (~4.23%, +4.70%),
+  Strong Buy, no binary until Jul 29 → monitor only. (2) FDX — the deployment-floor NAMED deployable, spread-gated
+  after the 7/6 broken quote. At 09:31 the quote briefly printed CLEAN (bid $311.15 / ask $312.63, 0.48% spread) so I
+  fired the ~3% starter (10 sh, 10% trail). The market order sat unfilled 15s; I canceled it (targeted DELETE, NOT
+  cancel-all — preserved META's stops) to avoid a late unprotected fill, then re-sampled the quote: ask had jumped to
+  $327.48 (bid steady $311.14) = 5.25% spread, STUCK there across 4 consecutive polls, only 40 sh offered. That's the
+  same pathological flickering paper feed as 7/6 — the tight open print didn't hold. A market fill would land ~$327
+  (~5% above bid, near-instant 10%-trail trip risk, ~5% above the plan's ~$312 assumption). SKIPPED — don't chase a
+  wide/broken quote; the `buy` script is market-only so there's no limit-order workaround. FDX thesis UNCHANGED; retry
+  when the quote normalizes. (3) MRK — the backup deployable — was also spread-gated (bid $122.54 / ask $129.11 =
+  5.36%), so no clean fill there either → skip. (4) NVDA — gate unconfirmed, do NOT initiate; MU — don't chase; AVGO/GEHC — WATCH.
+- Guardrail check: PASS. FDX starter would have been 10 sh ≈ $3.13k ≈ 3.12% of equity ≤ 5% cap ✅; but it never filled
+  so **NO new-position slot consumed — still 0 of 3 this week** ✅. Day P/L equity $100,188.08 vs prior close
+  $100,031.14 = +$156.94 (+0.157%) → no daily-loss-cap concern ✅. 10% trail was attached to the (unfilled) order ✅.
+  Paper mode ✅. No options/margin/short/crypto ✅. META 4.23% ≤ 5% size cap ✅.
+- Note: No Telegram (no trade actually filled/placed; recurring FDX-quote issue is a known, already-logged process note,
+  not a new abnormality). Deployment-floor rule STILL OPEN — named deployable FDX blocked twice now by the broken paper
+  feed; MRK backup also spread-gated today. Dry powder $95.95k intact. Week's binary = Wed 7/8 FOMC June minutes. Next
+  routine: midday risk-check Tue 7/7.
+
 ## 2026-07-06 18:08 ET — NO-OP (midday risk check; market CLOSED, ran post-close on frozen prices)
 - Qty / price / stop: none — no order placed or closed. Both META trailing legs live & auto-ratcheting:
   4-sh leg stop_price $565.452 / hwm $628.28; 3-sh leg stop_price $543.222 / hwm ratcheted UP to $603.58
