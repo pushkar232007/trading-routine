@@ -14,6 +14,30 @@ Format:
 
 ---
 
+## 2026-07-08 09:32 ET — NO-OP (market-open; HOLD META, deployables spread-gated + tape not cleared; market OPEN)
+- Qty / price / stop: none — no order placed. Both META trailing legs live: 4-sh stop $565.452 / hwm $628.28;
+  3-sh stop $562.833 / hwm $625.37 (10% trail, GTC, new). Full 7-sh position stop-protected.
+- Reasoning: Properly-timed open run (`is_open: true`, 09:30 ET). No pending guardrail-clean plan to catch up
+  (7/6 & 7/7 FDX attempts were both CANCELED → 0 slots used). Executed the standing pre-market plan: **HOLD META,
+  NO new positions at the open** — a LOGGED deployment-floor decision now confirmed by live data. Three independent
+  reasons: (1) **falling-knife rule** — Iran ceasefire "over" + oil +6% is an unconfirmed sentiment risk-off, not a
+  confirmed bottom; (2) **FOMC June minutes 2pm ET** = same-day binary, unresolved; (3) **spread gate FAILS** —
+  re-sampled live 2x at 09:31: MRK bid $121.91/ask $127.33 = 4.44% (100-200 sh), FDX bid $312.35/ask $328.65 =
+  5.09% (40 sh) — both >2-3%, same pathologically-wide paper feed as 7/6/7/7; a market buy fills ~4-5% below bid,
+  near-instantly tripping the 10% trail. So neither MRK (primary) nor FDX (secondary) is buyable cleanly today.
+  META: 7 sh @ $578.4486 blended, $611, unrealized +$227.86 (+5.63%), intraday -0.74% (mild risk-off, consistent
+  with the tape). **Loss-cut: +5.63% far above -7% → HOLD. Ratchet: +5.63% inside 0-15% band → trail stays 10%,
+  no tighten.**
+- Guardrail check: PASS (no trade). -7% cut: N/A (META +5.63% green) ✅. +15% ratchet: N/A (+5.63% < +15%) ✅.
+  META 4.27% of equity ($4,277 / $100,226.41) ≤ 5% size cap ✅. Day P/L equity $100,226.41 vs last_equity
+  $100,259.90 = -$33.49 (-0.033%) → no daily-loss-cap concern ✅. 0 of 3 weekly new-position slots used ✅.
+  TRADING_MODE = paper ✅. No options/margin/short/crypto ✅.
+- Note: No Telegram (nothing placed/closed). Dry powder $95.95k intact (~95.7% cash). Deployment-floor rule stays
+  OPEN — deployables MRK (primary, defensive/oil-insensitive) + FDX (secondary, oil-headwind today) remain
+  spread-gated; re-sample live post-minutes. NVDA gate unconfirmed (lease $4.22 soft; H20 China license restart =
+  new +) → do NOT initiate. MU/AVGO/GEHC = WATCH. Next routine: midday risk check Wed 7/8 (13:xx ET) — re-check
+  spreads live + FOMC minutes land at 2pm ET.
+
 ## 2026-07-07 16:02 ET — NO-OP (market-close wrap; market CLOSED)
 - Qty / price / stop: none — no order placed or closed. Both META trailing legs live & auto-ratcheting:
   4-sh leg stop_price $565.452 / hwm $628.28; 3-sh leg stop_price $562.833 / hwm ratcheted UP to $625.37
