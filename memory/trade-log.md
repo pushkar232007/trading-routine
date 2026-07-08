@@ -14,6 +14,26 @@ Format:
 
 ---
 
+## 2026-07-08 16:02 ET — NO-OP (market-close wrap; HOLD META, green, no cut/tighten; market CLOSED)
+- Qty / price / stop: none — no order placed or closed. Both META trailing legs live & confirmed via `orders`:
+  4-sh leg stop_price $565.452 / hwm $628.28; 3-sh leg stop_price $562.833 / hwm $625.37. Both 10% trail, GTC,
+  status new. Full 7-sh position stop-protected.
+- Reasoning: properly-timed market-close run (`is_open: false`, 16:02 ET, post-16:00 close). No trades today —
+  the standing plan was HOLD META / no new positions all day (deployment-floor decision to stay >90% cash was a
+  LOGGED deliberate call: falling-knife Iran/oil war-shock + the same-day FOMC-minutes binary). Only holding is
+  META: 7 sh @ $578.4486 blended entry, closed $603.12, unrealized +$172.70 (+4.27%), faded −2.02% intraday
+  ($615.58 → $603.12) into/after the 2pm FOMC June minutes — a mild risk-off drift, nothing thesis-breaking.
+  **Loss-cut: +4.27% far above the −7% cut → HOLD.** **Ratchet: +4.27% inside the 0–15% band → trail stays 10%,
+  no tighten (never loosen).** EOD summary sent via Telegram.
+- Guardrail check: PASS (no trade). −7% cut: N/A (position +4.27% green) ✅. +15% ratchet: N/A (+4.27% < +15%) ✅.
+  META 4.21% of equity ($4,221.84 / $100,172.68) ≤ 5% size cap ✅. Day P/L equity $100,172.68 vs last_equity
+  $100,259.90 = −$87.22 (−0.087%) → no daily-loss-cap concern ✅. 0 of 3 weekly new-position slots used ✅. Paper
+  mode ✅. No options/margin/short/crypto ✅.
+- Note: Dry powder $95.95k intact (~95.8% cash). Deployment-floor rule stays OPEN — MRK (primary,
+  defensive/oil-insensitive) + FDX (secondary, oil-headwind) remain spread-gated on the broken paper feed;
+  re-sample live next session. NVDA gate unconfirmed → do NOT initiate. MU/AVGO/GEHC WATCH. Next routine:
+  pre-market Thu 7/9.
+
 ## 2026-07-08 13:05 ET — NO-OP (midday risk check; HOLD META, green, no cut/tighten; market OPEN)
 - Qty / price / stop: none — no order placed or closed. Both META trailing legs live & confirmed via `orders`:
   4-sh leg stop_price $565.452 / hwm $628.28; 3-sh leg stop_price $562.833 / hwm $625.37. Both 10% trail, GTC,
