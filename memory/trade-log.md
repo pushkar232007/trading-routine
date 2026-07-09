@@ -14,6 +14,22 @@ Format:
 
 ---
 
+## 2026-07-09 09:36 ET — BUY MRK (deployment-floor deploy; defensive starter; market OPEN)
+- Qty / price / stop: **BUY 23 sh MRK @ $125.90** (market, filled at the ask, cost basis $2,895.70). **10% trailing stop attached: stop_price $112.8465 / hwm $125.385, GTC, live** (order 3d2f860f). Position now fully protected.
+- Reasoning: Executed the pre-market deployment-floor plan's PRIMARY deployable (MRK). Both gates evaluated LIVE: **(a) spread re-sampled 3x = 0.45%** (bid $125.33 / ask $125.90, 100 sh each side) → TIGHT, clears the <~2-3% gate; **(b) tape** — SPY ~flat (-0.2%, market near record highs, NOT a rout). New wrinkle vs the 07:10 plan: **Iran/oil RE-escalated this morning** (US airstrikes on 90 targets, oil +4.4%), flipping the plan's "oil fading" premise, and **META gapped -4%** at the open (idiosyncratic — broad market flat). But MRK is precisely the DEFENSIVE, oil-insensitive, low-tech-correlation name named for exactly this tape — a war/oil-shock + tech-selloff day is its environment (rotation into defensives), not a disqualifier. MRK pulled back to ~$126 → upside now ~4.6% vs consensus PT $131.67 (better than the ~2% the plan feared). Falling-knife rule doesn't bind (no confirmed 3+ day broad rout); deployment-floor discipline (96% cash, 0 slots) argues against drifting into cash. Small starter (2.88%), fresh 10% trail, limited defined risk.
+- EXECUTION NOTE: the `buy` script timed out at 15s (market order still `new`) and exited WITHOUT attaching the trail. Checked positions → the order had filled LATE at $125.90 (clean, no slippage — the tight 0.45% ask held). Targeted cancel by order-id returned 422 "already filled," so I manually submitted the trailing_stop sell leg (23 sh, 10%, GTC) → attached. **Distinct from the FDX flicker: here the ask was genuinely good, so the late fill was fine — the timeout was script latency, not a bad price.**
+- Guardrail check: PASS. Size: MRK 2.88% of equity ($2,881.90 / $100,010.48) ≤ 5% ✅. Weekly slots: MRK = fresh position → **1 of 3 used** ✅. Daily loss cap: day P/L -$162.20 (-0.16%) « -3% ✅. Paper mode ✅. No options/margin/short/crypto ✅. 10% trail attached at entry ✅.
+
+## 2026-07-09 09:36 ET — SKIP FDX (spread gate failed; oil headwind returned)
+- Qty / price / stop: none — not placed.
+- Reasoning: FDX secondary deployable — spread re-sampled 3x = **4.6%** (bid $314.14 / ask $328.65), still the broken/pathologically-wide paper feed → fails the <~2-3% gate; a market buy would lift a junk ask ~4.6% above bid. Also the fresh Iran/oil re-escalation (oil +4.4%) revives the fuel-cost headwind that makes FDX a worse deploy on THIS tape. Skip; retry when the quote normalizes.
+- Guardrail check: N/A (no trade).
+
+## 2026-07-09 09:36 ET — HOLD META (no add, no cut; market OPEN)
+- Qty / price / stop: none. Both trailing legs live (4-sh stop $565.452 / hwm $628.28; 3-sh stop $562.833 / hwm $625.37).
+- Reasoning: META 7 sh @ $578.4486, current $581.15, +$18.91 (+0.47%), gapped -3.6% intraday (idiosyncratic; broad market flat). At target weight ~4.07%, no add (plan = HOLD). Loss-cut: +0.47% green » -7% → HOLD. Ratchet: +0.47% in the 0–15% band → trail stays 10%.
+- Guardrail check: PASS. -7% cut N/A ✅. +15% ratchet N/A ✅. Size 4.07% ≤ 5% ✅.
+
 ## 2026-07-08 16:02 ET — NO-OP (market-close wrap; HOLD META, green, no cut/tighten; market CLOSED)
 - Qty / price / stop: none — no order placed or closed. Both META trailing legs live & confirmed via `orders`:
   4-sh leg stop_price $565.452 / hwm $628.28; 3-sh leg stop_price $562.833 / hwm $625.37. Both 10% trail, GTC,

@@ -70,6 +70,16 @@ is what makes you better over time instead of repeating the same mistakes._
     (a) SAMPLE the spread 2-3x before trusting it, don't act on one tight print at the open; (b) when a market buy
     doesn't fill in 15s, CANCEL it immediately (targeted DELETE by order-id, never cancel-all) — otherwise the
     script has already exited without attaching the trail, and a late fill leaves the position UNPROTECTED.
+- **A 15s `buy`-script timeout ≠ a bad fill — check positions, don't reflexively cancel (2026-07-09).** On the 7/9
+  open I bought the MRK deployment-floor starter (23 sh, tight 0.45% spread). The `buy` script timed out at 15s
+  (order still `new`) and exited WITHOUT attaching the trail — same *symptom* as the FDX flicker. But the outcome
+  was different: the order then **filled LATE at exactly the $125.90 ask (clean, zero slippage)** because MRK's
+  quote was genuinely tight, unlike FDX where the ask itself was junk. My cancel-by-order-id came back 422 "already
+  filled." Correct recovery: (a) `positions` to see if it filled; (b) if filled, **manually submit the trailing_stop
+  sell leg** (POST /v2/orders, type trailing_stop, sell, gtc, trail_percent 10) to protect it — the position is
+  naked until you do. Lesson: on a **tight-spread** name a 15s timeout is just script latency, and the late fill is
+  fine — the job is to attach the trail, NOT to cancel. Only CANCEL when the spread was wide/broken (FDX), where a
+  late fill would be at a bad price. Distinguish the two by the live spread you sampled, not by the timeout alone.
 - **Reconcile broker state at run start; the git clone can be briefly stale (2026-07-06).** On the 7/6
   market-open my fresh clone lagged remote `main` (missed the just-pushed pre-market commit), so the memory
   files looked empty. Always trust `alpaca.py positions`/`account` for live state, and if memory looks
