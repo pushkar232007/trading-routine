@@ -14,6 +14,25 @@ Format:
 
 ---
 
+## 2026-07-09 16:02 ET — NO-OP (market-close wrap; HOLD META + MRK, no cut/tighten; market CLOSED)
+- Qty / price / stop: none — no order placed or closed. All three trailing legs live & confirmed via `orders`:
+  META 4-sh & 3-sh legs both stop $569.943 / hwm ratcheted UP to $633.27 (new intraday high today); MRK 23-sh
+  stop $115.263 / hwm $128.07. All 10% trail, GTC, status new. Both positions fully stop-protected.
+- Reasoning: properly-timed market-close run (`is_open: false`, 16:02 ET). Today's one trade was the 09:36 MRK
+  deployment-floor starter (23 sh @ $125.90, 10% trail — already logged). Wrap: **META ripped +4.58% today**
+  ($603.12 → $630.73 close, a FRESH intraday high), fully reclaiming its -4% open gap and then some; 7 sh @
+  $578.4486 blended, unrealized **+$365.97 (+9.04%)**. **Loss-cut: +9.04% far above the -7% cut → HOLD.**
+  **Ratchet: +9.04% inside the 0–15% band → trail stays 10%, no tighten (never loosen).** MRK: 23 sh @ $125.90,
+  $125.07, **-$19.09 (-0.66%)** — barely red, far inside the -7% cut → HOLD; loser so ratchet N/A. EOD summary
+  sent via Telegram.
+- Guardrail check: PASS (no trade). -7% cut: N/A (META +9.04% green; MRK -0.66% » -7%) ✅. +15% ratchet: N/A
+  (META +9.04% < +15%; MRK red) ✅. Sizes: META 4.40% ($4,415.11) / MRK 2.87% ($2,876.61) of equity, both ≤ 5%
+  cap ✅. Day P/L equity $100,346.86 vs last_equity $100,172.68 = +$174.18 (+0.17%) → no daily-loss-cap concern ✅.
+  Weekly slots: 1 of 3 used (MRK) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: Dry powder $93.06k (~92.7% cash). Deployment-floor rule: 1 slot deployed (MRK) this week; NVDA gate
+  unconfirmed → do NOT initiate; FDX spread-gated (broken paper feed); MU/AVGO/GEHC WATCH. Next routine:
+  pre-market Fri 7/10 → weekly review at Fri close.
+
 ## 2026-07-09 09:36 ET — BUY MRK (deployment-floor deploy; defensive starter; market OPEN)
 - Qty / price / stop: **BUY 23 sh MRK @ $125.90** (market, filled at the ask, cost basis $2,895.70). **10% trailing stop attached: stop_price $112.8465 / hwm $125.385, GTC, live** (order 3d2f860f). Position now fully protected.
 - Reasoning: Executed the pre-market deployment-floor plan's PRIMARY deployable (MRK). Both gates evaluated LIVE: **(a) spread re-sampled 3x = 0.45%** (bid $125.33 / ask $125.90, 100 sh each side) → TIGHT, clears the <~2-3% gate; **(b) tape** — SPY ~flat (-0.2%, market near record highs, NOT a rout). New wrinkle vs the 07:10 plan: **Iran/oil RE-escalated this morning** (US airstrikes on 90 targets, oil +4.4%), flipping the plan's "oil fading" premise, and **META gapped -4%** at the open (idiosyncratic — broad market flat). But MRK is precisely the DEFENSIVE, oil-insensitive, low-tech-correlation name named for exactly this tape — a war/oil-shock + tech-selloff day is its environment (rotation into defensives), not a disqualifier. MRK pulled back to ~$126 → upside now ~4.6% vs consensus PT $131.67 (better than the ~2% the plan feared). Falling-knife rule doesn't bind (no confirmed 3+ day broad rout); deployment-floor discipline (96% cash, 0 slots) argues against drifting into cash. Small starter (2.88%), fresh 10% trail, limited defined risk.
