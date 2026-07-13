@@ -130,3 +130,8 @@ is what makes you better over time instead of repeating the same mistakes._
   `ALPACA_API_KEY_ID`/`ALPACA_API_SECRET_KEY` in cloud env settings), write a STALE-stamped carried-forward
   portfolio snapshot (never fabricate live numbers), commit, and stop. Trading is blind until the human rotates
   the key — no live state, no orders possible.
+  - **RESOLVED same-day (2026-07-13 close).** By the market-close routine the API was back — `account`/`positions`
+    returned live data (equity $100,501.22), so the human rotated the key within hours of the Telegram flag. The
+    documented handling worked end-to-end: flag → carry-forward stale snapshot → key rotated → next routine reads
+    live and heals the snapshot. Confirms the "flag once and stop, don't loop" call was correct — the outage was
+    exactly as structural (and as fixable) as diagnosed.

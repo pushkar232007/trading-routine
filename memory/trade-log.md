@@ -14,6 +14,26 @@ Format:
 
 ---
 
+## 2026-07-13 16:18 ET — NO-OP (market-close wrap; HOLD META + MRK, no cut/tighten; market CLOSED; API RESTORED)
+- Qty / price / stop: none placed/closed. Market CLOSED (`is_open: false`, 16:17 ET) — properly-timed close run.
+  All three trailing legs live & confirmed via `orders`: META 4-sh & 3-sh legs both stop $630.3912 / hwm $677.84
+  (7% trail, tightened 7/10); MRK 23-sh stop $115.263 / hwm $128.07 (10% trail, order 3d2f860f). Fully stop-protected.
+- **API note: Alpaca 401 outage RESOLVED.** Earlier today (midday/close) the key was 401 → carried-forward stale
+  snapshot + Telegram flag. By this run the human had rotated the key; `account`/`positions` return live data → this
+  is a genuine live EOD read, healing the stale snapshot. (Logged to signals-learnings.)
+- No trades today: 09:32 open = NO-OP (falling-knife risk-off + no fresh plan); midday = NO-OP. Nothing to cut/tighten.
+- META: 7 sh @ $578.4486, current $656.69, **+$547.69 (+13.53%)**, day **-1.87%** (faded with the AI-under-pressure
+  tape but deep green from entry). Weight 4.57% ($4,596.83 / $100,501.22) ≤ 5% cap → no add. **Loss-cut: +13.53% ≫
+  -7% → HOLD. Ratchet: +13.53% in the 0-15% band, stop already at 7% → NEVER LOOSEN, stays 7%.** Earnings Jul 29.
+- MRK: 23 sh @ $125.90, current $124.03, **-$43.01 (-1.49%)**, day **+0.40%** (defensive did its job on the oil-spike
+  tape). -7% cut: N/A (far above ~$117.09). 10% trail live. HOLD per stop rules.
+- Guardrail check: PASS (no trade). Day P/L equity $100,501.22 vs last_equity $100,581.02 = **-$79.80 (-0.079%)**
+  ≪ -3% cap ✅. Sizes META 4.57% / MRK 2.84% ≤ 5% ✅. **Weekly slots: 1 of 3 used (MRK)** ✅. Paper mode ✅. No
+  options/margin/short/crypto ✅.
+- Note: EOD Telegram summary sent (close routine always notifies). Dry powder $93.06k (~92.6% cash). Deployment gated
+  pre-CPI — **June CPI Tue 7/14 8:30 ET is the binary** (+ big-bank earnings pre-open); named deployable once tape/CPI
+  clear = NVDA (lease gate firming). Next routine: pre-market Tue 7/14.
+
 ## 2026-07-13 09:32 ET — NO-OP (market-open; HOLD META + MRK, NO new positions — falling-knife risk-off open)
 - Qty / price / stop: none placed, none closed, no stop touched. Market OPEN (clock is_open=true).
 - Standing-plan catch-up: the last pre-market plan (7/9) was FULLY executed (MRK bought 7/9, FDX skipped on
