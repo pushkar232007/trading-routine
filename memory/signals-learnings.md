@@ -120,3 +120,13 @@ is what makes you better over time instead of repeating the same mistakes._
   timing bug blocked every execution. Risk discipline is necessary but not sufficient; deployment is
   the job. When a guardrail-clean plan is pending and the market is open, the catch-up rule in
   `.claude/commands/trade.md` says execute it.
+- **Alpaca key can go 401 mid-life — verify with raw curl, then flag & stop, don't loop (2026-07-13).** On the
+  7/13 market-close, `alpaca.py account`/`positions` both returned **401 unauthorized** even though every env var
+  was present (key `PKMW...`, secret len 44, base URL correct `https://paper-api.alpaca.markets`). Fast triage that
+  works: (1) confirm env vars are SET (they were) → rules out "missing credential"; (2) raw
+  `curl -H APCA-API-KEY-ID -H APCA-API-SECRET-KEY .../v2/account` → also 401 → proves the CREDENTIAL is
+  rotated/revoked/invalid, not a script or base-URL bug. Don't retry more than once — a 401 is structural, not
+  transient, so looping just burns budget. Correct handling: send ONE Telegram flag naming the exact fix (refresh
+  `ALPACA_API_KEY_ID`/`ALPACA_API_SECRET_KEY` in cloud env settings), write a STALE-stamped carried-forward
+  portfolio snapshot (never fabricate live numbers), commit, and stop. Trading is blind until the human rotates
+  the key — no live state, no orders possible.

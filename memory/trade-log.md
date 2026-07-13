@@ -604,3 +604,15 @@ Format:
 - Regime: still day-2 of the Iran/oil watch; the BIG binary = June CPI Tue 7/14 8:30 ET + big-bank earnings
   pre-open. Deployment stays gated pre-CPI. NVDA lease gate firming (re-check post-CPI); FDX spread-gated.
 - Note: No Telegram (nothing placed/closed). Book ~92.6% cash (~$93.1k dry powder). Next routine: market-close 7/13.
+
+## 2026-07-13 ~16:xx ET — NO-OP / API OUTAGE (market-close routine)
+- Qty / price / stop: none — no order placed, none closed, no stop tightened.
+- **Alpaca API 401 unauthorized** on `account` and `positions`; confirmed via raw curl with the env key/secret →
+  credential rotated/revoked/invalid (NOT a script/base-URL bug; all env vars present, base URL correct). Could
+  NOT pull a live EOD snapshot — portfolio.md carries forward the midday numbers, STALE-stamped.
+- Last-known state (midday 7/13): equity $100,511.48 (+0.51% vs $100k start), day -$69.54 (-0.07%); META 7sh
+  +13.98% (7% trail), MRK 23sh -1.86% (10% trail); ~92.6% cash. No trades today.
+- Guardrail check: N/A — no trade possible (API down). Weekly slots 1 of 3 used (MRK). TRADING_MODE = paper.
+- Telegram EOD summary sent (msg 168) flagging the outage + the fix (refresh ALPACA_API_KEY_ID/SECRET in cloud env).
+- Next routine: pre-market Tue 7/14 (June CPI 8:30 ET + big-bank earnings) — but the human must rotate the Alpaca
+  key first, else the session stays blind.
