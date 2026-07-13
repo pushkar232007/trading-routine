@@ -14,6 +14,36 @@ Format:
 
 ---
 
+## 2026-07-13 09:32 ET — NO-OP (market-open; HOLD META + MRK, NO new positions — falling-knife risk-off open)
+- Qty / price / stop: none placed, none closed, no stop touched. Market OPEN (clock is_open=true).
+- Standing-plan catch-up: the last pre-market plan (7/9) was FULLY executed (MRK bought 7/9, FDX skipped on
+  spread, META held) → nothing pending. **No fresh pre-market plan exists for today** — origin/main's newest
+  commit is the 7/9 market-close wrap; no Fri 7/10 or Mon 7/13 pre-market commit. (NB: META's stop was
+  tightened to 7% on the broker Fri 7/10 13:06 ET — a Friday routine ran but its memory commit never reached
+  main. Reconciled all state from the live broker per the "trust the broker" learning; committing now heals it.)
+- TAPE (WebSearch 7/13): fresh **geopolitical risk-off open** — US renewed Strait-of-Hormuz strikes over the
+  weekend, **Iran retaliated vs US allies (Kuwait/Jordan/Qatar), oil jumping**; futures Dow -0.1% / S&P -0.3% /
+  Nasdaq-100 -0.8%, prediction mkts ~22% odds of an up open. Fri 7/11 closed strong (S&P +0.42% 7,575) but today
+  is day-1 of an unconfirmed sentiment shock = the falling-knife setup.
+- DECISION — **no new positions.** (a) **Falling-knife rule binds**: unconfirmed Iran/oil risk-off, not a
+  confirmed bottom. (b) **FDX fails spread gate** — sampled 3x LIVE: bid $296.75 / ask $316.92 = **6.6%, feed
+  frozen** (identical timestamps) → un-buyable, AND oil-sensitive on an oil-spike day = doubly wrong. (c) **NVDA**
+  tight spread (~$209.74, 0.02%) but B200-lease gate unconfirmed + no fresh research to clear it → do NOT initiate.
+  (d) No fresh plan today. **Deployment-floor: staying ~92% cash is a DELIBERATE, logged decision today**, not a
+  silent default — the one live deployable (FDX) is spread-gated + oil-wrong, and the tape is an unconfirmed shock.
+- META: 7 sh @ $578.4486, current $664.71, **+$603.83 (+14.91%)**, day -0.67%. Thesis STRENGTHENED (best week
+  since early 2024, +15% on Meta Compute + Muse Image/Spark 1.1 + Iris chip Sept). Weight 4.63% ($4,652.97 /
+  $100,542.25) ≤ 5% cap → no add (and not chasing into a risk-off open after a 15% week). Earnings Jul 29.
+  Stops: two trailing legs (4-sh & 3-sh) at **7% trail** (tightened Fri at the +17% $677 high), hwm $677.84,
+  stop $630.3912 — +14.91% now sits in the 0-15% band but rule is NEVER LOOSEN → leave at 7%. HOLD.
+- MRK: 23 sh @ $125.90, current $123.30, **-$59.80 (-2.07%)**, day -0.19%. No thesis-breaker. -7% cut: N/A
+  (far above ~$117.09). 10% trail live (stop $115.263, hwm $128.07, order 3d2f860f). HOLD per stop rules.
+- Guardrail check: PASS (no trade). Day P/L equity $100,542.25 vs last_equity $100,581.02 = **-$38.77 (-0.04%)**
+  ≪ -3% cap. Both names ≤ 5% size cap. **New week 7/13 → 0 of 3 new-position slots used.** TRADING_MODE = paper.
+  No options/margin/short/crypto.
+- Note: No Telegram (nothing placed/closed; a risk-off HOLD isn't notify-worthy). Dry powder ~$93.1k. MU/AVGO/GEHC
+  WATCH. This week's catalysts: bank earnings (JPM/GS/BAC), TSMC (AI read), NFLX, UNH. Next routine: midday risk check.
+
 ## 2026-07-09 16:02 ET — NO-OP (market-close wrap; HOLD META + MRK, no cut/tighten; market CLOSED)
 - Qty / price / stop: none — no order placed or closed. All three trailing legs live & confirmed via `orders`:
   META 4-sh & 3-sh legs both stop $569.943 / hwm ratcheted UP to $633.27 (new intraday high today); MRK 23-sh

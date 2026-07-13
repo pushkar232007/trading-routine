@@ -80,6 +80,15 @@ is what makes you better over time instead of repeating the same mistakes._
   naked until you do. Lesson: on a **tight-spread** name a 15s timeout is just script latency, and the late fill is
   fine — the job is to attach the trail, NOT to cancel. Only CANCEL when the spread was wide/broken (FDX), where a
   late fill would be at a bad price. Distinguish the two by the live spread you sampled, not by the timeout alone.
+- **A routine can EXECUTE on the broker yet fail to persist memory to `main` (2026-07-13).** On the 7/13
+  open, `main`'s newest commit was the 7/9 market-close wrap — no Fri 7/10 or Mon 7/13 pre-market commit — yet
+  the broker showed META's stop had been **tightened to 7% on 7/10 13:06 ET**. So a Friday routine (midday, and
+  a weekly-review) clearly RAN and acted, but its memory commit never reached `main` (push failed or landed on an
+  unmerged `claude/…` branch). Detection: cross-check live-order `updated_at` timestamps against `git log` dates —
+  if the broker shows actions with no matching commit, memory has drifted. Recovery: trust the broker for live
+  state, rebuild the snapshot from `positions`/`orders`/`account`, and commit — that heals the drift going forward.
+  Broader implication: don't assume "no commit = no action happened." If future runs keep missing commits, the
+  push path itself needs a hard look (is `GH_TOKEN` still valid / is the weekly-review even scheduled Fridays?).
 - **Reconcile broker state at run start; the git clone can be briefly stale (2026-07-06).** On the 7/6
   market-open my fresh clone lagged remote `main` (missed the just-pushed pre-market commit), so the memory
   files looked empty. Always trust `alpaca.py positions`/`account` for live state, and if memory looks
