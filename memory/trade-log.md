@@ -587,3 +587,20 @@ Format:
   standout — watch for the +15% ratchet on future runs; still +5.94%, no action yet. MRK holding as the
   defensive/oil-insensitive starter. NVDA gate unconfirmed; FDX spread-gated; MU/AVGO/GEHC WATCH.
   Next routine: market-close Thu 7/9.
+
+## 2026-07-13 13:xx — NO-OP (midday risk check, market OPEN)
+- Qty / price / stop: none — no order placed, none closed, no stop tightened.
+- META: 7 sh, entry $578.4486 blended, current $659.29, unrealized +$565.89 (+13.98%), intraday -1.48%.
+  -7% cut: N/A (big WINNER). +15% ratchet: +13.98% sits in the 0-15% band → nominal band is 10%, but the
+  stop was already tightened to **7% on 7/10** at the +17% high, and the rule is NEVER LOOSEN → stop STAYS 7%.
+  No action. Both trailing legs live at 7% (4-sh & 3-sh, stop $630.3912 / hwm $677.84). Weight 4.59%
+  ($4,615.03 / $100,511.48) ≤ 5% cap. HOLD — add complete.
+- MRK: 23 sh, entry $125.90, current $123.56, unrealized -$53.82 (-1.86%), intraday +0.02%. -7% cut: N/A
+  (only -1.86%, far from the -7.0% line = ~$117.09). Trailing stop live: 10%, stop $115.263 / hwm $128.07,
+  GTC, order 3d2f860f — protecting cleanly. Weight 2.83% ≤ 5% cap. HOLD per stop rules, doing its defensive job.
+- Guardrail check: PASS (no trade). No position ≤ -7% → no forced close. No position ≥ +15% → no ratchet
+  (META already at 7%, can't loosen; MRK red). Day P/L -$69.54 (-0.07%) → nowhere near -3% daily cap.
+  Weekly slots 1 of 3 used (MRK). Both names ≤ 5% size cap. TRADING_MODE = paper. No options/margin/short/crypto.
+- Regime: still day-2 of the Iran/oil watch; the BIG binary = June CPI Tue 7/14 8:30 ET + big-bank earnings
+  pre-open. Deployment stays gated pre-CPI. NVDA lease gate firming (re-check post-CPI); FDX spread-gated.
+- Note: No Telegram (nothing placed/closed). Book ~92.6% cash (~$93.1k dry powder). Next routine: market-close 7/13.
