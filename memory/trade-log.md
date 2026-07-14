@@ -14,6 +14,23 @@ Format:
 
 ---
 
+## 2026-07-14 16:02 ET — NO-OP (market-close wrap; HOLD META + MRK, no cut/tighten; market CLOSED)
+- Qty / price / stop: none placed/closed. Market CLOSED (`is_open: false`, 16:02 ET) — properly-timed close run.
+  All three trailing legs live & confirmed via `orders`: META 4-sh & 3-sh legs both 7% trail, stop $630.3912 /
+  hwm $677.84 (tightened 7/10); MRK 23-sh 10% trail, stop $115.263 / hwm $128.07 (order 3d2f860f). Fully stop-protected.
+- No trades today: 09:xx open (no fresh plan; NVDA oil-gated) + midday risk check were both NO-OP. Nothing to cut/tighten.
+- META: 7 sh @ $578.4486, current $661.00, **+$577.86 (+14.27%)**, day **+0.65%** (green into the close). Weight
+  4.61% ($4,627 / $100,460.53) ≤ 5% cap → no add. **Loss-cut: +14.27% ≫ -7% → HOLD. Ratchet: +14.27% in the
+  0-15% band, stop already 7% → NEVER LOOSEN, stays 7%.** Earnings Jul 29.
+- MRK: 23 sh @ $125.90, current $120.80, **-$117.30 (-4.05%)**, day **-2.60%** (day's laggard but defensive; above
+  the ~$117.09 -7% cut). 10% trail live. HOLD per stop rules.
+- Guardrail check: PASS (no trade). Day P/L equity $100,460.53 vs last_equity $100,504.93 = **-$44.40 (-0.044%)**
+  ≪ -3% cap ✅. Sizes META 4.61% / MRK 2.77% ≤ 5% ✅. **Weekly slots: 1 of 3 used (MRK)** ✅. Paper mode ✅. No
+  options/margin/short/crypto ✅.
+- Note: EOD Telegram summary sent (close routine always notifies). Dry powder $93.06k (~92.6% cash). NVDA stays
+  primary tech deployable once the oil/Iran shock stabilizes (CPI benign + lease firm; oil = only remaining gate).
+  Next routine: pre-market Wed 7/15.
+
 ## 2026-07-13 16:18 ET — NO-OP (market-close wrap; HOLD META + MRK, no cut/tighten; market CLOSED; API RESTORED)
 - Qty / price / stop: none placed/closed. Market CLOSED (`is_open: false`, 16:17 ET) — properly-timed close run.
   All three trailing legs live & confirmed via `orders`: META 4-sh & 3-sh legs both stop $630.3912 / hwm $677.84
