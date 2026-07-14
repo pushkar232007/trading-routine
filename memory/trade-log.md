@@ -636,3 +636,25 @@ Format:
 - Telegram EOD summary sent (msg 168) flagging the outage + the fix (refresh ALPACA_API_KEY_ID/SECRET in cloud env).
 - Next routine: pre-market Tue 7/14 (June CPI 8:30 ET + big-bank earnings) — but the human must rotate the Alpaca
   key first, else the session stays blind.
+
+## 2026-07-14 ~09:35 ET — NO-OP (market-open routine, market OPEN)
+- Qty / price / stop: none — no order placed, none closed, no stop tightened.
+- Executed the pre-market plan: it had ONE conditional deployable (NVDA), gated on the oil/Iran shock
+  stabilizing. **Live read confirms the gate FAILS:** Brent **+4.3% to ~$86.85** (fresh 1-month high),
+  day-3 of US strikes on Iran, IRGC attacked 2 Hormuz tankers, US Navy blockade reimposing 4pm ET + 20%
+  Hormuz cargo fees. That is the OPPOSITE of "≥1 up day OR oil reversing" → falling-knife still binds on
+  the geopolitical driver. Tape risk-off (S&P -0.2%, Dow -0.6%, Nasdaq +0.38%; Mon Nasdaq -1.55%; banks
+  beating but sold — JPM -2.5%, WFC -2%). **NVDA NOT initiated.** June CPI printed benign (gate a still MET)
+  but gate b (oil) is worse, not better → deployment stays gated. Deployment-floor: LOGGED deliberate
+  decision to stay ~92.6% cash is correct today.
+- META: 7 sh, entry $578.4486 blended, current $652.05, unrealized +$515.21 (+12.72%), intraday -0.71%.
+  HOLD — no add (at target weight 4.54%, add complete). Stop at 7% trail (tightened 7/10 at the +17% high,
+  stop $630.3912 / hwm $677.84) — NEVER LOOSEN → stays 7%. +12.72% is in the 0-15% band but rule forbids
+  loosening. Both trailing legs live.
+- MRK: 23 sh, entry $125.90, current $123.215, unrealized -$61.76 (-2.13%), intraday -0.66%. HOLD — far from
+  the -7% cut (~$117.09). 10% trail live, GTC, order 3d2f860f. Doing its defensive job on the oil-spike tape.
+- Guardrail check: PASS (no trade). Day P/L -$50.24 (-0.050%) → nowhere near -3% daily cap. META 4.54% /
+  MRK 2.82% ≤ 5% size cap. Weekly slots 1 of 3 used (MRK). TRADING_MODE = paper. No options/margin/short/crypto.
+- Note: No Telegram (nothing placed/closed — market-open routine only pings on an actual trade). Book ~92.6%
+  cash (~$93.1k dry powder). NVDA stays the primary tech deployable once oil reverses/stabilizes. Next
+  routine: midday risk check 7/14.
