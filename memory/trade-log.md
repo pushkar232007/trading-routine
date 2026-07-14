@@ -658,3 +658,23 @@ Format:
 - Note: No Telegram (nothing placed/closed — market-open routine only pings on an actual trade). Book ~92.6%
   cash (~$93.1k dry powder). NVDA stays the primary tech deployable once oil reverses/stabilizes. Next
   routine: midday risk check 7/14.
+
+## 2026-07-14 ~12:50 ET — NO-OP (midday risk check, market OPEN)
+- Qty / price / stop: none — no order placed, none closed, no stop tightened.
+- Loss-cut scan (-7% rule): NEITHER position is at/past -7% → no forced closes.
+  - **META**: 7 sh, entry $578.4486, current $663.485, unrealized **+$595.26 (+14.70%)**, intraday +1.03%
+    (up from +12.72% at the open — META ripping today). Gain sits in the **0-15% band** → rule leaves it at
+    10%, BUT the stop is already at **7%** (tightened 7/10 at the +17% high) and the ratchet NEVER loosens →
+    **stays 7%**. Watch: at +14.70% it's a whisker from the 15-30% band, whose target is also 7% — so no
+    action pending regardless. Both trailing legs live (hwm $677.84, stop $630.3912). HOLD, add complete.
+  - **MRK**: 23 sh, entry $125.90, current $120.39, unrealized **-$126.73 (-4.38%)**, intraday **-2.94%**
+    (worsened from -2.13% at open; the defensive name is the day's laggard, not META). Still **well above
+    the -7% cut** (cut ~$117.09; 10% trail stop at $115.263, hwm $128.07, order 3d2f860f live). Thesis
+    intact (Keytruda Qlex uptake, Guggenheim $145 / BMO $142, earnings Aug 4). No specific-hold-reason memo
+    needed — it isn't past the threshold. HOLD per stop rules.
+- Guardrail check: PASS. Day P/L **-$36.33 (-0.036%)** (equity $100,468.60 vs last_equity $100,504.93) →
+  nowhere near the -3% daily cap. META 4.62% / MRK 2.76% of equity ≤ 5% size cap. Weekly slots 1 of 3 used
+  (MRK). TRADING_MODE = paper. No options/margin/short/crypto.
+- Note: No Telegram (nothing closed — midday only pings on an actual close). Book ~92.6% cash (~$93.1k dry
+  powder). Alpaca API healthy again (Mon's key outage resolved). NVDA still the primary tech deployable once
+  oil/Iran stabilizes. Next routine: market-close wrap 7/14.
