@@ -135,3 +135,25 @@ is what makes you better over time instead of repeating the same mistakes._
     documented handling worked end-to-end: flag → carry-forward stale snapshot → key rotated → next routine reads
     live and heals the snapshot. Confirms the "flag once and stop, don't loop" call was correct — the outage was
     exactly as structural (and as fixable) as diagnosed.
+- **A 504 timeout is NOT a 401 — it's transient/partial, and a 504 on a POST is AMBIGUOUS (2026-07-15).** On the
+  7/15 open, `account`/`positions`/`buy` (POST /v2/orders) all returned **504 "request timed out" for ~15 min**,
+  while `clock`/`quote`/`orders`-GET stayed healthy — so it was a **partial Alpaca outage on specific endpoints**,
+  not a credential problem (unlike the 7/13 401). Two lessons: (1) **Unlike a 401, a 504 IS worth retrying** — it's
+  infrastructure latency, not structural; the API recovered on its own by the ~4th attempt and the buy filled clean.
+  Space retries with backoff, don't hammer. (2) **CRITICAL — a 504 on a POST (buy/order) is ambiguous: the order
+  MIGHT have been created server-side even though the response timed out.** NEVER blindly retry a 504'd buy — that
+  risks a double-buy. Between every retry, run `orders --status all` and grep for the symbol to confirm 0 orders
+  were created before firing again. Here all failed POSTs cleanly created 0 orders, and the eventual success created
+  exactly one position (verified via `positions` post-fill). GET endpoints (account/positions/orders) are safe to
+  retry freely — only the write path (POST) carries the double-submit hazard.
+- **The "equities rallying through it" gate-branch is a real deploy trigger, distinct from "oil reversing" (2026-07-15).**
+  For ~a week the NVDA deploy gate was written as: oil/Iran stabilizes [(oil reversing/≥1 down session) OR (equities
+  rallying through it)] AND tight spread. Pre-market runs kept reading "oil still up → gated" and deferring. But the
+  gate has TWO OR-branches, and on 7/15 the SECOND one fired while the first still failed: oil was up a 4th straight
+  session, yet a 2nd benign inflation print (PPI after CPI) + a bullish ASML AI read drove a tech-led up tape
+  (Nasdaq +0.67%) that was durably looking through the oil shock — on NVDA's OWN drivers. Bought the NVDA starter.
+  Lesson: don't let "oil is still up" reflexively veto the deploy when the market is clearly rallying THROUGH the
+  geopolitical driver — that's exactly what the second branch is for. The falling-knife rule targets initiating into
+  a *rout*; a broad up-tape is its opposite, and the deployment-floor discipline says idle cash in an up market is
+  the miss to avoid. The pre-market's "do NOT initiate today" was written pre-open (couldn't observe the equity tape
+  or the 8:30 PPI); evaluating the LIVE gate is the execution routine's job, not the pre-market's.
