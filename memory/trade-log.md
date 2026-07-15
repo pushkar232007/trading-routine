@@ -14,6 +14,28 @@ Format:
 
 ---
 
+## 2026-07-15 16:02 ET — NO-OP (market-close wrap; HOLD all 3, no cut/tighten; market CLOSED)
+- Qty / price / stop: none placed/closed. Market CLOSED (`is_open: false`, 16:02 ET) — properly-timed close run.
+  All 4 trailing legs live & confirmed via `orders`: META 4-sh & 3-sh both 7% trail, stop $638.04975 / hwm $686.075
+  (7/10 tighten, auto-ratcheted UP on today's new high); MRK 23-sh 10% trail, stop $115.263 / hwm $128.07 (order
+  3d2f860f); NVDA 14-sh 10% trail, stop $191.31237 / hwm $212.5693 (order 92b2b072, ratcheted up on today's high).
+  Fully stop-protected.
+- No trades today: 09:47 open BOUGHT NVDA (already logged) + 13:05 midday NO-OP. Close wrap = nothing to cut/tighten.
+- META: 7 sh @ $578.4486, current $680.90, **+$717.16 (+17.71%)**, day **+3.00%** (fresh highs). **Loss-cut: +17.71%
+  ≫ -7% → HOLD. Ratchet: +17.71% in the 15-30% band → target trail 7%; both legs ALREADY at 7% → no change, never
+  loosen.** Weight 4.73% ($4,766.30 / $100,674.89) ≤ 5% cap → no add. Earnings Jul 29.
+- MRK: 23 sh @ $125.90, current $123.61, **-$52.67 (-1.82%)**, day **+2.34%** (defensive firming). Above the ~$117.09
+  -7% cut. 10% trail live. HOLD per stop rules.
+- NVDA: 14 sh @ $211.73, current $212.40, **+$9.38 (+0.32%)**, day **+0.28%** — day-1 closed slightly GREEN, recovered
+  from the midday -1.84%. Above the ~$196.91 -7% cut. 10% trail live. HOLD — winner but <+15% so ratchet N/A. TSMC AI
+  read Thu 7/16.
+- Guardrail check: PASS (no trade). -7% cut: N/A (none at/below -7%; worst MRK -1.82%) ✅. Ratchet: META already at 7%
+  target ✅, others N/A (<+15%). Sizes META 4.73% / MRK 2.82% / NVDA 2.95% ≤ 5% ✅. Day P/L equity $100,674.89 vs
+  last_equity $100,460.35 = **+$214.54 (+0.21%)** ≪ -3% cap ✅. **Weekly slots: 2 of 3 used (MRK + NVDA)** ✅. Paper
+  mode ✅. No options/margin/short/crypto ✅.
+- Note: EOD Telegram summary sent (close routine always notifies). Dry powder $90.09k (~89.5% cash). Next routine:
+  pre-market Thu 7/16 (TSMC Q2 ~2am ET = AI-demand read for NVDA/AVGO/MU).
+
 ## 2026-07-15 13:05 ET — NO-OP (midday risk check; HOLD all 3, no cut/tighten; market OPEN)
 - Qty / price / stop: none placed/closed. Market OPEN (`is_open: true`, 13:05 ET, next close 16:00). All 4 trailing
   legs live & confirmed via `orders`: META 4-sh & 3-sh both 7% trail, stop $638.04975 / hwm $686.075 (auto-ratcheted
