@@ -747,3 +747,29 @@ Format:
 - **Book after:** META 7 sh (+13.73%, ~4.58%), MRK 23 sh (-1.68%, ~2.83%), NVDA 14 sh (~flat, ~2.95%). Cash $90,090.91, equity $100,505.93, ~89.6% cash. Day P/L +$45.58 (+0.045%) — far inside the -3% cap.
 - **Guardrail check: PASS.** Each position <5% size cap; 10% trail on the new buy; weekly slots 2 of 3 (MRK + NVDA); TRADING_MODE = paper; no options/margin/short/crypto.
 - **Telegram: SENT** (an actual trade was placed).
+
+## 2026-07-16 ~09:32 ET — NO-OP (market-open routine, market OPEN)
+- Qty / price / stop: none — no order placed, none closed, no stop tightened.
+- Executed the 7/16 pre-market plan: HOLD on all 3 holdings; the ONLY actionable idea was the
+  deployment-floor's last weekly slot → **FDX**, hard-gated on the chronically-broken paper feed.
+  **Live spread re-sampled 3x: bid $295.45 / ask $329.18 = ~11.4%, only 40 sh each side, and
+  samples 2-3 had IDENTICAL frozen timestamps** (13:31:12.235). Classic broken/frozen paper feed
+  (per 7/6+7/7 lessons) — an ask fill would sit ~11% below bid instantly, near-guaranteed to trip
+  the 10% trail. **FDX SKIPPED** — don't market-buy into a >5% spread. Thesis unchanged (oil
+  reversal eased the fuel-cost headwind; Buy consensus ~$350 PT); retry when the quote normalizes.
+- META: 7 sh, entry $578.4486, current $679.15, unrealized **+$704.91 (+17.41%)**, intraday -0.32%.
+  HOLD — no add (target weight ~4.72%, add complete). Gain in the 15-30% ratchet band → target 7%;
+  stop already at **7%** (both legs, hwm $686.075 / stop $638.04975) → no change (never loosen).
+  Both trailing legs live.
+- MRK: 23 sh, entry $125.90, current $124.825, unrealized -$24.73 (-0.85%), intraday +0.98%. HOLD —
+  far above the -7% cut (~$117.09). 10% trail live (order 3d2f860f, stop $115.263 / hwm $128.07).
+  Doing its diversifier job; KEYNOTE-C93 win + JPM $140 PT intact. Earnings Aug 4.
+- NVDA: 14 sh, entry $211.73, current $209.87, unrealized -$26.04 (-0.88%), intraday -1.24%. HOLD —
+  day-3 starter, well above the -7% cut & the $191.31 trail. TSMC Q2 record beat confirmed the
+  AI-demand thesis; do NOT add a fresh position. 10% trail live (order 92b2b072).
+- Guardrail check: PASS (no trade). Day P/L **-$22.66 (-0.02%)** (equity $100,655.44 vs last_equity
+  $100,678.10) → nowhere near the -3% daily cap. META 4.72% / MRK 2.85% / NVDA 2.92% ≤ 5% size cap.
+  Weekly slots: NVDA opened this week (7/15). TRADING_MODE = paper. No options/margin/short/crypto.
+- Note: No Telegram (nothing placed/closed — open routine only pings on an actual trade). Book ~89.5%
+  cash (~$90.1k dry powder). FDX stays the named last-slot deployable once its feed normalizes. Next
+  routine: midday risk check 7/16.
