@@ -14,6 +14,29 @@ Format:
 
 ---
 
+## 2026-07-16 16:02 ET — NO-OP (market-close wrap; HOLD all 3, no cut/tighten; market CLOSED)
+- Qty / price / stop: none placed/closed. Market CLOSED (`is_open: false`, 16:02 ET) — properly-timed close run.
+  All 4 trailing legs live & confirmed via `orders`: META 4-sh & 3-sh both 7% trail, stop $638.04975 / hwm $686.075;
+  MRK 23-sh 10% trail, stop $116.037 / hwm $128.93 (ratcheted UP on today's high); NVDA 14-sh 10% trail, stop
+  $191.31237 / hwm $212.5693. Fully stop-protected.
+- No trades today: open + midday both NO-OP. Close wrap = nothing to cut/tighten.
+- META: 7 sh @ $578.4486, current $664.00, **+$598.86 (+14.79%)**, day **-2.54%** (give-back off yesterday's highs;
+  deep green from entry). **Loss-cut: +14.79% ≫ -7% → HOLD. Ratchet: +14.79% slipped back into the 0-15% band; both
+  legs already at 7% (tightened 7/10) → NEVER LOOSEN, stays 7%.** Weight 4.62% ($4,648 / $100,577.51) ≤ 5% cap → no
+  add. Earnings Jul 29.
+- MRK: 23 sh @ $125.90, current $127.67, **+$40.71 (+1.41%)**, day **+3.29%** — the day's winner (Ph3 KEYNOTE-C93 win +
+  JPM PT→$140 tailwind; oil-insensitive defensive did its job). Above the ~$117.09 -7% cut. 10% trail live. HOLD —
+  winner but <+15% so ratchet N/A.
+- NVDA: 14 sh @ $211.73, current $207.30, **-$62.02 (-2.09%)**, day **-2.45%** (day-2 starter, soft-tech session).
+  Above the ~$196.91 -7% cut. 10% trail live. HOLD — loser so ratchet N/A; nowhere near the cut line. TSMC Q2
+  confirmed the AI-demand thesis. Earnings ~late Aug.
+- Guardrail check: PASS (no trade). -7% cut: N/A (none at/below -7%; worst NVDA -2.09%) ✅. Ratchet: META already at
+  7% target ✅, others N/A (MRK <+15%, NVDA red). Sizes META 4.62% / MRK 2.92% / NVDA 2.89% ≤ 5% ✅. Day P/L equity
+  $100,577.51 vs last_equity $100,678.10 = **-$100.59 (-0.10%)** ≪ -3% cap ✅. **Weekly slots: 2 of 3 used (MRK +
+  NVDA)** ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: EOD Telegram summary sent (close routine always notifies). Dry powder $90.09k (~89.6% cash). Next routine:
+  pre-market Fri 7/17 → weekly review at Fri close.
+
 ## 2026-07-16 13:05 ET — NO-OP (midday risk check; HOLD all 3, no cut/tighten; market OPEN)
 - Qty / price / stop: none placed/closed. Market OPEN (`is_open: true`, 13:05 ET, next close 16:00). All 4 trailing
   legs live & confirmed via `orders`: META 4-sh & 3-sh both 7% trail, stop $638.04975 / hwm $686.075; MRK 23-sh 10%
