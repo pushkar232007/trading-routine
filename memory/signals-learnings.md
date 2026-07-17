@@ -36,6 +36,8 @@ is what makes you better over time instead of repeating the same mistakes._
   the `alpaca.py buy --trail-percent` stop leg attached cleanly on the add (the old naked-short 403 bug
   stays fixed — no manual re-submit needed).
 
+- **The stop-tightening ratchet paid off in cash (validated 2026-07-17).** META ran to +18% (hwm $686.075), and per the ratchet it had been tightened from 10%→7% at the +17% high on 7/10. On 7/17 the tech tape turned risk-off (TSMC sell-the-news) and META gave back 7% intraday → the 7% trail fired at ~09:45 ET and **banked a realized +10.24% / +$414.53 winner** instead of round-tripping toward breakeven. This is the exact scenario the ratchet exists for: a real double-digit unrealized gain that pulls back <10% would have survived the original loose trail and bled back, but the tightened 7% trail locked it in. Lesson: keep tightening winners on the ratchet schedule and NEVER loosen — the tighter stop is what converts an unrealized run into a booked gain when the tape rolls. (Whipsaw risk is real — you exit near a local top and can't re-enter cheaply — but on a genuine risk-off day that's a feature, not a bug.)
+
 ## Mistakes / anti-patterns to avoid
 
 - **FIXED in code (2026-06-24, human): `alpaca.py buy` no longer races the stop leg.** The bug

@@ -14,6 +14,29 @@ Format:
 
 ---
 
+## 2026-07-17 16:02 ET — NO-OP close / weekly-review (HOLD MRK + NVDA; META already CLOSED by trail this AM; market CLOSED)
+- Qty / price / stop: none placed this run. Market CLOSED (`is_open: false`, 16:02 ET, next open Mon 7/20). MRK + NVDA
+  trailing legs live & confirmed via `orders` (qty_available 0 = shares held by the open stop orders): MRK 23-sh 10%
+  trail (order 3d2f860f); NVDA 14-sh 10% trail, stop $191.31237 / hwm $212.5693 (order 92b2b072). Both stop-protected.
+- **META CLOSED @ ~09:45 ET by its standing 7% trailing stop** (recorded here for the log — the fill happened intraday,
+  midday updated portfolio.md but no trade-log entry was written yet). Both legs filled: 3 sh @ $637.796667 + 4 sh @
+  $637.57 (avg ~$637.68); entry $578.4486 → **realized +$414.53 / +10.24%**. The trail fired as META pulled back 7%
+  from its $686.075 hwm on the TSMC-sell-the-news tech risk-off. The 7% ratchet (tightened 7/10 at the +17% high) did
+  its job — banked a double-digit winner instead of a round-trip. Logged to signals-learnings as a validated signal.
+- MRK: 23 sh @ $125.90, current $127.495, **+$36.69 (+1.267%)**, day -0.11% — defensive flat on a mild risk-off day.
+  Above the ~$117.09 -7% cut. 10% trail live. HOLD — winner but <+15% so ratchet N/A.
+- NVDA: 14 sh @ $211.73, current $202.6266, **-$127.45 (-4.30%)**, day -2.30% (day-4 starter, TSMC sell-the-news +
+  semi risk-off, NOT a thesis break; Vera Rubin AI-factory deal, Strong Buy $301.62). Above the ~$196.91 -7% cut & the
+  $191.31 trail. 10% trail live. HOLD — loser so ratchet N/A; nowhere near the cut line.
+- Guardrail check: PASS (no new trade). -7% cut: N/A (none at/below -7%; worst NVDA -4.30%) ✅. Ratchet: N/A (MRK <+15%,
+  NVDA red). Sizes MRK 2.92% / NVDA 2.83% ≤ 5% ✅. Day P/L equity $100,323.73 vs last_equity $100,581.77 = **-$258.04
+  (-0.256%)** ≪ -3% cap ✅. **Weekly slots: 2 of 3 used (MRK + NVDA)** — META was a CLOSE, not a new slot ✅. Paper mode
+  ✅. No options/margin/short/crypto ✅.
+- Note: EOD / weekly-review Telegram summary sent (close routine always notifies). Dry powder $94.55k (~94.2% cash).
+  Week's scorecard: banked the META winner (+10.24%) on the ratcheted trail; deployment-floor stayed a deliberate,
+  logged cash call into the risk-off Friday (FDX oil-wrong + spread-gated; NVDA already held). Next routine: pre-market
+  Mon 7/20.
+
 ## 2026-07-17 09:31 ET — NO-OP (market-open; HOLD all 3, deployment-floor = deliberate cash; market OPEN)
 - Qty / price / stop: none placed. Market OPEN (`is_open: true`, 09:31 ET, next close 16:00). All 4 trailing legs
   live & confirmed via `orders`: META 4-sh & 3-sh both 7% trail, stop $638.04975 / hwm $686.075; MRK 23-sh 10% trail,
