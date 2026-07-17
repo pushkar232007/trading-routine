@@ -839,3 +839,13 @@ Format:
 - Note: No Telegram (nothing placed/closed — open routine only pings on an actual trade). Book ~89.5%
   cash (~$90.1k dry powder). FDX stays the named last-slot deployable once its feed normalizes. Next
   routine: midday risk check 7/16.
+
+## 2026-07-17 ~13:10 ET — META STOPPED OUT (winner locked in) + midday risk check (market OPEN)
+- **META CLOSED by its 7% trailing stop @ ~09:45 ET (13:45:40Z).** Both legs filled: 3 sh @ $637.796667 + 4 sh @ $637.57 = 7 sh, avg **~$637.68** proceeds ~$4,463.67. Entry $578.4486 (cost $4,049.14) → **realized +$414.53 (+10.24%)**. The trail triggered on a 7% pullback from the $686.075 hwm to the $638.04975 stop (META rode the tech risk-off lower off its 7/16 high). **This is the trailing-stop doing exactly its job — a double-digit winner banked, not a loss.** META has since bounced to ~$650 bid / $664 ask (wide 40-sh frozen paper feed) — normal trail whipsaw; discipline held, no regret trade. META no longer a holding; re-entry is a /trade decision (add was "complete", only 1 weekly slot left, feed currently wide) — NOT a midday action.
+- **Loss-cut scan (-7% rule): NO position at/past -7% → no forced closes.**
+  - **MRK**: 23 sh, entry $125.90, current $127.745, unrealized **+$42.44 (+1.465%)**, intraday +0.09%. Ran to a $131.74 hwm today (trail ratcheted: order 3d2f860f, stop $118.566 / hwm $131.74). Gain in the **0-15% band → target 10%, already at 10% → no change.** Well above the ~$117.09 -7% cut. HOLD — defensive diversifier, earnings Aug 4.
+  - **NVDA**: 14 sh, entry $211.73, current $205.875, unrealized **-$81.97 (-2.765%)**, intraday -0.735%. **Improved from -4.43% at the open** → NOT deteriorating toward the cut. Well above the -7% cut (~$196.91) & the $191.31 10% trail (order 92b2b072, hwm $212.5693). Thesis intact (TSMC AI-demand confirm, Vera Rubin deal, Strong Buy $301.62). HOLD — no add, no hold-memo needed (not past threshold).
+- **Stop-tightening scan:** none actionable — MRK in 0-15% band (10%, no change); NVDA is a loser; META gone.
+- **Guardrail check: PASS.** Day P/L **-$205.73 (-0.205%)** (equity $100,376.04 vs last_equity $100,581.77) → far inside the -3% daily cap. MRK 2.93% / NVDA 2.87% ≤ 5% size cap. Weekly slots: 2 of 3 used (MRK + NVDA); META was a CLOSE, not a new slot. TRADING_MODE = paper. No options/margin/short/crypto.
+- **Telegram: SENT** (a position — META — was actually closed today).
+- Note: Book now ~94.2% cash (~$94.55k dry powder) after META proceeds landed. Only 2 holdings left (MRK + NVDA). **Weekly-review routine fires at today's close (Fri 7/17)** — it will grade the week & the META stop-out vs the S&P. Next routine: market-close / weekly-review.

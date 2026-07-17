@@ -3,20 +3,19 @@
 _Bull: overwrite this entire file with a fresh snapshot every routine run. This should always
 reflect the CURRENT state, not history (history lives in trade-log.md)._
 
-- **Last updated:** 2026-07-17 ~09:31 ET (market-open routine) — LIVE read from `account` + `positions` + `orders`. Market OPEN (`is_open: true`, next close 2026-07-17 16:00 ET). NO trades this routine (HOLD all; deployment-floor = deliberate cash into the weekly review).
+- **Last updated:** 2026-07-17 ~13:10 ET (midday risk-check routine) — LIVE read from `account` + `positions` + `orders`. Market OPEN. **META STOPPED OUT @ 09:45 ET** (7% trail triggered, winner banked ~+10.24%); MRK + NVDA HELD (neither near the -7% cut).
 - **Mode:** paper
-- **Cash:** $90,090.90
-- **Equity:** $100,414.57
-- **Buying power:** $389,269.87
-- **Day P/L:** -$167.20 (-0.17%) — equity $100,414.57 vs last_equity $100,581.77. Far inside the -3% daily cap.
-- **vs. $100k paper start:** +$414.57 (+0.41%); account funded 2026-06-22
+- **Cash:** $94,554.57
+- **Equity:** $100,376.04
+- **Buying power:** $394,518.39
+- **Day P/L:** -$205.73 (-0.205%) — equity $100,376.04 vs last_equity $100,581.77. Far inside the -3% daily cap.
+- **vs. $100k paper start:** +$376.04 (+0.38%); account funded 2026-06-22
 
 ## Open positions
 
 | Symbol | Qty | Avg entry | Current price | Unrealized P/L | Stop level | Thesis |
 |---|---|---|---|---|---|---|
-| META | 7 | $578.4486 | $646.11 | +$473.66 (+11.70%) | **7% trailing**, GTC, live (two legs, both stop $638.04975 / hwm $686.075; at 7% since 7/10 — never loosen) | Core AI name (~4.50% of equity = target weight). Day **-2.77%** (rode the tech risk-off into the weekly review). +11.70% in the 0-15% band; both legs already at 7% → no change (never loosen). Wedbush Street-low PT $671 (Neutral) but consensus ~$820 Buy. Earnings Jul 29. HOLD — add complete, no add. |
-| MRK | 23 | $125.90 | $129.18 | +$75.44 (+2.61%) | 10% trailing, GTC, live (order stop $116.262 / hwm $129.18, ratcheted up on today's high) | Defensive/oil-insensitive pharma starter (~2.96%). Day **+1.21%** — the day's winner again, doing its diversifier job on a risk-off-tech day. +2.61% from entry, well above the ~$117.09 -7% cut. Earnings Aug 4. Risk: 2028 Keytruda LOE. HOLD per stop rules. |
-| NVDA | 14 | $211.73 | $202.35 | -$131.33 (-4.43%) | **10% trailing**, GTC, live (order stop $191.31237 / hwm $212.5693) | Primary tech deployable, opened 7/15 (~2.82%). Day-4 starter, **-4.43% from entry** on TSMC **sell-the-news** + broad semi risk-off (NOT a thesis break; TSMC's beat confirmed AI demand, Vera Rubin AI-factory deal, Strong Buy $301.62). Still ≫ the -7% cut (~$196.91) & above the $191.31 trail. HOLD — do NOT add; **midday re-checks the -7% cut**. |
+| MRK | 23 | $125.90 | $127.745 | +$42.44 (+1.465%) | 10% trailing, GTC, live (order 3d2f860f, stop $118.566 / hwm $131.74, ratcheted up on today's high) | Defensive/oil-insensitive pharma starter (~2.93% of equity). Day +0.09%. +1.465% from entry → 0-15% band, stop already at 10% → no change. Well above the ~$117.09 -7% cut. Earnings Aug 4. Risk: 2028 Keytruda LOE. HOLD per stop rules. |
+| NVDA | 14 | $211.73 | $205.875 | -$81.97 (-2.765%) | **10% trailing**, GTC, live (order 92b2b072, stop $191.31237 / hwm $212.5693) | Primary tech deployable, opened 7/15 (~2.87%). Day-4 starter, -2.765% from entry (**improved from -4.43% at the open**) on TSMC sell-the-news + semi risk-off (NOT a thesis break; Vera Rubin AI-factory deal, Strong Buy $301.62). Well above the -7% cut (~$196.91) & the $191.31 trail. HOLD — do NOT add. |
 
-_Notes: Fri 7/17 **market-open** — NO trades (HOLD all 3). Live tape confirmed the risk-off-tech read from pre-market: META -2.77% & NVDA -2.44% on the day, MRK +1.21% (defensive cushion). Book down just -$167.20 (-0.17%) on the day; no position at/below the -7% cut (worst NVDA -4.43%, ~2.3% of cushion above its ~$196.91 cut — midday will re-check). All 4 trailing legs confirmed live via `orders` (META 2 legs @7%, MRK @10% hwm-ratcheted to $129.18, NVDA @10%). Book ~89.7% cash (~$90.1k dry powder). Weekly slots: 2 of 3 used (MRK + NVDA). Deployment-floor: staying in cash into the weekly review is a DELIBERATE logged decision (risk-off-tech tape + oil overhang re-established; FDX oil-wrong + spread-gated; NVDA already held). No Telegram (no trade placed). Next routine: midday risk check, then market-close + **weekly-review at today's close**._
+_Notes: Fri 7/17 **midday risk check** — **META was closed by its standing 7% trailing stop at ~09:45 ET** (both legs: 3 sh @ $637.80 + 4 sh @ $637.57, avg ~$637.68; entry $578.4486 → realized +$414.53 / +10.24%). The trail did its job — a double-digit winner banked as META pulled back 7% from its $686.075 hwm on the tech risk-off. META since bounced to ~$650 bid / $664 ask (wide frozen paper feed) — normal trail whipsaw; no re-entry at midday (that's a /trade call; add was complete, 1 weekly slot left, feed wide). Remaining book: MRK +1.465% & NVDA -2.765% — **no position at/past the -7% cut, no forced closes, no stop-tightening actionable.** Book down just -$205.73 (-0.205%) on the day, far inside the -3% cap. Book now ~94.2% cash (~$94.55k dry powder) after META proceeds landed. Weekly slots: 2 of 3 used (MRK + NVDA); META was a CLOSE, not a new slot. **Telegram SENT (META closed).** Next routine: market-close / **weekly-review at today's close** — it grades the week & the META stop-out vs the S&P 500._
