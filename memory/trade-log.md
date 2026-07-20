@@ -872,3 +872,36 @@ Format:
 - **Guardrail check: PASS.** Day P/L **-$205.73 (-0.205%)** (equity $100,376.04 vs last_equity $100,581.77) → far inside the -3% daily cap. MRK 2.93% / NVDA 2.87% ≤ 5% size cap. Weekly slots: 2 of 3 used (MRK + NVDA); META was a CLOSE, not a new slot. TRADING_MODE = paper. No options/margin/short/crypto.
 - **Telegram: SENT** (a position — META — was actually closed today).
 - Note: Book now ~94.2% cash (~$94.55k dry powder) after META proceeds landed. Only 2 holdings left (MRK + NVDA). **Weekly-review routine fires at today's close (Fri 7/17)** — it will grade the week & the META stop-out vs the S&P. Next routine: market-close / weekly-review.
+
+## 2026-07-20 ~09:31 ET — NO-OP (market-open routine, market OPEN)
+- Qty / price / stop: none — no order placed, none closed, no stop tightened.
+- Executed the 7/20 pre-market plan against live state. **Regime: confirmed semiconductor BEAR
+  MARKET (China's Kimi K3 open-weight model, SOX/SOXX >20% off the June-2 peak) + oil spiking
+  (Brent ~$88, +14%/wk, Iran attacked a Kuwaiti plant) = risk-off tape.** Falling-knife rule BINDS
+  for any AI/tech name → the logged decision to stay mostly cash for tech is deliberate and correct.
+- **Deployment-floor (new week, 0 of 3 slots, ~94.2% cash):** the plan named **GEHC** as the primary
+  rotation-into-defensives deployable (oil-insensitive + uncorrelated to the semi rout), gated on a
+  tight live spread. **Live spread re-sampled 3x: bid $62.51 / ask $66.96 = ~6.9%, 100 sh each side,
+  and all 3 samples had IDENTICAL frozen timestamps (13:31:10.237266512Z).** Classic broken/frozen
+  paper feed (per 7/6+7/7+7/16 FDX lessons) — an ask fill would sit ~7% below bid instantly,
+  near-guaranteed to trip the 10% trail. **GEHC SKIPPED** — don't market-buy into a >5% spread.
+  Thesis unchanged (~30% disc to ~$88 FV); retry when the quote normalizes. Secondary was an
+  **MRK-add on a pullback** — trigger NOT met (MRK is +0.88% from entry, ~flat intraday, not a
+  pullback). No deployable cleared its gate → book stays ~94% cash. Deployment-floor satisfied:
+  named deployable (GEHC, spread-gated) + logged risk-off reason to hold cash.
+- **NVDA**: 14 sh, entry $211.73, current $205.675, unrealized **-$84.77 (-2.86%)**, intraday
+  **+1.41%** (recovering, stabilizing above $200). Well above the -7% cut (~$196.91) & the $191.31
+  10% trail (order 92b2b072, hwm $212.5693). **HOLD, do NOT add** — the slide is now a structural
+  semi bear-market re-rating (Kimi K3), higher bar to hold, no averaging down. Not past any
+  threshold → no hold-memo needed. Midday MUST re-check the -7% cut.
+- **MRK**: 23 sh, entry $125.90, current $127.01, unrealized **+$25.53 (+0.88%)**, intraday -0.38%.
+  Well above the -7% cut (~$117.09). 10% trail live (order 3d2f860f, stop $118.566 / hwm $131.74).
+  Doing its oil-insensitive defensive job in a semi-rout + oil-spike tape; new Lipfendra FDA
+  approval; PTs $140-150. Earnings Aug 4. HOLD — no add (not a pullback).
+- **Guardrail check: PASS.** Day P/L **+$28.84 (+0.029%)** (equity $100,355.23 vs last_equity
+  $100,326.39) → far inside the -3% daily cap. MRK 2.91% / NVDA 2.87% of equity ≤ 5% size cap.
+  Weekly slots: 0 of 3 used (new week 7/20). TRADING_MODE = paper. No options/margin/short/crypto.
+- **Telegram: NOT sent** (nothing placed/closed — open routine only pings on an actual trade).
+- Note: Book ~94.2% cash (~$94.55k dry powder). GEHC stays the named primary deployable once its
+  feed normalizes; MRK-add on a genuine pullback is the secondary. Next routine: midday risk check —
+  **MUST re-check NVDA's -7% cut** (~$196.91).
