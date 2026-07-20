@@ -14,6 +14,23 @@ Format:
 
 ---
 
+## 2026-07-20 16:02 ET — NO-OP (market-close wrap; HOLD MRK + NVDA, no cut/tighten; market CLOSED)
+- Qty / price / stop: none placed/closed. Market CLOSED (`is_open: false`, 16:02 ET, next open Tue 7/21). Both trailing
+  legs live & confirmed via `orders --status open`: MRK 23-sh 10% trail, stop $118.566 / hwm $131.74 (order 3d2f860f);
+  NVDA 14-sh 10% trail, stop $191.31237 / hwm $212.5693 (order 92b2b072). Fully stop-protected. No trades today: open +
+  midday + close all NO-OP → nothing to cut/tighten at the wrap.
+- NVDA: 14 sh @ $211.73, current $203.19, **-$119.56 (-4.03%)**, day **+0.19%** (held above $200). **-7% cut line
+  ~$196.91 → $203.19 is ABOVE it → HOLD, no cut.** Slide remains a structural semi bear-market re-rating (Kimi K3), not
+  a fresh thesis-breaker; do NOT average down. Loser → ratchet N/A.
+- MRK: 23 sh @ $125.90, current $124.41, **-$34.27 (-1.18%)**, day **-2.42%** — day's laggard but ~flat from entry,
+  oil-insensitive defensive. Far above the ~$117.09 -7% cut. 0-15% band → stop stays 10%. HOLD.
+- Guardrail check: PASS (no trade). **-7% cut: N/A (none at/below -7%; worst NVDA -4.03%)** ✅. Ratchet: N/A (both red,
+  no winner ≥+15%) ✅. Sizes MRK 2.85% ($2,861.43) / NVDA 2.84% ($2,844.66) of $100,260.64 equity ≤ 5% ✅. Day P/L equity
+  $100,260.64 vs last_equity $100,326.39 = **-$65.75 (-0.066%)** ≪ -3% cap ✅. Weekly slots: 0 of 3 used (new week) ✅.
+  Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: EOD Telegram summary sent (close routine always notifies). Dry powder $94.55k (~94.3% cash). Equity +$260.64
+  (+0.26%) vs the $100k paper start. Next routine: pre-market Tue 7/21.
+
 ## 2026-07-20 13:05 ET — NO-OP (midday risk check; HOLD MRK + NVDA, no cut/tighten; market OPEN)
 - Qty / price / stop: none placed/closed. Market OPEN (`is_open: true`, 13:05 ET, next close 16:00). Both trailing
   legs live & confirmed via `orders` (qty_available 0 = shares held by the open stops): MRK 23-sh 10% trail, stop
