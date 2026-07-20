@@ -14,6 +14,24 @@ Format:
 
 ---
 
+## 2026-07-20 13:05 ET — NO-OP (midday risk check; HOLD MRK + NVDA, no cut/tighten; market OPEN)
+- Qty / price / stop: none placed/closed. Market OPEN (`is_open: true`, 13:05 ET, next close 16:00). Both trailing
+  legs live & confirmed via `orders` (qty_available 0 = shares held by the open stops): MRK 23-sh 10% trail, stop
+  $118.566 / hwm $131.74 (order 3d2f860f); NVDA 14-sh 10% trail, stop $191.31237 / hwm $212.5693 (order 92b2b072).
+  Fully stop-protected.
+- **NVDA re-check (the flagged one): 14 sh @ $211.73, current $203.665, -$112.91 (-3.81%)**, day **+0.42%**
+  (recovering intraday, stabilizing above $200). **-7% cut line ~$196.91 → current $203.665 is ABOVE it → HOLD, no
+  cut required.** The slide remains a structural semi bear-market re-rating (Kimi K3), not a fresh thesis-breaker;
+  higher bar to hold but nowhere near the cut. Do NOT average down. Loser → ratchet N/A.
+- MRK: 23 sh @ $125.90, current $125.72, **-$4.14 (-0.14%)**, day **-1.40%** — essentially flat, oil-insensitive
+  defensive. Far above the ~$117.09 -7% cut. 0-15% band → stop stays 10%. HOLD.
+- Guardrail check: PASS (no trade). **-7% cut: N/A (none at/below -7%; worst NVDA -3.81%)** ✅. Ratchet: N/A (MRK
+  ~flat, NVDA red — no winner ≥+15%) ✅. Sizes MRK 2.88% ($2,891.56) / NVDA 2.84% ($2,851.31) of $100,297.42 equity
+  ≤ 5% ✅. Day P/L equity $100,297.42 vs last_equity $100,326.39 = **-$28.97 (-0.029%)** ≪ -3% cap ✅. Weekly slots:
+  0 of 3 used (new week) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: No Telegram (nothing closed; a clean risk check isn't notify-worthy). Dry powder $94.55k (~94.3% cash). Next
+  routine: market-close wrap 7/20.
+
 ## 2026-07-17 16:02 ET — NO-OP close / weekly-review (HOLD MRK + NVDA; META already CLOSED by trail this AM; market CLOSED)
 - Qty / price / stop: none placed this run. Market CLOSED (`is_open: false`, 16:02 ET, next open Mon 7/20). MRK + NVDA
   trailing legs live & confirmed via `orders` (qty_available 0 = shares held by the open stop orders): MRK 23-sh 10%
