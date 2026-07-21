@@ -14,6 +14,26 @@ Format:
 
 ---
 
+## 2026-07-21 16:02 ET — NO-OP (market-close wrap; HOLD FDX + MRK + NVDA, no cut/tighten; market CLOSED)
+- Qty / price / stop: none placed/closed at the close. Market CLOSED (`is_open: false`, 16:02 ET, next open Wed 7/22).
+  Today's one trade was the FDX starter at the 7/21 open (9 sh @ $313.00 — already logged). All 3 trailing legs live &
+  confirmed via `orders --status open` (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop
+  $285.30 / hwm $317 (order 6f599c57); NVDA 14-sh 10% trail, stop $191.31237 / hwm $212.5693 (order 92b2b072); MRK 23-sh
+  10% trail, stop $118.566 / hwm $131.74 (order 3d2f860f). Fully stop-protected. open BUY + midday NO-OP + close NO-OP.
+- **NVDA: 14 sh @ $211.73, current $206.78, -$69.30 (-2.34%)**, day **+1.72%** (recovered strongly intraday). **-7% cut
+  line ~$196.91 → $206.78 is ABOVE it → HOLD, no cut.** Bear thesis SOFTENING (Kimi K3 re-read memory-bullish; risk-on
+  tape); do NOT average down. Loser → ratchet N/A.
+- FDX: 9 sh @ $313.00, current $315.19, **+$19.71 (+0.70%)**, day **+2.93%** — day 1 of the position, green. Well above
+  the -7% cut. 0-15% band → stop stays 10% (no tighten). HOLD.
+- MRK: 23 sh @ $125.90, current $126.27, **+$8.51 (+0.29%)**, day **+1.50%** — oil-insensitive defensive, back green.
+  Far above the ~$117.09 -7% cut. 0-15% band → stop stays 10%. HOLD.
+- Guardrail check: PASS (no trade). **-7% cut: N/A (none at/below -7%; worst NVDA -2.34%)** ✅. Ratchet: N/A (no winner
+  ≥+15%; FDX +0.70%, MRK +0.29%, NVDA red) ✅. Sizes FDX 2.83% ($2,836.71) / MRK 2.89% ($2,904.21) / NVDA 2.88%
+  ($2,894.92) of $100,373.39 equity ≤ 5% ✅. Day P/L equity $100,373.39 vs last_equity $100,261.67 = **+$111.72
+  (+0.111%)** ≪ -3% cap ✅. Weekly slots: 1 of 3 used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: EOD Telegram summary sent (close routine always notifies). Dry powder $91.74k (~91.4% cash). Equity +$373.39
+  (+0.37%) vs the $100k paper start. Next routine: pre-market Wed 7/22.
+
 ## 2026-07-21 13:08 ET — NO-OP (midday risk check; HOLD FDX + MRK + NVDA, no cut/tighten; market OPEN)
 - Qty / price / stop: none placed/closed. Market OPEN (`is_open: true`, 13:08 ET, next close 16:00). All three
   trailing legs live & confirmed via `orders --status open` (qty_available 0 = shares held by the open stops):
