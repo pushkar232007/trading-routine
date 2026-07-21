@@ -14,6 +14,26 @@ Format:
 
 ---
 
+## 2026-07-21 13:08 ET — NO-OP (midday risk check; HOLD FDX + MRK + NVDA, no cut/tighten; market OPEN)
+- Qty / price / stop: none placed/closed. Market OPEN (`is_open: true`, 13:08 ET, next close 16:00). All three
+  trailing legs live & confirmed via `orders --status open` (qty_available 0 = shares held by the open stops):
+  FDX 9-sh 10% trail, stop $285.30 / hwm $317 (order 6f599c57, ratcheted UP intraday from $312.60); NVDA 14-sh
+  10% trail, stop $191.31237 / hwm $212.5693 (order 92b2b072); MRK 23-sh 10% trail, stop $118.566 / hwm $131.74
+  (order 3d2f860f). Fully stop-protected.
+- **NVDA (the flagged one): 14 sh @ $211.73, current $205.33, -$89.61 (-3.02%)**, day **+1.01%** (recovering
+  intraday). **-7% cut line ~$196.91 → $205.33 is ABOVE it → HOLD, no cut required.** Bear thesis SOFTENING
+  (Kimi K3 re-read memory-bullish; risk-on tape); do NOT average down. Loser → ratchet N/A.
+- FDX: 9 sh @ $313.00, current $315.42, **+$21.74 (+0.77%)**, day **+3.00%** — day's winner, 1 day into the
+  position. Well above the -7% cut. **Ratchet: +0.77% in the 0-15% band → stop stays 10% (no tighten).** HOLD.
+- MRK: 23 sh @ $125.90, current $125.36, **-$12.42 (-0.43%)**, day **+0.77%** — ~flat, oil-insensitive defensive.
+  Far above the ~$117.09 -7% cut. 0-15% band → stop stays 10%. HOLD.
+- Guardrail check: PASS (no trade). **-7% cut: N/A (none at/below -7%; worst NVDA -3.02%)** ✅. Ratchet: N/A
+  (FDX +0.77% & MRK ~flat — no winner ≥+15%; NVDA red) ✅. Sizes FDX 2.83% ($2,838.74) / MRK 2.87% ($2,883.28) /
+  NVDA 2.86% ($2,874.61) of $100,333.91 equity ≤ 5% ✅. Day P/L equity $100,333.91 vs last_equity $100,261.67 =
+  **+$72.24 (+0.072%)** ≪ -3% cap ✅. Weekly slots: 1 of 3 used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: No Telegram (nothing closed; a clean risk check isn't notify-worthy). Dry powder $91.74k (~91.4% cash).
+  Next routine: market-close wrap 7/21.
+
 ## 2026-07-20 16:02 ET — NO-OP (market-close wrap; HOLD MRK + NVDA, no cut/tighten; market CLOSED)
 - Qty / price / stop: none placed/closed. Market CLOSED (`is_open: false`, 16:02 ET, next open Tue 7/21). Both trailing
   legs live & confirmed via `orders --status open`: MRK 23-sh 10% trail, stop $118.566 / hwm $131.74 (order 3d2f860f);
