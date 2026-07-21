@@ -940,3 +940,29 @@ Format:
 - Note: Book ~94.2% cash (~$94.55k dry powder). GEHC stays the named primary deployable once its
   feed normalizes; MRK-add on a genuine pullback is the secondary. Next routine: midday risk check —
   **MUST re-check NVDA's -7% cut** (~$196.91).
+
+## 2026-07-21 ~09:34 ET — BOUGHT FDX (deployment-floor deploy, market OPEN)
+- Qty / price / stop: **BOUGHT FDX 9 sh @ $313.00** (order a03872d0, ~2.81% of equity). **10% trailing
+  stop attached** (order 6f599c57, sell trailing_stop, gtc, stop $281.34 / hwm $312.60). Fill note: the
+  `buy` script timed out at 15s (order only partially filled — 4/9 — at that moment), so it exited
+  WITHOUT attaching the trail; I re-checked `orders --status all` → the market order then completed FULLY
+  (9/9 @ $313.00) and the spread had TIGHTENED to 0.31%, so per the 7/9 tight-spread lesson I **manually
+  POSTed the trailing_stop sell leg for 9 sh** (did NOT cancel — the fill was clean at $313, not the FDX
+  broken-feed case). Position confirmed protected.
+- Reasoning: Executed the 7/21 pre-market plan's deployables against live gates on a **risk-on tape**
+  (oil easing on Iran ceasefire talks; Kimi K3 re-framed memory-bullish). **GEHC (primary): SKIPPED** —
+  feed broken again (bid frozen $58.65, ask flickering $62.25→$65.03 = 5.8–9.8% spread; an ask fill sits
+  ~6–10% below bid → near-certain trail trip). **MRK-add (secondary): SKIPPED** — trigger is a pullback +
+  fresh catalyst; MRK ~flat from entry, no new catalyst → not met. **FDX (tertiary): BOUGHT** — spread
+  sampled 3x STABLE at ~2.26% (bid $307.01 held all 3, ask $313.95–99, NOT the flicker-wide 7/6–7/7
+  pattern), cleanest FDX feed in weeks + inside the <~3% gate; thesis right THIS tape (oil-ease removes
+  the fuel headwind; Citizens JMP "market outperform" PT $375, Buy consensus ~$350); non-tech diversifier.
+  Deployment-floor discipline (0/3 slots, ~94% cash, up tape → idle cash is the logged miss) tipped a
+  clean-gate name to action; falling-knife rule doesn't bind (not a rout). Sized SMALL (~2.8%) as a
+  tertiary/lower-conviction starter with real oil flip-flop risk. NVDA (HOLD, +1.53% intraday, bear
+  thesis softening) & MRK (HOLD) unchanged — no add, no cut.
+- Guardrail check: **PASS.** FDX 2.81% / MRK 2.86% / NVDA 2.88% ≤ 5% size cap. Weekly slots: **1 of 3
+  used (FDX, new week 7/21).** Day P/L **+$52.32 (+0.05%)** (equity $100,313.99 vs last_equity
+  $100,261.67) → far inside the -3% daily cap. TRADING_MODE = paper. No options/margin/short/crypto.
+  All 3 positions have live 10% trailing stops.
+- Telegram: **SENT** (a trade was placed).
