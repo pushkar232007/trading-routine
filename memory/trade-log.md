@@ -1006,3 +1006,35 @@ Format:
   $100,261.67) → far inside the -3% daily cap. TRADING_MODE = paper. No options/margin/short/crypto.
   All 3 positions have live 10% trailing stops.
 - Telegram: **SENT** (a trade was placed).
+
+## 2026-07-22 ~09:31 ET — market-open (Wed; NO trades — HOLD all 3, deployment-floor logged as deliberate cash)
+- **NO TRADES PLACED.** Standing-plan check: the 7/21 FDX deploy was already executed on 7/21;
+  the 7/22 pre-market plan's logged decision is HOLD all three + deploy GEHC only IF the tape
+  stabilizes AND its spread confirms. Market confirmed OPEN (`is_open: true`, 09:30 ET).
+- **GEHC (primary deployable): SKIPPED.** Live quote sampled 3x = bid $62.28 / ask $62.46 (~0.29%,
+  100 sh each side) — but all 3 samples had IDENTICAL frozen timestamps (13:31:25.019743689Z) =
+  the same chronic broken/frozen paper feed flagged 7/6+7/7+7/16+7/21, not a trustworthy live read.
+  More decisively, the TAPE fails the gate regardless: **oil-driven risk-off (Brent ~$94, Iran
+  ceasefire stalled) + the GOOGL/TSLA AI-capex binary TONIGHT + GEHC's own Q2 print 7/29 (~5
+  sessions out)** = not a tape to add risk into; falling-knife leans caution. Thesis unchanged
+  (~30% disc to ~$88 FV; Citi/UBS upgrades); retry when the feed normalizes AND the tape stabilizes.
+  Secondary = MRK-add on a pullback — trigger NOT met (MRK +0.92% from entry, not a pullback).
+- **FDX**: 9 sh, entry $313.00, current $314.95, unrealized **+$17.55 (+0.62%)**, intraday -0.08%.
+  10% trail live (order 6f599c57, stop $285.30 / hwm $317). **Oil re-spike to ~$94 revives the fuel
+  headwind (logged flip-flop risk materializing) — inside the trail, NOT a cut; most oil-exposed
+  holding → watch at midday.** 0-15% band → stop stays 10%. HOLD.
+- **MRK**: 23 sh, entry $125.90, current $127.06, unrealized **+$26.68 (+0.92%)**, intraday +0.63%.
+  Well above the -7% cut (~$117.09). 10% trail live (order 3d2f860f, stop $118.566 / hwm $131.74).
+  Oil-insensitive defensive doing its job on an oil-spike day; PTs $138-155. Earnings Aug 4. HOLD.
+- **NVDA**: 14 sh, entry $211.73, current $205.74, unrealized **-$83.86 (-2.83%)**, intraday -0.75%.
+  Above the -7% cut (~$196.91) & the $191.31 10% trail (order 92b2b072, hwm $212.5693). Chips cooling
+  on the risk-off tape; worst chip performer 2026 but thesis intact (Goldman 21.7x "compelling").
+  **GOOGL/TSLA capex tonight = the AI-capex read-through — do NOT add ahead of the binary.** HOLD.
+- **Guardrail check: PASS.** Day P/L **-$4.20 (-0.004%)** (equity $100,376.09 vs last_equity
+  $100,380.29) → far inside the -3% daily cap. FDX 2.82% / MRK 2.91% / NVDA 2.87% of equity ≤ 5%
+  size cap. Weekly slots: **1 of 3 used (FDX).** TRADING_MODE = paper. No options/margin/short/crypto.
+  All 3 positions have live 10% trailing stops.
+- **Telegram: NOT sent** (nothing placed/closed — open routine only pings on an actual trade).
+- Note: Book ~91.4% cash (~$91.7k dry powder). GEHC stays the named primary deployable once its
+  feed normalizes AND the tape stabilizes; MRK-add on a genuine pullback is the secondary. Next
+  routine: midday risk check — re-check NVDA's -7% cut (~$196.91) & FDX on the oil headwind.
