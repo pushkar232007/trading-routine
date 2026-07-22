@@ -14,6 +14,27 @@ Format:
 
 ---
 
+## 2026-07-22 16:05 ET — NO-OP (market-close wrap; HOLD FDX + MRK + NVDA, no cut/tighten; ALL 3 GREEN; market CLOSED)
+- Qty / price / stop: none placed/closed. All 3 trailing legs live & confirmed via `orders --status open`
+  (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105 (order
+  6f599c57, hwm ratcheted UP intraday); NVDA 14-sh 10% trail, stop $192.951 / hwm $214.39 (order 92b2b072, hwm
+  ratcheted UP); MRK 23-sh 10% trail, stop $118.566 / hwm $131.74 (order 3d2f860f). Fully stop-protected.
+- **Notable: the risk-off pre-market read REVERSED intraday.** Despite oil ~$94 + chips cooling into GOOGL/TSLA
+  tonight, the tape rallied and all 3 closed GREEN. **NVDA: 14 sh @ $211.73, current $212.11, +$5.32 (+0.18%)**,
+  day **+2.33%** — recovered from -2.83% at the open to green from entry. -7% cut line ~$196.91 → HOLD, no cut.
+- FDX: 9 sh @ $313.00, current $321.02, **+$72.18 (+2.56%)**, day **+1.85%** — shrugged off the oil headwind;
+  hwm ratcheted to $322.11. 0-15% band → stop stays 10%. HOLD.
+- MRK: 23 sh @ $125.90, current $127.51, **+$37.03 (+1.28%)**, day **+0.99%** — steady defensive. Far above the
+  ~$117.09 -7% cut. 0-15% band → stop stays 10%. HOLD.
+- Guardrail check: PASS (no trade). **-7% cut: N/A (all 3 GREEN)** ✅. Ratchet: N/A (no winner ≥+15%; FDX +2.56%,
+  MRK +1.28%, NVDA +0.18%) ✅. Sizes FDX 2.87% ($2,889.18) / MRK 2.92% ($2,932.73) / NVDA 2.95% ($2,969.54) of
+  $100,528.99 equity ≤ 5% ✅. Day P/L equity $100,528.99 vs last_equity $100,380.29 = **+$148.70 (+0.148%)** ≪
+  -3% cap ✅. Weekly slots: 1 of 3 used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: EOD Telegram summary sent (close routine always notifies). Dry powder $91.74k (~91.3% cash). Equity
+  +$528.99 (+0.53%) vs the $100k paper start. GEHC (primary deployable) not deployed — deliberate cash into
+  tonight's GOOGL/TSLA binary + GEHC's 7/29 earnings. Next routine: pre-market Thu 7/23 (GOOGL/TSLA capex prints
+  after tonight's close = the semi-sentiment read).
+
 ## 2026-07-21 16:02 ET — NO-OP (market-close wrap; HOLD FDX + MRK + NVDA, no cut/tighten; market CLOSED)
 - Qty / price / stop: none placed/closed at the close. Market CLOSED (`is_open: false`, 16:02 ET, next open Wed 7/22).
   Today's one trade was the FDX starter at the 7/21 open (9 sh @ $313.00 — already logged). All 3 trailing legs live &
