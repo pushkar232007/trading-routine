@@ -14,6 +14,28 @@ Format:
 
 ---
 
+## 2026-07-23 13:05 ET — NO-OP (midday risk check; HOLD FDX + MRK + NVDA, no cut/tighten; market OPEN)
+- Qty / price / stop: none placed/closed. All 3 trailing legs live & confirmed via `orders --status open`
+  (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105 (6f599c57);
+  NVDA 14-sh 10% trail, stop $192.951 / hwm $214.39 (92b2b072); MRK 23-sh 10% trail, stop $118.566 / hwm $131.74
+  (3d2f860f). Fully stop-protected.
+- **NVDA (the flagged one): 14 sh @ $211.73, current $209.46, -$31.78 (-1.07%)**, day -1.23%. **-7% cut line
+  ~$196.91 → $209.46 is ABOVE it → HOLD, no cut required.** GOOGL capex raise ($195-205B) = net-bullish
+  read-through, but risk-off oil-spike tape + sell-semis rotation → no add. Loser → ratchet N/A.
+- FDX: 9 sh @ $313.00, current $315.50, **+$22.52 (+0.80%)**, day -1.72% (giving back some of yesterday's +1.85%
+  as oil >$98 fuel headwind bites — but still green, well inside the 10% trail). Well above the -7% cut. **Ratchet:
+  +0.80% in the 0-15% band → stop stays 10% (no tighten).** Most oil-exposed holding but not near a cut; don't
+  pre-emptively cut (7/22 head-fake lesson). HOLD.
+- MRK: 23 sh @ $125.90, current $130.07, **+$95.80 (+3.31%)**, day **+2.04%** — day's winner, oil-insensitive
+  defensive doing its job on the oil-spike high. Far above the ~$117.09 -7% cut. **Ratchet: +3.31% in the 0-15%
+  band → stop stays 10%.** HOLD.
+- Guardrail check: PASS (no trade). **-7% cut: N/A (none at/below -7%; worst NVDA -1.07%)** ✅. Ratchet: N/A (no
+  winner ≥+15%; MRK +3.31%, FDX +0.80%, NVDA red) ✅. Sizes FDX 2.83% ($2,839.52) / MRK 2.98% ($2,991.50) / NVDA
+  2.92% ($2,932.44) of $100,500.58 equity ≤ 5% ✅. Day P/L ~flat (equity $100,500.58 vs ~$100,529 prior close)
+  ≪ -3% cap ✅. Weekly slots: 1 of 3 used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: No Telegram (nothing closed; a clean risk check isn't notify-worthy). Dry powder $91.74k (~91.3% cash).
+  Next routine: market-close wrap 7/23.
+
 ## 2026-07-23 09:31 ET — NO-OP (market-OPEN; HOLD FDX + MRK + NVDA, no new buy; deployment-floor deliberate cash)
 - Qty / price / stop: none placed/closed. Executed the 7/23 pre-market plan = HOLD all three, no adds. All 3
   trailing legs live & confirmed via `orders --status open`: FDX 10% trail, stop $289.8945 / hwm $322.105 (6f599c57);
