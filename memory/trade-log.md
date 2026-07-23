@@ -14,6 +14,29 @@ Format:
 
 ---
 
+## 2026-07-23 09:31 ET — NO-OP (market-OPEN; HOLD FDX + MRK + NVDA, no new buy; deployment-floor deliberate cash)
+- Qty / price / stop: none placed/closed. Executed the 7/23 pre-market plan = HOLD all three, no adds. All 3
+  trailing legs live & confirmed via `orders --status open`: FDX 10% trail, stop $289.8945 / hwm $322.105 (6f599c57);
+  NVDA 10% trail, stop $192.951 / hwm $214.39 (92b2b072); MRK 10% trail, stop $118.566 / hwm $131.74 (3d2f860f).
+- Standing-plan catch-up: NONE pending — 7/22 close ran & is logged; no misfired plan to salvage. Market `is_open: true`.
+- **NVDA: 14 sh @ $211.73, current $209.29, -$34.17 (-1.15%)**, day -1.31%. HOLD, do NOT add — GOOGL capex raise to
+  $195-205B is a net-bullish read-through, but a risk-off oil-spike tape (Brent >$98) + a live "sell-semis/buy-hyperscalers"
+  rotation + NVDA still worst chip performer 2026 argue against adding. Well above the -7% cut (~$196.91). MSFT/META 7/29 = next confirm.
+- FDX: 9 sh @ $313.00, current ~$320, **+$63.00 (+2.24%)**, day -0.32%. Oil >$98 = worst fuel headwind since entry
+  (flip-flop risk at its peak), but shrugged off $94 → inside the 10% trail. HOLD, WATCH at midday; don't pre-emptively
+  cut on the overnight oil read (7/22 head-fake lesson).
+- MRK: 23 sh @ $125.90, current $127.99, **+$48.07 (+1.66%)**, day +0.41%. Oil-insensitive defensive doing its job on a
+  new oil-spike high. Far above the ~$117.09 -7% cut. HOLD.
+- **GEHC (primary deployable) — SKIPPED (deliberate).** Q2 earnings 7/29 before open (~4 sessions out) = a binary +
+  oil at a saga high = risk-off tape → don't deploy right into the print. Falling-knife leans caution on the oil driver.
+  MRK-add's pullback trigger not met (MRK green). This is a LOGGED deployment-floor decision, not a silent hold.
+- Guardrail check: PASS (no trade). **-7% cut: N/A (NVDA -1.15% worst, above ~$196.91)** ✅. Ratchet: N/A (no winner
+  ≥+15%; FDX +2.24%, MRK +1.66%) ✅. Sizes FDX 2.87% ($2,880) / MRK 2.93% ($2,943.77) / NVDA 2.92% ($2,930.05) of
+  $100,485.06 equity ≤ 5% ✅. Day P/L ~flat (~$100,485 vs ~$100,529 prior close) ≪ -3% cap ✅. Weekly slots: 1 of 3
+  used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: no trade placed → no Telegram (per protocol). Dry powder $91.74k (~91.3% cash). Next routine: midday risk check
+  (re-check the -7% cut on NVDA + FDX vs live oil; tighten any winner that crosses +15%).
+
 ## 2026-07-22 16:05 ET — NO-OP (market-close wrap; HOLD FDX + MRK + NVDA, no cut/tighten; ALL 3 GREEN; market CLOSED)
 - Qty / price / stop: none placed/closed. All 3 trailing legs live & confirmed via `orders --status open`
   (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105 (order
