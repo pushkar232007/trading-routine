@@ -14,6 +14,28 @@ Format:
 
 ---
 
+## 2026-07-23 16:05 ET — NO-OP (market-close wrap; HOLD FDX + MRK + NVDA, no cut/tighten; market CLOSED)
+- Qty / price / stop: none placed/closed today (open + midday + close all NO-OP). All 3 trailing legs live
+  (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop ~$289.89 / hwm $322.105 (6f599c57);
+  NVDA 14-sh 10% trail, stop ~$192.95 / hwm $214.39 (92b2b072); MRK 23-sh 10% trail, stop ~$118.57 / hwm $131.74
+  (3d2f860f). Fully stop-protected.
+- **Oil >$98 stayed elevated all day but the book held ~flat — MRK carried it.** MRK: 23 sh @ $125.90, current
+  $130.46, **+$104.88 (+3.62%)**, day **+2.35%** = day's winner, oil-insensitive defensive doing its job on the
+  oil-spike high. Far above the ~$117.09 -7% cut. 0-15% band → stop stays 10%. HOLD.
+- FDX: 9 sh @ $313.00, current $315.62, **+$23.58 (+0.84%)**, day **-1.68%** — gave back some of yesterday's +1.85%
+  as the oil >$98 fuel headwind bit, but still green from entry, well inside the 10% trail. Most oil-exposed holding;
+  didn't pre-emptively cut (7/22 head-fake lesson). 0-15% band → stop stays 10%. HOLD.
+- **NVDA: 14 sh @ $211.73, current $209.15, -$36.12 (-1.22%)**, day **-1.37%**. -7% cut line ~$196.91 → ABOVE it →
+  HOLD, no cut. GOOGL capex raise = net-bullish read-through, but risk-off oil tape + sell-semis rotation → no add.
+  Loser → ratchet N/A. MSFT/META 7/29 = next AI-capex confirm.
+- Guardrail check: PASS (no trade). **-7% cut: N/A (none at/below -7%; worst NVDA -1.22%)** ✅. Ratchet: N/A (no
+  winner ≥+15%; MRK +3.62%, FDX +0.84%, NVDA red) ✅. Sizes FDX 2.83% ($2,840.58) / MRK 2.99% ($3,000.58) / NVDA
+  2.91% ($2,928.10) of $100,506.80 equity ≤ 5% ✅. Day P/L ~-$20.57 (~-0.02%, flat: FDX -$48.60, MRK +$68.77,
+  NVDA -$40.74) ≪ -3% cap ✅. Weekly slots: 1 of 3 used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: EOD Telegram summary sent (close routine always notifies). Dry powder $91.74k (~91.3% cash). Equity +$507
+  (+0.51%) vs the $100k paper start. GEHC (primary deployable) not deployed — deliberate cash (oil saga high +
+  GEHC 7/29 earnings ~4 sessions out). Next routine: pre-market Fri 7/24 → **weekly review at Fri close.**
+
 ## 2026-07-23 13:05 ET — NO-OP (midday risk check; HOLD FDX + MRK + NVDA, no cut/tighten; market OPEN)
 - Qty / price / stop: none placed/closed. All 3 trailing legs live & confirmed via `orders --status open`
   (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105 (6f599c57);
