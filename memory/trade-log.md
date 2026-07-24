@@ -14,6 +14,29 @@ Format:
 
 ---
 
+## 2026-07-24 13:06 ET — NO-OP (midday risk check; HOLD FDX + MRK + NVDA, no cut/tighten; ALL 3 GREEN intraday; market OPEN)
+- Qty / price / stop: none placed/closed. All 3 trailing legs live & confirmed via `orders --status open`
+  (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105 (6f599c57);
+  NVDA 14-sh 10% trail, stop $192.951 / hwm $214.39 (92b2b072); MRK 23-sh 10% trail, stop $118.566 / hwm $131.74
+  (3d2f860f). Fully stop-protected.
+- **NVDA (the flagged one): 14 sh @ $211.73, current $210.035, -$23.73 (-0.80%)**, day **+0.61%** (recovering
+  after Thu's -1.6% rotation-out-of-Mag7). **-7% cut line ~$196.91 → $210.035 is ABOVE it → HOLD, no cut required.**
+  Intel beat = mild positive semi read; risk-off oil tape eased Friday. No add (MSFT/META 7/29 = next AI-capex confirm).
+  Loser → ratchet N/A.
+- FDX: 9 sh @ $313.00, current $316.755, **+$33.80 (+1.2%)**, day **+0.36%** — oil dipping off Thu's >$100 spike →
+  fuel headwind easing; still green, well inside the 10% trail. Most oil-exposed holding but nowhere near a cut; don't
+  pre-emptively cut (7/22 head-fake lesson). **Ratchet: +1.2% in the 0-15% band → stop stays 10%.** HOLD.
+- MRK: 23 sh @ $125.90, current $131.26, **+$123.28 (+4.26%)**, day **+0.60%** — book's best performer, oil-insensitive
+  defensive doing its job; fresh Buy/$141 PT (ISLEND HIV upside). Far above the ~$117.09 -7% cut. **Ratchet: +4.26% in
+  the 0-15% band → stop stays 10%.** HOLD.
+- Guardrail check: PASS (no trade). **-7% cut: N/A (none at/below -7%; worst NVDA -0.80%)** ✅. Ratchet: N/A (no
+  winner ≥+15%; MRK +4.26%, FDX +1.2%, NVDA red) ✅. Sizes FDX 2.84% ($2,850.80) / MRK 3.00% ($3,018.98) / NVDA
+  2.92% ($2,940.49) of $100,547.81 equity ≤ 5% ✅. Day P/L equity $100,547.81 vs last_equity $100,501.80 =
+  **+$46.01 (+0.046%)** ≪ -3% cap ✅. Weekly slots: 1 of 3 used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: No Telegram (nothing closed; a clean risk check isn't notify-worthy). Dry powder $91.74k (~91.2% cash).
+  GEHC (primary deployable) still not deployed — deliberate (Q2 print 7/29 before open ~3 sessions out + the 7/29-30
+  FOMC/GDP/PCE binary stack). Next routine: **weekly review at today's (Fri) close.**
+
 ## 2026-07-23 16:05 ET — NO-OP (market-close wrap; HOLD FDX + MRK + NVDA, no cut/tighten; market CLOSED)
 - Qty / price / stop: none placed/closed today (open + midday + close all NO-OP). All 3 trailing legs live
   (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop ~$289.89 / hwm $322.105 (6f599c57);
