@@ -3,7 +3,7 @@
 _Bull: overwrite this entire file with a fresh snapshot every routine run. This should always
 reflect the CURRENT state, not history (history lives in trade-log.md)._
 
-- **Last updated:** 2026-07-24 ~16:02 ET (Fri **market-close wrap** — NO trades today, HOLD all 3, no cut/tighten) — snapshot from live `account` + `positions`, market CLOSED (`is_open: false`, next open Mon 7/27). Regime: **oil dipped off Thu's >$100 spike (fuel headwind easing); Friday finished roughly flat after the S&P's worst-day-in-a-month Thursday.**
+- **Last updated:** 2026-07-24 ~16:20 ET (Fri **weekly-review** — NO trades, HOLD all 3; graded the week B−, +0.155% vs S&P −0.613% = +0.77 pts, review appended to weekly-review.md + Telegram sent) — snapshot from live `account` + `positions`, market CLOSED (`is_open: false`, next open Mon 7/27). Regime: **oil dipped off Thu's >$100 spike (fuel headwind easing); Friday finished roughly flat after the S&P's worst-day-in-a-month Thursday.**
 - **Mode:** paper
 - **Cash:** $91,737.54
 - **Equity / portfolio value:** $100,484.58 (last_equity $100,501.80)
