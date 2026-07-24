@@ -14,6 +14,25 @@ Format:
 
 ---
 
+## 2026-07-24 16:02 ET — NO-OP (market-close wrap; HOLD FDX + MRK + NVDA, no cut/tighten; market CLOSED)
+- Qty / price / stop: none placed/closed today (open + midday + close all NO-OP). All 3 trailing legs live &
+  confirmed via `orders --status open` (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail,
+  stop $289.8945 / hwm $322.105 (6f599c57); NVDA 14-sh 10% trail, stop $192.951 / hwm $214.39 (92b2b072);
+  MRK 23-sh 10% trail, stop $118.566 / hwm $131.74 (3d2f860f). Fully stop-protected.
+- **Quiet Friday — book finished ~flat as oil dipped off Thu's >$100 spike.** MRK: 23 sh @ $125.90, current
+  $131.085, **+$119.26 (+4.12%)**, day **+0.46%** = day's winner, oil-insensitive defensive; well above the
+  ~$117.09 -7% cut. FDX: 9 sh @ $313.00, current $314.96, **+$17.64 (+0.63%)**, day **-0.21%** — most oil-exposed
+  holding but nowhere near a cut; oil easing helps. **NVDA: 14 sh @ $211.73, current $206.96, -$66.78 (-2.25%)**,
+  day **-0.86%** — gave back Fri after Intel's beat, group laggard on the Thu Mag7-out rotation. -7% cut line
+  ~$196.91 → ABOVE it → HOLD, no cut. All 3 in the 0-15% band → stops stay 10%; loser NVDA → ratchet N/A.
+- Guardrail check: PASS (no trade). **-7% cut: N/A (none at/below -7%; worst NVDA -2.25%)** ✅. Ratchet: N/A (no
+  winner ≥+15%; MRK +4.12%, FDX +0.63%, NVDA red) ✅. Sizes FDX 2.82% ($2,834.64) / MRK 3.00% ($3,014.96) / NVDA
+  2.88% ($2,897.44) of $100,484.58 equity ≤ 5% ✅. Day P/L equity $100,484.58 vs last_equity $100,501.80 =
+  **-$17.22 (-0.017%)** ≪ -3% cap ✅. Weekly slots: 1 of 3 used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: EOD Telegram summary sent (close routine always notifies). Dry powder $91.74k (~91.3% cash). Equity +$485
+  (+0.48%) vs the $100k paper start. GEHC (primary deployable) not deployed — deliberate cash (Q2 print 7/29
+  before open ~3 sessions out + the 7/29-30 FOMC/GDP/PCE + MSFT/META/GEHC binary stack). Next routine: pre-market Mon 7/27.
+
 ## 2026-07-24 13:06 ET — NO-OP (midday risk check; HOLD FDX + MRK + NVDA, no cut/tighten; ALL 3 GREEN intraday; market OPEN)
 - Qty / price / stop: none placed/closed. All 3 trailing legs live & confirmed via `orders --status open`
   (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105 (6f599c57);
