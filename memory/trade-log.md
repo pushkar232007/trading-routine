@@ -1126,3 +1126,38 @@ Format:
 - Note: Book ~91.4% cash (~$91.7k dry powder). GEHC stays the named primary deployable once its
   feed normalizes AND the tape stabilizes; MRK-add on a genuine pullback is the secondary. Next
   routine: midday risk check — re-check NVDA's -7% cut (~$196.91) & FDX on the oil headwind.
+
+## 2026-07-24 ~09:31 ET — market-open (Fri; NO trades — HOLD all 3, deployment-floor logged as deliberate cash into the weekly review)
+- **NO TRADES PLACED.** Standing-plan check: the 7/21 FDX deploy was already executed; the 7/24
+  pre-market plan's logged decision is HOLD all three + deploy GEHC only IF the tape stabilizes AND
+  its spread confirms AND we're not right into its print. Market confirmed OPEN (`is_open: true`, 09:30 ET).
+- **GEHC (primary deployable): SKIPPED — did not even sample the feed.** GEHC's Q2 print is **7/29
+  before open = ~3 sessions out**, and the plan is explicit: do NOT deploy right into the binary. The
+  7/29-30 macro stack (FOMC decision + Q2 GDP + June PCE) + MSFT/META/GEHC 7/29, AAPL/AMZN 7/30
+  compounds it, and oil is still elevated (blew past $100 Thu, easing Fri but +13%/wk). Adding risk on
+  a Friday into that binary stack fails the gate on proximity regardless of spread. Thesis unchanged
+  (~30% disc to ~$88 FV; Buy avg PT $79.33). Retry post-earnings-week once the print clears.
+- **MRK-add (secondary): SKIPPED.** Trigger is a pullback + fresh catalyst; MRK is **+3.92%** from
+  entry (the book's best performer, not a pullback) — trigger NOT met.
+- **FDX**: 9 sh, entry $313.00, current $315.045, unrealized **+$18.41 (+0.65%)**, intraday -0.18%.
+  10% trail live (order 6f599c57, stop ~$289.89 / hwm ~$322.11). **Oil >$100 Thu = worst fuel headwind
+  since entry, yet STILL GREEN** on shipping demand + fuel surcharges. Most oil-exposed holding →
+  watch at midday; let the 10% trail manage risk, don't pre-emptively cut (7/22 head-fake lesson).
+  0-15% band → stop stays 10%. HOLD.
+- **MRK**: 23 sh, entry $125.90, current $130.83, unrealized **+$113.39 (+3.92%)**, intraday +0.27%.
+  Well above the -7% cut (~$117.09). 10% trail live (order 3d2f860f, stop ~$118.57 / hwm ~$131.74).
+  Oil-insensitive defensive, book's best performer; fresh Buy/$141 PT (ISLEND HIV upside). Earnings
+  Aug 4. 0-15% band → stop stays 10%. HOLD.
+- **NVDA**: 14 sh, entry $211.73, current $207.68, unrealized **-$56.70 (-1.91%)**, intraday -0.52%.
+  Above the -7% cut (~$196.91) & the $191.31 10% trail (order 92b2b072, stop ~$192.95 / hwm $214.39).
+  Rotated-out laggard (-1.6% Thu into MU/SK Hynix) on a risk-off oil tape; Intel's beat = mild positive
+  read, not an add signal. **HOLD, no add** (MSFT/META 7/29 = next AI-capex confirm). 0-15% band → stop 10%.
+- **Guardrail check: PASS.** Day P/L **-$12.66 (-0.01%)** (equity $100,489.14 vs last_equity
+  $100,501.80) → far inside the -3% daily cap. FDX 2.82% / MRK 2.99% / NVDA 2.89% of equity ≤ 5% size
+  cap. Weekly slots: **1 of 3 used (FDX).** TRADING_MODE = paper. No options/margin/short/crypto. All 3
+  positions have live 10% trailing stops.
+- **Telegram: NOT sent** (nothing placed/closed — open routine only pings on an actual trade).
+- Note: Book ~91.3% cash (~$91.7k dry powder). GEHC stays the named primary deployable post-earnings-week
+  once its 7/29 print clears; MRK-add on a genuine pullback is the secondary. **Weekly-review routine
+  fires at today's close.** Next routine: midday risk check — re-check NVDA's -7% cut (~$196.91) & FDX
+  on the oil headwind.
