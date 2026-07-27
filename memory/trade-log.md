@@ -14,6 +14,39 @@ Format:
 
 ---
 
+## 2026-07-27 09:31 ET — market-open (Mon; NO trades — HOLD all 3, deployment-floor deliberate cash into the biggest binary week of the quarter)
+- **NO TRADES PLACED.** Standing-plan check: no pending plan to salvage — the 7/24 open routine
+  executed correctly and the 7/27 pre-market plan's logged decision is HOLD all 3 + deploy nothing
+  today. Market confirmed OPEN (`is_open: true`, 09:31 ET).
+- **GEHC (primary deployable): SKIPPED — did not sample the feed.** Q2 print is **7/29 before open
+  = ~2 sessions out**; plan is explicit: do NOT deploy right into the print — evaluate the REACTION
+  post-print (buy the reaction, not the run-up). Compounded by the 7/29-30 macro stack (FOMC + Q2
+  GDP + June PCE) + MSFT/META/GEHC 7/29, AAPL/AMZN 7/30 = the biggest binary week of the quarter.
+  Adding NEW risk on a Monday into that stack fails the gate on proximity regardless of spread.
+  One weekend oil de-escalation ≠ a durable all-clear (oil has flip-flopped on Iran repeatedly).
+  Thesis unchanged (~30% disc to ~$88 FV; Buy avg PT ~$79-90). Retry post-earnings-week.
+- **MRK-add (secondary): SKIPPED.** Trigger is a pullback + fresh catalyst; MRK is **+3.78%** from
+  entry (book's best performer, not a pullback) — trigger NOT met.
+- **FDX**: 9 sh, entry $313.00, current $313.775, unrealized **+$6.98 (+0.25%)**, intraday -0.38%.
+  10% trail live (order 6f599c57, stop ~$289.89 / hwm ~$322.11). **Weekend oil tumble (~7%, Brent
+  <$86) = a direct tailwind — the fuel headwind that peaked >$100 Thu is easing hard.** RJ trimmed
+  PT to $330 (kept Outperform) — a note, not a break. 0-15% band → stop stays 10%. HOLD.
+- **MRK**: 23 sh, entry $125.90, current $130.66, unrealized **+$109.48 (+3.78%)**, intraday -0.31%.
+  Well above the -7% cut (~$117.09). 10% trail live (order 3d2f860f, stop ~$118.57 / hwm ~$131.74).
+  Oil-insensitive defensive; bullish PTs $138-155. Earnings Aug 4. 0-15% band → stop stays 10%. HOLD.
+- **NVDA**: 14 sh, entry $211.73, current $206.34, unrealized **-$75.46 (-2.55%)**, intraday -0.24%.
+  Above the -7% cut (~$196.91) & the $191.31 10% trail (order 92b2b072, hwm ~$214.39). **Kimi K3
+  weights drop TODAY** = a swing factor (bull: could bolster NVDA premium demand; bear: DeepSeek-style
+  compute-scarcity attack). **HOLD, no add** — MSFT 7/29 = the next AI-capex confirm. 0-15% band → stop 10%.
+- **Guardrail check: PASS.** Day P/L **-$27.07 (-0.027%)** (equity $100,455.48 vs last_equity
+  $100,482.55) → far inside the -3% daily cap. FDX 2.81% / MRK 2.99% / NVDA 2.88% of equity ≤ 5% size
+  cap. Weekly slots: **0 of 3 used (new week 7/27).** TRADING_MODE = paper. No options/margin/short/crypto.
+  All 3 positions have live 10% trailing stops.
+- **Telegram: NOT sent** (nothing placed/closed — open routine only pings on an actual trade).
+- Note: Book ~91.3% cash (~$91.7k dry powder). GEHC stays the named primary deployable — evaluate the
+  REACTION post its 7/29 print; MRK-add on a genuine pullback is the secondary. Next routine: midday
+  risk check — re-check NVDA's -7% cut (~$196.91) & tighten any winner that crosses +15% (none yet).
+
 ## 2026-07-24 16:02 ET — NO-OP (market-close wrap; HOLD FDX + MRK + NVDA, no cut/tighten; market CLOSED)
 - Qty / price / stop: none placed/closed today (open + midday + close all NO-OP). All 3 trailing legs live &
   confirmed via `orders --status open` (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail,
