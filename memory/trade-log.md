@@ -14,6 +14,17 @@ Format:
 
 ---
 
+## 2026-07-27 ~13:08 ET — midday risk check (Mon) — **CLOSED NVDA on the -7% loss-cut guardrail**
+- **CLOSED NVDA: sold 14 sh @ $195.93 (market). Entry $211.73 → realized -$221.20 (-7.46%).** Order 6b7eb292, filled.
+- **Trigger:** midday risk check found NVDA at ~$195.86 = **-7.50% from entry**, breaching the hard -7% loss-cut. NVDA was **-5.3% intraday** — **Kimi K3 weights dropped today**, the exact bear catalyst memory flagged as the DeepSeek-style compute-scarcity attack, and it played out. Semi bear market was already declared confirmed/structural (7/20).
+- **Why cut, not hold:** no specific pre-logged thesis reason to override the cut. The standing note was "HOLD, do NOT add" (about not averaging down) but explicitly said "midday re-checks the -7% cut — a close <~$196.91 = cut per rules unless a logged thesis reason." No such reason exists; the bear thesis is materializing, not a dip to hold. Rules-based exit.
+- **Mechanics:** shares were held by the live trailing stop (qty_available 0), so `close` 403'd first. Canceled ONLY the NVDA trailing-stop order (92b2b072) via a targeted DELETE (CLI has no per-order cancel; `cancel-all` would have dropped FDX+MRK stops too, and the script can't recreate standalone stops), then closed. FDX + MRK trailing stops left fully intact (verified live).
+- **FDX**: 9 sh, entry $313.00, current ~$312.42, **-0.18%** (intraday -0.81% on oil ticking). 10% trail live (order 6f599c57, stop $289.8945 / hwm $322.105). 0-15% band → stop stays 10%. HOLD.
+- **MRK**: 23 sh, entry $125.90, current ~$131.53, **+4.48%** (book's best; +0.35% intraday). 10% trail live (order 3d2f860f, stop $119.277 / hwm $132.53). 0-15% band → stop stays 10%. Well above the ~$117.09 -7% cut. HOLD.
+- **Guardrail check: PASS.** Day P/L **-$164.61 (-0.16%)** (equity $100,317.94 vs last_equity $100,482.55) → far inside the -3% daily cap. FDX/MRK each ≤5% size cap. TRADING_MODE = paper. Both remaining positions have live 10% trailing stops. Weekly new-position slots unaffected (a close, not an open) — **1 of 3 used (FDX).**
+- **Telegram: SENT** (a position was actually closed).
+- Note: NVDA exit frees ~$2.74k → book now ~94.2% cash (~$94.5k dry powder), 2 holdings (FDX, MRK). NVDA can be re-evaluated on a durable semi-bear bottom, not before. GEHC (primary deployable) still gated by its 7/29 print. Next routine: market-close wrap.
+
 ## 2026-07-27 09:31 ET — market-open (Mon; NO trades — HOLD all 3, deployment-floor deliberate cash into the biggest binary week of the quarter)
 - **NO TRADES PLACED.** Standing-plan check: no pending plan to salvage — the 7/24 open routine
   executed correctly and the 7/27 pre-market plan's logged decision is HOLD all 3 + deploy nothing
