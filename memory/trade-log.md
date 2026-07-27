@@ -14,6 +14,26 @@ Format:
 
 ---
 
+## 2026-07-27 16:05 ET — NO-OP (market-close wrap; HOLD FDX + MRK, no cut/tighten; market CLOSED)
+- Qty / price / stop: none placed/closed at the close. Today's one trade was the **midday NVDA loss-cut**
+  (14 sh @ $195.93, realized -$221.20 / -7.46% — already logged above). Both remaining trailing legs live &
+  confirmed via `orders --status open` (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail,
+  stop $289.8945 / hwm $322.105 (6f599c57); MRK 23-sh 10% trail, stop $119.277 / hwm $132.53 (3d2f860f).
+  NVDA's stop correctly gone. Fully stop-protected.
+- **FDX: 9 sh @ $313.00, current $310.79, -$19.89 (-0.71%)**, day **-1.32%** — gave back as oil ticked back up
+  off the weekend tumble; still barely red from entry, well inside the 10% trail. -7% cut line N/A. 0-15% band →
+  stop stays 10%. HOLD.
+- **MRK: 23 sh @ $125.90, current $130.76, +$111.78 (+3.86%)**, day **-0.24%** — book's best performer, oil-insensitive
+  defensive; far above the ~$117.09 -7% cut. 0-15% band → stop stays 10%. HOLD.
+- Guardrail check: PASS (no trade at the close). **-7% cut: N/A (FDX -0.71%, MRK +3.86% — none at/below -7%)** ✅.
+  Ratchet: N/A (no winner ≥+15%; MRK +3.86%, FDX red) ✅. Sizes FDX 2.79% ($2,797.11) / MRK 3.00% ($3,007.48) of
+  $100,285.15 equity ≤ 5% ✅. Day P/L equity $100,285.15 vs last_equity $100,482.55 = **-$197.40 (-0.20%)** ≪ -3% cap
+  ✅ (driven by the NVDA cut). Weekly slots: 1 of 3 used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: EOD Telegram summary sent (close routine always notifies). Dry powder $94.48k (~94.2% cash). Equity +$285
+  (+0.29%) vs the $100k paper start. Realized -$221.20 on NVDA today; book trimmed to 2 stop-protected holdings.
+  GEHC (primary deployable) not deployed — deliberate (7/29 print 2 sessions out; evaluate the REACTION post-print).
+  Next routine: pre-market Tue 7/28.
+
 ## 2026-07-27 ~13:08 ET — midday risk check (Mon) — **CLOSED NVDA on the -7% loss-cut guardrail**
 - **CLOSED NVDA: sold 14 sh @ $195.93 (market). Entry $211.73 → realized -$221.20 (-7.46%).** Order 6b7eb292, filled.
 - **Trigger:** midday risk check found NVDA at ~$195.86 = **-7.50% from entry**, breaching the hard -7% loss-cut. NVDA was **-5.3% intraday** — **Kimi K3 weights dropped today**, the exact bear catalyst memory flagged as the DeepSeek-style compute-scarcity attack, and it played out. Semi bear market was already declared confirmed/structural (7/20).
