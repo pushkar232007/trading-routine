@@ -1267,3 +1267,34 @@ Format:
   once its 7/29 print clears; MRK-add on a genuine pullback is the secondary. **Weekly-review routine
   fires at today's close.** Next routine: midday risk check — re-check NVDA's -7% cut (~$196.91) & FDX
   on the oil headwind.
+
+## 2026-07-28 ~09:31 ET — market-open (Tue; NO trades — HOLD both, deployment-floor logged as deliberate cash on the EVE of the FOMC decision + a 5-megacap-print gauntlet)
+- **NO TRADES PLACED.** Standing-plan check: the 7/28 pre-market plan's logged decision is HOLD
+  FDX + MRK + deploy NOTHING today (GEHC reports 7/29 before open — buy the reaction, not the run-up).
+  No unexecuted guardrail-clean plan pending. Market confirmed OPEN (`is_open: true`, 09:30 ET).
+- **GEHC (primary deployable): SKIPPED — did not even sample the feed.** Q2 print is **7/29 before
+  open (8:30am ET call) = ~1 session out (tomorrow)**, and the plan is explicit: do NOT deploy right
+  into the binary; evaluate the REACTION post-print (buy the reaction, not the run-up). Compounded by
+  the FOMC decision Wed 7/29 2pm + MSFT/META 7/29 + AAPL/AMZN/GDP/PCE 7/30 = the biggest binary stack
+  of the quarter. Adding risk on the eve of it fails the gate on proximity regardless of spread. Thesis
+  unchanged (~30% disc to ~$88 FV; consensus Q2 EPS $1.03 on rev $5.26B; FY26 guide maintained
+  $4.80-5.00; Buy/Hold PT ~$80-90). Retry post-print once the reaction is readable.
+- **MRK-add (secondary): SKIPPED.** Trigger is a pullback + fresh catalyst; MRK is **+5.81%** from
+  entry (the book's best performer, running — NOT a pullback) — trigger NOT met.
+- **FDX**: 9 sh, entry $313.00, current $310.31, unrealized **-$24.21 (-0.86%)**, intraday -0.15%.
+  10% trail live (order 6f599c57, stop ~$289.89 / hwm ~$322.11). Ticked slightly red today despite the
+  oil-relief tape (Brent ~$86, US-Iran pause holding) — no company catalyst; well inside the 10% trail,
+  NOT a cut. Most oil-exposed holding but oil is helping now. 0-15% band → stop stays 10%. HOLD.
+- **MRK**: 23 sh, entry $125.90, current $133.215, unrealized **+$168.25 (+5.81%)**, intraday +1.88%.
+  Well above the -7% cut (~$117.09). 10% trail live (order 3d2f860f, stop ~$119.28 / hwm ~$132.53).
+  Oil-insensitive defensive, book's best performer; fresh 7/27 positive (Alimatravir once-monthly oral
+  HIV-PrEP Ph3 initial-access → HIV-pipeline re-rating extends). Earnings Aug 4. 0-15% band → stop 10%. HOLD.
+- **Guardrail check: PASS.** Day P/L **+$52.15 (+0.05%)** (equity $100,337.28 vs last_equity
+  $100,285.13) → far inside the -3% daily cap. FDX 2.78% / MRK 3.05% of equity ≤ 5% size cap. Weekly
+  slots: **1 of 3 used (FDX).** TRADING_MODE = paper. No options/margin/short/crypto. Both positions
+  have live 10% trailing stops (qty_available 0). No position at/below the -7% cut.
+- **Telegram: NOT sent** (nothing placed/closed — open routine only pings on an actual trade).
+- Note: Book ~94.2% cash (~$94.5k dry powder). NVDA closed at the 7/27 midday -7% loss-cut (realized
+  -$221.20). GEHC stays the named primary deployable once its 7/29 print clears + the reaction is
+  readable; MRK-add on a genuine pullback is the secondary. Next routine: midday risk check — re-check
+  FDX & MRK against the ratchet/-7% cut; watch the FOMC-decision-eve tape.
