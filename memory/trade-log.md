@@ -14,6 +14,24 @@ Format:
 
 ---
 
+## 2026-07-28 16:02 ET — NO-OP (market-close wrap, Tue; HOLD FDX + MRK, no cut/tighten; market CLOSED)
+- Qty / price / stop: none placed/closed today (midday + close both NO-OP). Both trailing legs live & confirmed
+  via `orders --status open` (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop
+  $289.8945 / hwm $322.105 (6f599c57); MRK 23-sh 10% trail, stop $121.545 / hwm $135.05 (3d2f860f, hwm ratcheted
+  UP as MRK printed a new high). Fully stop-protected.
+- **Quiet GREEN day — MRK carried it. MRK: 23 sh @ $125.90, current $132.54, +$152.72 (+5.27%)**, day **+1.36%** =
+  the day's winner, oil-insensitive defensive; book's best. Far above the ~$117.09 -7% cut. 0-15% band → stop stays 10%.
+- **FDX: 9 sh @ $313.00, current $312.64, -$3.24 (-0.12%)**, day **+0.60%** — firmed as oil relief held (Brent ~$86);
+  essentially flat from entry, well inside the 10% trail. -7% cut line ~$291.09 → ABOVE it → HOLD, no cut. 0-15% band → stop stays 10%.
+- Guardrail check: PASS (no trade). **-7% cut: N/A (FDX -0.12%, MRK +5.27% — none at/below -7%)** ✅. Ratchet: N/A
+  (no winner ≥+15%; MRK +5.27%, FDX ~flat) ✅. Sizes FDX 2.80% ($2,813.76) / MRK 3.04% ($3,048.42) of $100,342.72
+  equity ≤ 5% ✅. Day P/L equity $100,342.72 vs last_equity $100,285.13 = **+$57.59 (+0.06%)** ≪ -3% cap ✅. Weekly
+  slots: 1 of 3 used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: EOD Telegram summary sent (close routine always notifies). Dry powder $94.48k (~94.2% cash). Equity +$343
+  (+0.34%) vs the $100k paper start. GEHC (primary deployable) reports **7/29 before open (~1 session out)** → SKIP
+  the run-up, evaluate the REACTION post-print. FOMC decision Wed 7/29 2pm + MSFT/META 7/29 + AAPL/AMZN/GDP/PCE 7/30
+  = the biggest binary stack of the quarter ahead. Next routine: pre-market Wed 7/29.
+
 ## 2026-07-28 13:05 ET — NO-OP (midday risk check, Tue; HOLD FDX + MRK, no cut/tighten; market OPEN)
 - Qty / price / stop: none placed/closed. Both trailing legs live & confirmed via `orders --status open`
   (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105
