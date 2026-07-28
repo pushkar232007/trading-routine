@@ -14,6 +14,25 @@ Format:
 
 ---
 
+## 2026-07-28 13:05 ET — NO-OP (midday risk check, Tue; HOLD FDX + MRK, no cut/tighten; market OPEN)
+- Qty / price / stop: none placed/closed. Both trailing legs live & confirmed via `orders --status open`
+  (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105
+  (6f599c57); MRK 23-sh 10% trail, stop $121.545 / hwm $135.05 (3d2f860f, hwm ratcheted UP). Fully stop-protected.
+- **FDX: 9 sh @ $313.00, current $311.60, -$12.64 (-0.45%)**, day **+0.26%**. Oil de-escalation holding (Brent ~$86)
+  keeps the fuel headwind easing; barely red from entry, well inside the 10% trail. **-7% cut line ~$291.09 → ABOVE
+  it → HOLD, no cut.** 0-15% band → stop stays 10%. HOLD.
+- **MRK: 23 sh @ $125.90, current $131.83, +$136.39 (+4.71%)**, day **+0.82%** — book's best performer, oil-insensitive
+  defensive; far above the ~$117.09 -7% cut. Running (not a pullback) → MRK-add trigger NOT met. **Ratchet: +4.71% in
+  the 0-15% band → stop stays 10% (no tighten).** Earnings Aug 4. HOLD.
+- **Guardrail check: PASS (no trade).** **-7% cut: N/A (FDX -0.45%, MRK +4.71% — none at/below -7%)** ✅. Ratchet: N/A
+  (no winner ≥+15%; MRK +4.71%, FDX red) ✅. Sizes FDX 2.80% ($2,804.36) / MRK 3.02% ($3,032.09) of $100,316.99 equity
+  ≤ 5% ✅. Day P/L equity $100,316.99 vs last_equity $100,285.13 = **+$31.86 (+0.03%)** ≪ -3% cap ✅. Weekly slots: 1 of
+  3 used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: No Telegram (nothing closed; a clean risk check isn't notify-worthy). Dry powder $94.48k (~94.2% cash). GEHC
+  (primary deployable) reports **7/29 before open (~1 session out)** → SKIP the run-up, evaluate the REACTION post-print.
+  FOMC decision Wed 7/29 2pm + MSFT/META 7/29 + AAPL/AMZN/GDP/PCE 7/30 = the biggest binary stack of the quarter ahead.
+  Next routine: market-close wrap Tue 7/28.
+
 ## 2026-07-27 16:05 ET — NO-OP (market-close wrap; HOLD FDX + MRK, no cut/tighten; market CLOSED)
 - Qty / price / stop: none placed/closed at the close. Today's one trade was the **midday NVDA loss-cut**
   (14 sh @ $195.93, realized -$221.20 / -7.46% — already logged above). Both remaining trailing legs live &
