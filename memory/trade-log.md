@@ -1335,3 +1335,38 @@ Format:
   -$221.20). GEHC stays the named primary deployable once its 7/29 print clears + the reaction is
   readable; MRK-add on a genuine pullback is the secondary. Next routine: midday risk check — re-check
   FDX & MRK against the ratchet/-7% cut; watch the FOMC-decision-eve tape.
+
+## 2026-07-29 ~09:31 ET — market-open (Wed; NO trades — GEHC deploy gate MET on the print but BLOCKED by a broken/wide paper spread; HOLD FDX + MRK)
+- **NO TRADES PLACED.** Market confirmed OPEN (`is_open: true`, 09:30 ET). Standing-plan check:
+  the 7/29 pre-market plan named **GEHC as the primary deployable** post-print (Q2 beat big — EPS
+  $1.13 vs $1.04, rev $5.30B, record orders/backlog, FY26 guide reaffirmed → "buy the reaction, not
+  the run-up" condition MET), a ~3% starter with a 10% trail, **spread-gated + weight the 2pm FOMC.**
+  No unexecuted guardrail-clean plan from a prior misfire pending.
+- **GEHC (primary deployable): SKIPPED — spread gate FAILED.** Sampled the live feed 3x per the
+  FDX-feed lessons (thin paper feed flickers): bid **$69.51 → $68.99 → $68.51** (drifting down)
+  against a STUCK ask **$73.24** → spread **5.37% → 6.16% → 6.90%** (widening), far above the
+  <~2-3% gate. The `buy` script is market-only, so a fill would land near the $73.24 ask — instantly
+  ~7% below the bid (near-guaranteed to trip the 10% trail) and well above the ~$70-71 the plan
+  assumed. Per the 2026-07-06/07 rule: do NOT market-buy into a >~3% spread — SKIP rather than take a
+  broken fill. **Thesis is intact and the binary is behind it (clean beat) — this is purely a broken-
+  feed block, not a thesis change.** Retry at midday/close if the quote normalizes; the 2pm FOMC
+  (~64% CME hold = live hike tail) is a second reason to prefer a post-2pm entry anyway.
+- **MRK-add (secondary): SKIPPED.** Trigger is a pullback + fresh catalyst; MRK is **+4.78%** from
+  entry (running, book's best performer — NOT a pullback). Trigger NOT met.
+- **FDX**: 9 sh, entry $313.00, current $310.68, unrealized **-$20.88 (-0.74%)**, intraday -0.63%.
+  10% trail live (order 6f599c57, stop ~$289.89 / hwm ~$322.11). Slightly red; well inside the trail,
+  above the -7% cut (~$291.09) → NOT a cut. Oil easing (Brent ~$87.5) = fuel tailwind. 0-15% band →
+  stop stays 10%. HOLD.
+- **MRK**: 23 sh, entry $125.90, current $131.92, unrealized **+$138.46 (+4.78%)**, intraday +0.08%.
+  10% trail live (order 3d2f860f, stop ~$121.55 / hwm ~$135.05). Oil-insensitive defensive, book's
+  best; hit a fresh 52-wk high $135.05 on 7/28. Well above the -7% cut (~$117.09). 0-15% band → stop
+  stays 10%. Earnings Aug 4. HOLD.
+- **Guardrail check: PASS.** Day P/L **-$9.21 (-0.01%)** (equity $100,316.95 vs last_equity
+  $100,326.16) → far inside the -3% daily cap. FDX 2.79% / MRK 3.02% of equity ≤ 5% size cap. Weekly
+  slots: **1 of 3 used (FDX).** TRADING_MODE = paper. No options/margin/short/crypto. Both positions
+  have live 10% trailing stops (qty_available 0). No position at/below the -7% cut.
+- **Telegram: NOT sent** (nothing placed/closed — open routine only pings on an actual trade).
+- Note: Book ~94.2% cash (~$94.5k dry powder). GEHC stays the named primary deployable the moment its
+  paper feed tightens (<~3% spread) — retry midday/close, preferably post-2pm FOMC. Secondary =
+  MRK-add on a pullback (trigger not met). Next routine: midday risk check — re-sample the GEHC spread,
+  re-check FDX/MRK against the ratchet & -7% cut, weigh the 2pm FOMC outcome.
