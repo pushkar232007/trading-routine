@@ -14,6 +14,26 @@ Format:
 
 ---
 
+## 2026-07-29 13:04 ET — NO-OP (midday risk check, Wed; HOLD FDX + MRK, no cut/tighten; market OPEN)
+- Qty / price / stop: none placed/closed. Both trailing legs live & confirmed via `orders --status open`
+  (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105
+  (6f599c57); MRK 23-sh 10% trail, stop $121.545 / hwm $135.05 (3d2f860f). Fully stop-protected.
+- **FDX: 9 sh @ $313.00, current $310.08, -$26.28 (-0.93%)**, day **-0.82%** — slightly red as oil relief
+  (Brent ~$87.5) holds but no fresh catalyst; well inside the 10% trail. **-7% cut line ~$291.09 → $310.08 is
+  ABOVE it → HOLD, no cut.** 0-15% band → stop stays 10%. HOLD.
+- **MRK: 23 sh @ $125.90, current $131.265, +$123.395 (+4.26%)**, day **-0.42%** — book's best performer,
+  oil-insensitive defensive; well above the ~$117.09 -7% cut. Running (not a pullback) → MRK-add trigger NOT
+  met. **Ratchet: +4.26% in the 0-15% band → stop stays 10% (no tighten).** Earnings Aug 4. HOLD.
+- **Guardrail check: PASS (no trade).** **-7% cut: N/A (FDX -0.93%, MRK +4.26% — none at/below -7%)** ✅.
+  Ratchet: N/A (no winner ≥+15%; MRK +4.26%, FDX red) ✅. Sizes FDX 2.78% ($2,790.72) / MRK 3.01% ($3,019.10)
+  of $100,290.31 equity ≤ 5% ✅. Day P/L equity $100,290.31 vs last_equity $100,326.16 = **-$35.85 (-0.036%)**
+  ≪ -3% cap ✅. Weekly slots: 1 of 3 used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: No Telegram (nothing closed; a clean risk check isn't notify-worthy). Dry powder $94.48k (~94.2% cash).
+  **GEHC (primary deployable) Q2 beat big (deploy gate MET on thesis) but was SKIPPED at the open on its
+  broken/wide paper feed (5.4-6.9% spread) — a feed block, not a thesis change; a deploy decision is /trade's
+  job, not this risk check's.** **FOMC decision 2pm ET today (~64% CME hold = live hike tail); MSFT+META after
+  close = AI-capex reads.** Next routine: market-close wrap (re-sample GEHC spread post-2pm FOMC; EOD summary).
+
 ## 2026-07-28 16:02 ET — NO-OP (market-close wrap, Tue; HOLD FDX + MRK, no cut/tighten; market CLOSED)
 - Qty / price / stop: none placed/closed today (midday + close both NO-OP). Both trailing legs live & confirmed
   via `orders --status open` (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop
