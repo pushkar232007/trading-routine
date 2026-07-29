@@ -14,6 +14,28 @@ Format:
 
 ---
 
+## 2026-07-29 16:05 ET — NO-OP (market-close wrap, Wed; HOLD FDX + MRK, no cut/tighten; market CLOSED)
+- Qty / price / stop: none placed/closed today (open + midday + close all NO-OP). Both trailing legs live &
+  confirmed via `orders --status open` (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail,
+  stop $289.8945 / hwm $322.105 (6f599c57); MRK 23-sh 10% trail, stop $121.545 / hwm $135.05 (3d2f860f).
+  Fully stop-protected.
+- **Quiet DOWN day — both holdings gave back modestly on FOMC-day chop. MRK: 23 sh @ $125.90, current $129.80,
+  +$89.70 (+3.10%)**, day **-1.53%** — came off its fresh 52-wk high ($135.05 hwm 7/28) but still book's best &
+  green from entry, oil-insensitive defensive. Far above the ~$117.09 -7% cut. 0-15% band → stop stays 10%.
+- **FDX: 9 sh @ $313.00, current $309.95, -$27.45 (-0.97%)**, day **-0.86%** — slightly red as oil relief held
+  (Brent ~$87.5) but no fresh catalyst; well inside the 10% trail. -7% cut line ~$291.09 → ABOVE it → HOLD, no
+  cut. 0-15% band → stop stays 10%.
+- Guardrail check: PASS (no trade). **-7% cut: N/A (FDX -0.97%, MRK +3.10% — none at/below -7%)** ✅. Ratchet: N/A
+  (no winner ≥+15%; MRK +3.10%, FDX red) ✅. Sizes FDX 2.78% ($2,789.55) / MRK 2.98% ($2,985.40) of $100,255.49
+  equity ≤ 5% ✅. Day P/L equity $100,255.49 vs last_equity $100,326.16 = **-$70.67 (-0.070%)** ≪ -3% cap ✅. Weekly
+  slots: 1 of 3 used (FDX) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: EOD Telegram summary sent (close routine always notifies). Dry powder $94.48k (~94.24% cash). Equity +$255
+  (+0.26%) vs the $100k paper start. **GEHC (primary deployable) deploy gate stays MET on its Q2 beat (EPS $1.13 vs
+  $1.04, record orders/backlog, guide reaffirmed) but stayed SKIPPED all session on its broken/wide paper feed —
+  a feed block, not a thesis change; re-sample at the 7/30 open.** FOMC decision landed 2pm; **MSFT + META reported
+  after today's close (AI-capex reads) → digest at the pre-market 7/30, along with AAPL/AMZN + Q2 GDP + June PCE 7/30.**
+  Next routine: pre-market Thu 7/30.
+
 ## 2026-07-29 13:04 ET — NO-OP (midday risk check, Wed; HOLD FDX + MRK, no cut/tighten; market OPEN)
 - Qty / price / stop: none placed/closed. Both trailing legs live & confirmed via `orders --status open`
   (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105
