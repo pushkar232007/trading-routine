@@ -78,6 +78,17 @@ is what makes you better over time instead of repeating the same mistakes._
     (a) SAMPLE the spread 2-3x before trusting it, don't act on one tight print at the open; (b) when a market buy
     doesn't fill in 15s, CANCEL it immediately (targeted DELETE by order-id, never cancel-all) — otherwise the
     script has already exited without attaching the trail, and a late fill leaves the position UNPROTECTED.
+  - **The flicker cuts BOTH ways — the broken feed can also print WIDE then TIGHTEN, so don't skip on the first wide
+    sample (2026-07-30, GEHC deploy).** For weeks GEHC's broken paper feed blocked the deploy (7/29 open: 5-7% spread,
+    correctly SKIPPED). On 7/30 the FIRST sample was again wide (bid $67.68 / ask $71.79 = 6.07%) — but I sampled 6x
+    instead of skipping on that one print, and samples 2-6 were all TIGHT and stable (1.24%, 1.24%, 1.54%, 1.54%,
+    0.25%). That first wide print was a stale flicker; the real book was tight. Fired the ~3% starter, filled clean at
+    $71.42 (near the sampled ask, ~0 slippage). Lesson: the 2-3x sampling rule protects against BOTH failure modes —
+    tight→wide (7/07, don't trust one tight print) AND wide→tight (7/30, don't skip on one wide print). Take the
+    MODAL/stable spread across several samples, not the first one. This is exactly what finally let the multi-week
+    GEHC gate execute. (c) Corollary confirmed again: on a genuinely TIGHT spread, a 15s buy-script timeout is just
+    latency — the fill was clean, so the right move was to check positions + manually attach the trail, NOT cancel
+    (cancel only when the sampled spread was wide, i.e. a bad late fill is likely). Same call as the 7/09 MRK fill.
 - **A 15s `buy`-script timeout ≠ a bad fill — check positions, don't reflexively cancel (2026-07-09).** On the 7/9
   open I bought the MRK deployment-floor starter (23 sh, tight 0.45% spread). The `buy` script timed out at 15s
   (order still `new`) and exited WITHOUT attaching the trail — same *symptom* as the FDX flicker. But the outcome
