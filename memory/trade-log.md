@@ -14,6 +14,29 @@ Format:
 
 ---
 
+## 2026-07-30 13:05 ET — NO-OP (midday risk check, Thu; HOLD GEHC + FDX + MRK, no cut/tighten; market OPEN)
+- Qty / price / stop: none placed/closed. All 3 trailing legs live & confirmed via `orders --status open`
+  (qty_available 0 = shares held by the open stops): GEHC 42-sh 10% trail, stop $63.918 / hwm $71.02 (85f200d4);
+  FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105 (6f599c57); MRK 23-sh 10% trail, stop $121.545 / hwm $135.05
+  (3d2f860f). Fully stop-protected.
+- **GEHC (the brand-new one, watch it doesn't round-trip entry): 42 sh @ $71.42, current $68.82, -$109.20 (-3.64%)**,
+  day **-4.28%** — giving back part of yesterday's +11% earnings pop the day after entry (normal post-print digestion,
+  no fresh negative catalyst). **-7% cut line ~$66.42 → $68.82 is ABOVE it → HOLD, no cut required.** 0-15% band →
+  stop stays 10%. Watch at close.
+- **FDX: 9 sh @ $313.00, current $306.745, -$56.30 (-2.00%)**, day **-0.60%** — slightly red, no fresh catalyst, well
+  inside the 10% trail. **-7% cut line ~$291.09 → ABOVE it → HOLD, no cut.** 0-15% band → stop stays 10%. HOLD.
+- **MRK: 23 sh @ $125.90, current $129.19, +$75.67 (+2.61%)**, day **-0.90%** — book's only green name, oil-insensitive
+  defensive; giving back intraday off the 7/28 52-wk high ($135.05 hwm) but well above the ~$117.09 -7% cut. Running/flat
+  (not a pullback) → MRK-add trigger NOT met; Aug 4 earnings binary + ~0% consensus upside → do NOT add. **Ratchet:
+  +2.61% in the 0-15% band → stop stays 10% (no tighten).** HOLD.
+- **Guardrail check: PASS (no trade).** **-7% cut: N/A (GEHC -3.64%, FDX -2.00%, MRK +2.61% — none at/below -7%)** ✅.
+  Ratchet: N/A (no winner ≥+15%; MRK +2.61%, GEHC/FDX red) ✅. Sizes GEHC 2.89% ($2,890.44) / FDX 2.76% ($2,760.71) /
+  MRK 2.97% ($2,971.37) of $100,103.42 equity ≤ 5% ✅. Day P/L equity $100,103.42 vs last_equity $100,326.16 =
+  **-$222.74 (-0.22%)** ≪ -3% cap ✅. Weekly slots: 1 of 3 used (GEHC) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: No Telegram (nothing closed; a clean risk check isn't notify-worthy). Dry powder $91.48k (~91.4% cash). All 3
+  holdings non-tech → ≥2 diversification rule satisfied. Q2 GDP + June PCE landed 8:30; AAPL/AMZN after close = the day's
+  earnings read. Next routine: market-close wrap (re-check GEHC doesn't round-trip entry; EOD summary).
+
 ## 2026-07-29 16:05 ET — NO-OP (market-close wrap, Wed; HOLD FDX + MRK, no cut/tighten; market CLOSED)
 - Qty / price / stop: none placed/closed today (open + midday + close all NO-OP). Both trailing legs live &
   confirmed via `orders --status open` (qty_available 0 = shares held by the open stops): FDX 9-sh 10% trail,
