@@ -14,6 +14,32 @@ Format:
 
 ---
 
+## 2026-07-31 13:06 ET — NO-OP (midday risk check, Fri; HOLD GEHC + FDX + MRK, no cut/tighten; market OPEN)
+- Qty / price / stop: none placed/closed. All 3 trailing legs live & confirmed via `orders --status open`
+  (qty_available 0 = shares held by the open stops): GEHC 42-sh 10% trail, stop $63.918 / hwm $71.02 (85f200d4);
+  FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105 (6f599c57); MRK 23-sh 10% trail, stop $121.545 / hwm $135.05
+  (3d2f860f). Fully stop-protected.
+- **GEHC (the one to watch — closest to a cut): 42 sh @ $71.42, current $67.94, -$146.16 (-4.87%)**, day **-2.86%** —
+  still digesting yesterday's/Wed's Q2 earnings pop the days after entry (normal post-print consolidation, no fresh
+  negative catalyst; BTIG keeps Buy, PT $75). **-7% cut line ~$66.42 → $67.94 is ABOVE it → HOLD, no cut required.**
+  Logged hold thesis stands: deploy gate fired on the Q2 beat (EPS $1.13 vs $1.04, record backlog $23.9B, FY26
+  reaffirmed); this is digestion, not a thesis break. 0-15% band → stop stays 10%. **Watch it doesn't breach $66.42 —
+  if it closes below, that's a rules cut next check absent a fresh logged reason.**
+- **FDX: 9 sh @ $313.00, current $309.24, -$33.84 (-1.20%)**, day **+0.22%** — ~flat, no fresh catalyst, oil quiet,
+  well inside the 10% trail. **-7% cut line ~$291.09 → ABOVE it → HOLD, no cut.** 0-15% band → stop stays 10%. HOLD.
+- **MRK: 23 sh @ $125.90, current $130.92, +$115.46 (+3.99%)**, day **+0.87%** — book's only green name, oil-insensitive
+  defensive; well above the ~$117.09 -7% cut. Running (not a pullback) + **Aug 4 earnings binary (before open, ~1
+  session out at Mon open; Street models a steep y/y EPS decline)** → MRK-add trigger NOT met, do NOT add ahead of it.
+  **Ratchet: +3.99% in the 0-15% band → stop stays 10% (no tighten).** HOLD.
+- **Guardrail check: PASS (no trade).** **-7% cut: N/A (GEHC -4.87%, FDX -1.20%, MRK +3.99% — none at/below -7%)** ✅.
+  Ratchet: N/A (no winner ≥+15%; MRK +3.99%, GEHC/FDX red) ✅. Sizes GEHC 2.85% ($2,853.48) / FDX 2.78% ($2,783.16) /
+  MRK 3.01% ($3,011.16) of $100,128.69 equity ≤ 5% ✅. Day P/L equity $100,128.69 vs last_equity $100,180.49 =
+  **-$51.80 (-0.05%)** ≪ -3% cap ✅. Weekly slots: 1 of 3 used (GEHC) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: No Telegram (nothing closed; a clean risk check isn't notify-worthy). Dry powder $91.48k (~91.4% cash). All 3
+  holdings non-tech → ≥2 diversification rule satisfied. GEHC is the only position worth flagging (-4.87%, ~$1.52/sh
+  above its cut line) — not actionable yet but on the radar. **Weekly review fires at today's (Fri) close** — grade the
+  week vs the S&P & always send the EOW Telegram summary. Next routine: weekly review / market-close wrap.
+
 ## 2026-07-30 16:02 ET — NO-OP (market-close wrap, Thu; HOLD GEHC + FDX + MRK, no cut/tighten; market CLOSED)
 - Qty / price / stop: none placed/closed at the close. Today's one trade was the **GEHC deploy at the open**
   (42 sh @ $71.42, ~2.93%, 10% trail — the multi-week gate firing on the Q2 beat, already logged). All 3 trailing
