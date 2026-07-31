@@ -27,6 +27,15 @@ For each candidate trade idea:
    This buys at market and immediately attaches a 10% trailing stop, per strategy.
 3. If a trade does NOT clear a guardrail, skip it and log why in `memory/trade-log.md` anyway —
    skipped trades are still useful history.
+
+**Post-earnings-gap entry discipline (added 2026-07-31 after the GEHC lesson).** "Buy the
+reaction, not the run-up" is too vague — on 7/30 it let us buy GEHC AT its +11% earnings pop
+($71.42, above the $71.25 pop close) with no consolidation, and it immediately gave back to
+-4.76%. Concrete rule: if a name has gapped **≥8% on an earnings/catalyst print**, do NOT enter
+on the pop (same-day or next-day). Require EITHER (a) a pullback of **≥⅓ of the gap** off the
+post-print high, OR (b) **≥1 full consolidation session** that holds above the pre-gap level,
+before deploying. If neither has happened, the gate stays met — wait for a cleaner entry rather
+than chasing the vertical move.
 4. To exit a position: `python3 scripts/alpaca.py close SYMBOL`.
 
 After acting, append every action (or deliberate non-action) to `memory/trade-log.md` in the
