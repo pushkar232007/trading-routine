@@ -14,6 +14,30 @@ Format:
 
 ---
 
+## 2026-08-04 13:04 ET — NO-OP (midday risk check, Tue; HOLD GEHC + FDX + MRK, no cut/tighten; market OPEN)
+- Qty / price / stop: none placed/closed. All 3 trailing legs live & confirmed via `orders --status open`
+  (qty_available 0 = shares held by the open stops): GEHC 42-sh 10% trail, stop $63.918 / hwm $71.02 (85f200d4);
+  FDX 9-sh 10% trail, stop $289.8945 / hwm $322.105 (6f599c57); MRK 23-sh 10% trail, stop $121.545 / hwm $135.05
+  (3d2f860f). Fully stop-protected.
+- **GEHC (the one to watch — closest to a cut): 42 sh @ $71.42, current $69.76, -$69.72 (-2.32%)**, day **+0.04%** —
+  digesting its Q2-beat pop; no fresh negative catalyst (8/4: soft Patient Care Solutions segment under strategic
+  review incl. a possible sale = de-risking positive). **-7% cut line ~$66.42 → $69.76 is ABOVE it (~$3.34/sh room)
+  → HOLD, no cut.** 0-15% band → stop stays 10%.
+- **FDX: 9 sh @ $313.00, current $314.57, +$14.13 (+0.50%)**, day **+1.72%** — back GREEN, oil weak = quiet fuel
+  tailwind, no fresh catalyst, well inside the trail. **-7% cut line ~$291.09 → ABOVE it → HOLD, no cut.** 0-15% band → stop stays 10%.
+- **MRK: 23 sh @ $125.90, current $128.83, +$67.39 (+2.33%)**, day **+0.83%** — book's best, oil-insensitive defensive;
+  Q2 (8/4 before open) cleared POSITIVE (rev beat + FY-rev-guide raise; headline loss = the known one-time Terns+Cidara
+  IPR&D charges). Well above the ~$117.09 -7% cut. Running (not a pullback) + thin ~2-3% consensus upside → MRK-add
+  trigger NOT met, do NOT chase the pop. **Ratchet: +2.33% in the 0-15% band → stop stays 10% (no tighten).** HOLD.
+- **Guardrail check: PASS (no trade).** **-7% cut: N/A (GEHC -2.32%, FDX +0.50%, MRK +2.33% — none at/below -7%)** ✅.
+  Ratchet: N/A (no winner ≥+15%; MRK +2.33%, GEHC red) ✅. Sizes GEHC 2.92% ($2,929.92) / FDX 2.82% ($2,831.13) /
+  MRK 2.96% ($2,963.09) of $100,205.03 equity ≤ 5% ✅. Day P/L equity $100,205.03 vs last_equity $100,131.42 =
+  **+$73.61 (+0.07%)** ≪ -3% cap ✅. Weekly slots: 0 of 3 used ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: No Telegram (nothing closed; a clean risk check isn't notify-worthy). Dry powder $91.48k (~91.3% cash). All 3
+  holdings non-tech → ≥2 diversification rule satisfied. **CI (named primary deployable) not evaluated here — a deploy
+  decision is /trade's job, not this risk check's; the gate stays met for a cleaner feed.** Week's remaining binary:
+  July NFP Fri 8/7. Next routine: market-close wrap Tue 8/4 (EOD summary + re-check the -7% cut / ratchet).
+
 ## 2026-07-31 16:02 ET — NO-OP (market-close wrap, Fri; HOLD GEHC + FDX + MRK, no cut/tighten; market CLOSED)
 - Qty / price / stop: none placed/closed today (open + midday + close all NO-OP). All 3 trailing legs live &
   confirmed via `orders --status open` (qty_available 0 = shares held by the open stops): GEHC 42-sh 10% trail,
