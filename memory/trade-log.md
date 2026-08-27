@@ -14,6 +14,34 @@ Format:
 
 ---
 
+## 2026-08-27 16:03 ET — NO-OP (market-close wrap, Thu; HOLD all 4, no cut/tighten; market CLOSED)
+- Qty / price / stop: none placed/closed today (open + midday + close all NO-OP). All 4 trailing legs live &
+  confirmed via `orders --status open` (qty_available 0 = shares held by the open stops): MRK 23-sh **7% trail**,
+  stop $145.93 / hwm $156.917 (c051e0b1); FDX 9-sh 10% trail, stop $307.521 / hwm $341.69 (6f599c57); GEHC 42-sh
+  10% trail, stop $68.076 / hwm $75.64 (85f200d4); CI 10-sh 10% trail, stop $257.409 / hwm $286.01 (b59a273b).
+  Fully stop-protected.
+- **Quiet broad-tape DOWN day (all 4 red intraday, no thesis-breaker). MRK: 23 sh @ $125.90, current $149.54,
+  +$543.72 (+18.78%)**, day **-2.33%** — book's big winner, oil-insensitive defensive (not an NVDA proxy). Well above
+  the ~$117.09 -7% cut. **Ratchet: +18.78% in the 15-30% band → 7% trail correct (ratcheted 8/19), no change. +30%
+  line $163.67 → NOT hit → 7% stays.** ~+1% above the ~$147.77 avg PT = extended → NO add. HOLD.
+- **FDX: 9 sh @ $313.00, current $331.41, +$165.69 (+5.88%)**, day **-1.36%** — oil-weak fuel tailwind, Bernstein
+  Outperform $397 (8/24). **-7% cut line ~$291.09 → ABOVE it → HOLD, no cut.** 0-15% band → stop stays 10%.
+- **GEHC: 42 sh @ $71.42, current $72.48, +$44.52 (+1.48%)**, day **-1.13%** — Q2 beat + new CFO (Grogan 8/18);
+  8/27 dense-breast ABUS/StreamVue launch. **-7% cut line ~$66.42 → ABOVE it → HOLD, no cut.** 0-15% band → stop stays 10%.
+- **CI: 10 sh @ $281.08, current $277.67, -$34.10 (-1.21%)**, day **-1.14%** — ~flat from entry; raised FY26 guide
+  ≥$30.45, deep value fwd P/E ~9.5 vs ~17.7; watch the 2027 narrative (no breaker). **-7% cut line ~$261.40 → ABOVE
+  it → HOLD, no cut.** 0-15% band → stop stays 10%.
+- **Guardrail check: PASS (no trade).** **-7% cut: N/A (MRK +18.78%, FDX +5.88%, GEHC +1.48%, CI -1.21% — none at/below
+  -7%)** ✅. Ratchet: MRK already at 7% (15-30% band, correct; +30%→5% line $163.67 not hit); FDX/GEHC/CI in 0-15% → 10% ✅.
+  Sizes MRK 3.41% ($3,439.42) / GEHC 3.02% ($3,044.16) / FDX 2.96% ($2,982.69) / CI 2.75% ($2,776.70) of $100,913.05
+  equity ≤ 5% ✅. Day P/L equity $100,913.05 vs last_equity $101,103.01 = **-$189.96 (-0.19%)** ≪ -3% cap ✅. Weekly slots:
+  0 of 3 used (wk 8/24) ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- Note: **EOD Telegram summary SENT** (close routine always notifies). Dry powder ~$88.67k (~87.9% cash). Equity +$913.05
+  (+0.91%) vs the $100k paper start. All 4 holdings non-tech → ≥2 diversification rule satisfied. Deployment-floor unchanged:
+  book DEFENSIVE + healthcare-concentrated (3 of 4) → next useful deploy is a NON-healthcare diversifier (CAT, named but
+  unvetted on entry; trigger = post-Warsh + tight spread + non-chasing entry). **Remaining binary: Warsh's FIRST Jackson
+  Hole keynote as Fed Chair Fri 8/28 10am ET.** Next routine: pre-market Fri 8/28.
+
 ## 2026-08-27 ~12:55 ET — NO-OP (midday risk check, Thu; HOLD all 4, no cut/tighten; market OPEN)
 - Qty / price / stop: none placed/closed. All 4 trailing legs live & confirmed via `orders --status open`
   (qty_available 0 = shares held by the open stops): MRK 23-sh **7% trail**, stop $145.93 / hwm $156.917 (c051e0b1);
