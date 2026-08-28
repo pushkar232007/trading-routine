@@ -3,7 +3,7 @@
 _Bull: overwrite this entire file with a fresh snapshot every routine run. This should always
 reflect the CURRENT state, not history (history lives in trade-log.md)._
 
-- **Last updated:** 2026-08-28 ~16:03 ET (Fri **market-close wrap + weekly-review day.** Market CLOSED, is_open false). **The day's one trade was MRK's 7% trailing stop firing at the open** (sold 23 sh @ $147.82, realized **+$504.16 / +17.41%** — a booked winner, the ratchet doing its job; logged at midday). Book now **3 HOLDINGS: FDX + GEHC + CI**, all stop-protected (trailing legs live, qty_available 0). Warsh's first Jackson Hole keynote as Fed Chair landed at 10am — no rate shock; the tape stayed quiet. No thesis-breaker on the remaining 3.
+- **Last updated:** 2026-08-28 ~16:20 ET (Fri **weekly-review run**, after the market-close wrap. Market CLOSED, is_open false). **This week (Mon 8/24 → Fri 8/28): portfolio −0.17% ($101,021.99 → $100,850.95) vs S&P ≈ +0.5% = −0.67 pts (underperformed); graded B−.** Booked MRK's 7% trail at the open (+17.41% / +$504.16 realized — the ratchet's 2nd cash win). Book now **3 HOLDINGS: FDX + GEHC + CI**, all stop-protected (trailing legs live, qty_available 0). Warsh's first Jackson Hole keynote landed 10am — no rate shock. **Weekly-review flag: this was the FIRST weekly review persisted since 7/31 (the 8/3/8/10/8/17/8/21 reviews are all missing from `main` — see weekly-review.md change #3). Next week: execute the CAT deploy if its live spread verifies (Warsh gate now spent).**
 - **Mode:** paper
 - **Cash:** $92,069.94
 - **Equity / portfolio value:** $100,849.31 (last_equity $100,913.05)
