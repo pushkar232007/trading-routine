@@ -14,6 +14,16 @@ Format:
 
 ---
 
+## 2026-08-28 ~13:08 ET — midday risk check (Fri): **MRK STOPPED OUT at the open (7% trail fired) — booked +17.41% winner; HOLD CI + FDX + GEHC**
+- **MRK CLOSED by its 7% trailing stop.** The stop (order c051e0b1, replaces 3d2f860f) **triggered at the open and filled 09:33 ET: sold 23 sh @ $147.82** (stop_price $145.93 / hwm $156.917). Entry $125.90 → **realized +$504.16 (+17.41%)**. Not a discretionary sale — the trail fired on its own as MRK gave back off its run at the open; this midday check is discovering it. This is exactly the ratchet-into-risk-off scenario (cf. META 7/17): MRK ran to +18-21%, was ratcheted 10%→7% on 8/19 (15-30% band), and today's pullback tripped the 7% trail, converting the unrealized run into a booked gain instead of letting it round-trip. Clean, rules-driven exit — no override needed.
+- **Remaining 3 holdings — all stop-protected, none actionable (all confirmed via `orders --status open`, qty_available 0):**
+  - **FDX: 9 sh @ $313.00, current $329.305, +$146.75 (+5.21%)**, day -0.64%. Oil quiet; Bernstein Outperform $397. 10% trail live (6f599c57, stop $307.521 / hwm $341.69). **-7% cut ~$291.09 → ABOVE → HOLD.** 0-15% band → stop stays 10%.
+  - **GEHC: 42 sh @ $71.42, current $71.68, +$10.92 (+0.36%)**, day -1.10%. Q2 beat + new CFO Grogan (eff. 9/14). 10% trail live (85f200d4, stop $68.076 / hwm $75.64). **-7% cut ~$66.42 → ABOVE → HOLD.** 0-15% band → stop stays 10%.
+  - **CI: 10 sh @ $281.08, current $278.04, -$30.40 (-1.08%)**, day +0.13%. Deep value P/E ~11.6x, raised FY26 guide ≥$30.45; watch 2027 narrative (no breaker). 10% trail live (b59a273b, stop $257.409 / hwm $286.01). **-7% cut ~$261.40 → ABOVE → HOLD.** 0-15% band → stop stays 10%.
+- **Guardrail check: PASS.** **-7% cut: N/A (FDX +5.21%, GEHC +0.36%, CI -1.08% — none at/below -7%)** ✅. Ratchet: N/A (no remaining winner ≥+15%; MRK, the only one, is now closed) ✅. Sizes FDX 2.94% ($2,963.75) / GEHC 2.99% ($3,010.56) / CI 2.76% ($2,780.40) of $100,824.65 equity ≤ 5% ✅. Day P/L equity $100,824.65 vs last_equity $100,913.05 = **-$88.40 (-0.09%)** ≪ -3% cap ✅. Weekly slots: 0 of 3 used (wk 8/24) — a CLOSE doesn't consume a new-position slot ✅. Paper mode ✅. No options/margin/short/crypto ✅.
+- **Telegram: SENT** (a position was actually closed — MRK booked +17.41%).
+- Note: MRK exit frees ~$3.4k → book now **3 holdings, ~91.3% cash (~$92.07k dry powder)**. Realized YTD gains grow by +$504.16. Book still non-tech / defensive (2 healthcare CI+GEHC + FDX logistics). Deployment-floor: CAT remains the named non-healthcare deployable (post-Warsh + tight spread + non-chasing entry); **weekly-review fires at today's (Fri) close** — re-vet CAT + the MRK exit there and always send the EOW Telegram summary. Next routine: weekly review / market-close.
+
 ## 2026-08-27 16:03 ET — NO-OP (market-close wrap, Thu; HOLD all 4, no cut/tighten; market CLOSED)
 - Qty / price / stop: none placed/closed today (open + midday + close all NO-OP). All 4 trailing legs live &
   confirmed via `orders --status open` (qty_available 0 = shares held by the open stops): MRK 23-sh **7% trail**,
